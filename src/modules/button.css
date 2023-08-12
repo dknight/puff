@@ -1,0 +1,25 @@
+.btn {
+  background: var(--c-pri);
+  border: transparent solid var(--bw);
+  color: var(--c-inv);
+  cursor: pointer;
+  font: 1rem var(--ff);
+  padding: var(--s) calc(var(--s) * 1.5);
+}
+
+.btn.border {
+  background: transparent;
+  border: var(--bw) solid currentColor;
+}
+
+.btn:hover:not(:disabled) {
+  /* wait for css color module 5, or fix bug in lightning css */
+  /* background: oklch(from var(--c-pri) calc(l + 10%) c h); */
+  filter: brightness(0.9);
+}
+
+.btn:disabled {
+  cursor: default;
+  opacity: 0.5;
+}
+/* TODO more buttons */

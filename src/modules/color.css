@@ -1,0 +1,83 @@
+/**
+ * Text
+ */
+.text {
+  color: var(--c-txt);
+}
+.invert {
+  color: var(--c-inv);
+}
+.primary {
+  color: var(--c-pri);
+}
+.neutral {
+  color: var(--c-neu);
+}
+.info {
+  color: var(--c-inf);
+}
+.success {
+  color: var(--c-suc);
+}
+.warning {
+  color: var(--c-wrn);
+}
+.error {
+  color: var(--c-err);
+}
+
+/**
+ * Backgrounds
+ */
+.bg-text {
+  background-color: var(--c-txt);
+}
+.bg-invert {
+  background-color: var(--c-inv);
+}
+.bg-primary {
+  background-color: var(--c-pri);
+}
+.bg-neutral {
+  background-color: var(--c-neu);
+}
+.bg-info {
+  background-color: var(--c-inf);
+}
+.bg-success {
+  background-color: var(--c-suc);
+}
+.bg-warning {
+  background-color: var(--c-wrn);
+}
+.bg-error {
+  background-color: var(--c-err);
+}
+
+/**
+ * Borders
+ */
+.b-text {
+  border-color: var(--c-txt);
+}
+.b-invert {
+  border-color: var(--c-inv);
+}
+.b-primary {
+  border-color: var(--c-pri);
+}
+.b-neutral {
+  border-color: var(--c-neu);
+}
+.b-info {
+  border-color: var(--c-inf);
+}
+.b-success {
+  border-color: var(--c-suc);
+}
+.b-warning {
+  border-color: var(--c-wrn);
+}
+.b-error {
+  border-color: var(--c-err);
+}

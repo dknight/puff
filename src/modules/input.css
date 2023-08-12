@@ -1,0 +1,14 @@
+.input {
+  background: var(--c-bg2);
+  border: var(--bw) solid var(--c-neu);
+  color: var(--c-txt);
+  font-size: 1rem;
+  padding: var(--s);
+}
+.input[type]:read-only, /* handle <select>, kinf of bug? */
+.input:disabled {
+  background: var(--c-brd);
+}
+textarea {
+  font: inherit;
+}

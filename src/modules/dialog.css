@@ -1,0 +1,12 @@
+.dialog {
+  max-width: var(--maxw);
+  margin: auto;
+  border: 0;
+  color: var(--c-txt);
+  background: var(--c-bg2);
+}
+.dialog::backdrop {
+  background: rgba(0 0 0 / 80%);
+}
+
+/* TODO: maybe animatoins? */

@@ -1,0 +1,19 @@
+:focus-visible {
+  outline: var(--bw) var(--c-foc) solid;
+}
+
+body {
+  background: var(--c-inv);
+  color: var(--c-txt);
+  margin: 0;
+  font: var(--font);
+}
+
+pre {
+  overflow: auto;
+}
+
+hr {
+  border: 0;
+  border-bottom: var(--bw) solid var(--c-pri);
+}

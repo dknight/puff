@@ -1,0 +1,14 @@
+## general
+
+- After node >= 19 use nodejs --watch flag instead of nodemon.
+  In node 18.11+ --watch seems to be very unstable and buggy.
+
+## current
+
+- make list like element
+- make great colors
+- make web-component for docs
+- write doc
+- no lorem ipsum in docs, use only correct text!
+- make simple js framework for interaction
+- make oklch from colors

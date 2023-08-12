@@ -1,0 +1,31 @@
+.caret::after {
+  padding-left: 0.3rem;
+  line-height: 0;
+}
+.caret::after {
+  content: '▾';
+}
+.caret.up::after {
+  content: '▴';
+}
+
+.round {
+  border-radius: var(--br);
+}
+
+.pill {
+  border-radius: 999px;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.border {
+  border-width: var(--bw);
+  border-style: solid;
+}

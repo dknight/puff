@@ -1,0 +1,48 @@
+/**
+ * Links
+ */
+a {
+  color: var(--c-pri);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/**
+ * Headings
+ */
+h1 {
+  font: 100 2.5rem/150% var(--ff);
+}
+h2 {
+  font: 100 2.2rem/150% var(--ff);
+}
+h3 {
+  font: 100 2rem/140% var(--ff);
+}
+h4 {
+  font: 100 1.5rem/140% var(--ff);
+}
+h5 {
+  font: 100 1.2rem/130% var(--ff);
+}
+h6 {
+  font: 100 1rem var(--ff);
+}
+
+/**
+ * Text alignemnt
+ */
+.ts {
+  /* TODO deal with polyfills */
+  /* text-align: start; */
+  text-align: left;
+}
+.te {
+  /* text-align: end; */
+  text-align: right;
+}
+.tc {
+  text-align: center;
+}

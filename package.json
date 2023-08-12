@@ -1,0 +1,40 @@
+{
+  "name": "kerge",
+  "version": "0.0.0",
+  "description": "Full-featured, lightweight  CSS framework that maintained",
+  "main": "kerge.css",
+  "type": "module",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "test",
+    "build": "node build.js",
+    "watch": "npx nodemon --watch './src' -e 'css'  build.js",
+    "serve": "node build.js && browser-sync ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dknight/kerge.git"
+  },
+  "keywords": [
+    "css",
+    "framework"
+  ],
+  "engines": {
+    "npm": ">=9.6.6",
+    "node": ">=18.16.1"
+  },
+  "author": "Dmitri Smirnov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dknight/kerge/issues"
+  },
+  "homepage": "https://github.com/dknight/kerge#readme",
+  "devDependencies": {
+    "browser-sync": "^2.29.3",
+    "browserslist": "^4.21.10",
+    "lightningcss": "^1.21.5",
+    "nodemon": "^3.0.1"
+  }
+}
