@@ -11,7 +11,7 @@
     --c-neu: #aaa;
     --c-brd: #444;
     --c-drk: #282828;
-    --ls: 0.05rem;
+    --ls: 0.06rem;
     --img-filter: brightness(0.8) contrast(1.2);
   }
 }
@@ -28,6 +28,6 @@
   --c-neu: #aaa;
   --c-brd: #444;
   --c-drk: #282828;
-  --ls: 0.05rem;
+  --ls: 0.06rem;
   --img-filter: brightness(0.8) contrast(1.2);
 }
