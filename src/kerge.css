@@ -4,6 +4,7 @@
 @import 'modules/base.css' layer(core);
 @import 'modules/color.css' layer(core);
 @import 'modules/layout.css' layer(core);
+@import 'modules/print.css' layer(core);
 @import 'modules/props.css' layer(core);
 @import 'modules/typo.css' layer(core);
 @import 'modules/utils.css' layer(core);

@@ -29,6 +29,15 @@ body {
   top: 0;
 }
 
+@media print {
+  body {
+    display: block;
+  }
+  .doc-sidebar {
+    display: none;
+  }
+}
+
 .doc-sidebar ul {
   list-style: none;
   margin: 0;
