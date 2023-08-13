@@ -41,14 +41,17 @@ h6 {
   font-size: 0.9rem;
 }
 .l {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   line-height: 140%;
 }
 .xl {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   line-height: 140%;
 }
 .xxl {
+  font-size: 2rem;
+}
+.xxxl {
   font-size: 7rem;
 }
 
