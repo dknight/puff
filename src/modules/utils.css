@@ -17,3 +17,9 @@
   border-width: var(--bw);
   border-style: solid;
 }
+
+.plain {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
