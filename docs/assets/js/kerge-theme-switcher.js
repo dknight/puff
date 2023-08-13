@@ -46,11 +46,7 @@ class KergeThemeSwitcher extends HTMLElement {
    * @returns {boolean}
    */
   isDark() {
-    return (
-      (window.matchMedia &&
-        window.matchMedia('(prefers-color-scheme: dark)').matches) ||
-      this.root.dataset.theme === this.constructor.Themes.DARK
-    );
+    return this.root.dataset.theme === this.constructor.Themes.DARK;
   }
 
   /**
@@ -69,7 +65,6 @@ class KergeThemeSwitcher extends HTMLElement {
     const css = `
     button {
       align-items: center;
-      background: #ddd;
       border-radius: 333px;
       border: 0;
       color: var(--c-txt);
@@ -79,6 +74,9 @@ class KergeThemeSwitcher extends HTMLElement {
       line-height: 0;
       padding: .5rem 1rem;
       transition: all 0.2s ease-out;
+    }
+    .light {
+      background: #ddd;
     }
     .dark {
       background: #111;
@@ -155,10 +153,10 @@ class KergeThemeSwitcher extends HTMLElement {
         labelText = 'Dark';
         klass = dark;
       }
-
-      this.setTheme(klass);
+      console.log(klass);
       label.textContent = labelText;
       e.target.className = klass;
+      this.setTheme(klass);
     });
     this.shadowRoot.prepend(styles, button);
   }

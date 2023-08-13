@@ -20,17 +20,4 @@
   --ls: 0;
   /* Image filter */
   --img-filter: ;
-
-  /* Colors */
-  --c-pri: #005cbd;
-  --c-inf: #2f7c8e;
-  --c-suc: #438221;
-  --c-wrn: #fde74c;
-  --c-err: #da3125;
-  --c-txt: #333;
-  --c-inv: #fafafa;
-  --c-neu: #637779;
-  --c-brd: #eee;
-  --c-drk: var(--c-brd);
-  --c-fcs: #da0;
 }

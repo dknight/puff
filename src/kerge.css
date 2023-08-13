@@ -19,4 +19,5 @@
 @import 'modules/tag.css' layer(components);
 
 /** Themes */
+@import 'themes/light.css' layer(themes);
 @import 'themes/dark.css' layer(themes);
