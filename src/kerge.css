@@ -1,19 +1,22 @@
+@layer components, core, themes;
+
 /* Core features */
-@import 'modules/props.css';
-@import 'modules/core.css';
+@import 'modules/base.css' layer(core);
+@import 'modules/color.css' layer(core);
+@import 'modules/layout.css' layer(core);
+@import 'modules/props.css' layer(core);
+@import 'modules/typo.css' layer(core);
+@import 'modules/utils.css' layer(core);
 
-/* Component */
-@import 'modules/button.css';
-@import 'modules/card.css';
-@import 'modules/dialog.css';
-@import 'modules/dropdown.css';
-@import 'modules/input.css';
-@import 'modules/menu.css';
-@import 'modules/table.css';
-@import 'modules/tag.css';
+/* Components */
+@import 'modules/button.css' layer(components);
+@import 'modules/card.css' layer(components);
+@import 'modules/dialog.css' layer(components);
+@import 'modules/dropdown.css' layer(components);
+@import 'modules/input.css' layer(components);
+@import 'modules/menu.css' layer(components);
+@import 'modules/table.css' layer(components);
+@import 'modules/tag.css' layer(components);
 
-/* Theming */
-@import 'modules/layout.css';
-@import 'modules/color.css';
-@import 'modules/typo.css';
-@import 'modules/utils.css';
+/** Themes */
+@import 'themes/dark.css' layer(themes);

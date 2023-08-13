@@ -1,5 +1,4 @@
-.card,
-pre {
+.card {
   padding: calc(var(--s) * 2);
   background: var(--c-brd);
 }

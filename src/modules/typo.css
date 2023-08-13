@@ -6,36 +6,68 @@ a {
   text-decoration: none;
 }
 a:hover {
-  text-decoration: underline;
+  opacity: 0.8;
 }
 
 /**
  * Headings
  */
 h1 {
-  font: 100 2.5rem/150% var(--ff);
+  font: 300 2.5rem/150% var(--ff);
 }
 h2 {
-  font: 100 2.2rem/150% var(--ff);
+  font: 300 2.2rem/150% var(--ff);
 }
 h3 {
-  font: 100 2rem/140% var(--ff);
+  font: 300 2rem/140% var(--ff);
 }
 h4 {
-  font: 100 1.5rem/140% var(--ff);
+  font: 300 1.5rem/140% var(--ff);
 }
 h5 {
-  font: 100 1.2rem/130% var(--ff);
+  font: 300 1.2rem/130% var(--ff);
 }
 h6 {
-  font: 100 1rem var(--ff);
+  font: 300 1rem var(--ff);
+}
+
+/**
+ * Text size
+ */
+.xs {
+  font-size: 0.75rem;
+}
+.s {
+  font-size: 0.9rem;
+}
+.l {
+  font-size: 1.5rem;
+  line-height: 140%;
+}
+.xl {
+  font-size: 1.75rem;
+  line-height: 140%;
+}
+.xxl {
+  font-size: 7rem;
+}
+
+/**
+ * Text weight
+ */
+.italic {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: 700;
 }
 
 /**
  * Text alignemnt
  */
 .ts {
-  /* TODO deal with polyfills */
+  /* deal with polyfills */
   /* text-align: start; */
   text-align: left;
 }

@@ -2,12 +2,12 @@
   /* Max width of the wrapper */
   --maxw: 60rem;
   /* Font family */
-  --ff: Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande,
-    sans-serif;
+  --ff: 'Roboto', Helvetica Neue Light, Helvetica Neue, Helvetica, Arial,
+    Lucida Grande, sans-serif;
   /* Bsse font-size*/
   --fs: 16px/120%;
   /* Font weight */
-  --fw: 100;
+  --fw: 400;
   /* Base font */
   --font: var(--fw) var(--fs) var(--ff);
   /* Border width */
@@ -16,17 +16,13 @@
   --s: 0.5rem;
   /* Border radius */
   --br: 0.25rem;
+  /* Letter spacing */
+  --ls: 0;
+  /* Image filter */
+  --img-filter: ;
 
   /* Colors */
-  /* --c-pri: oklch(80.16% 0.171 73.267);
-  --c-inf: oklch(56.24% 0.24 264.4);
-  --c-suc: oklch(72.66% 0.208 148.34);
-  --c-wrn: oklch(88.48% 0.182 94.897);
-  --c-err: oklch(54.82% 0.225 29.234);
-  --c-txt: oklch(0% 0 0);
-  --c-inv: oklch(100% 0 0);
-  --c-neu: oklch(84.52% 0 0); */
-  --c-pri: #bd0094;
+  --c-pri: #005cbd;
   --c-inf: #2f7c8e;
   --c-suc: #438221;
   --c-wrn: #fde74c;
@@ -34,29 +30,7 @@
   --c-txt: #333;
   --c-inv: #fafafa;
   --c-neu: #637779;
-
-  /* Util colors */
-  --c-brd: oklch(95% 0 0);
-  --c-foc: oklch(45.2% 0.313 264.052);
-  --c-bg2: var(--c-brd);
-}
-
-@media (prefers-color-scheme: dark) {
-  body {
-    letter-spacing: 0.05rem;
-  }
-  :root {
-    --c-pri: #e18bc3;
-    --c-inf: #90b5bf;
-    --c-suc: #97b982;
-    --c-wrn: #d68f00;
-    --c-err: #ea7c57;
-    --c-txt: #fafafa;
-    --c-inv: #1b1b1b;
-    --c-neu: #8b8b8b;
-
-    /* Util colors */
-    --c-brd: #444;
-    --c-bg2: #282828;
-  }
+  --c-brd: #eee;
+  --c-drk: var(--c-brd);
+  --c-fcs: #da0;
 }

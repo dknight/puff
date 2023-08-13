@@ -7,7 +7,7 @@
 }
 
 /* this is doubtful  */
-* + * {
+* + *:not(body, dialog, menu) {
   margin: var(--s) 0;
 }
 
@@ -216,6 +216,24 @@
 .d-flex {
   display: flex;
 }
+.f-jstart {
+  justify-content: flex-start;
+}
+.f-jend {
+  justify-content: flex-end;
+}
+.f-jcenter {
+  justify-content: center;
+}
+.f-astart {
+  align-items: flex-start;
+}
+.f-aend {
+  align-items: flex-end;
+}
+.f-acenter {
+  align-items: center;
+}
 @media screen and (min-width: 36rem) {
   .f-start {
     margin-right: auto;
@@ -223,4 +241,18 @@
   .f-end {
     margin-left: auto;
   }
+  .f-center {
+    margin: auto;
+  }
+}
+
+/**
+ * Postision
+ */
+.von {
+  transform: translateY(-10%);
+}
+
+.vop {
+  transform: translateY(10%);
 }

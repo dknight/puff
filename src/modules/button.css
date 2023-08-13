@@ -1,25 +1,31 @@
 .btn {
+  align-items: center;
   background: var(--c-pri);
-  border: transparent solid var(--bw);
+  border: var(--bw) solid transparent;
   color: var(--c-inv);
   cursor: pointer;
+  display: inline-flex;
   font: 1rem var(--ff);
+  gap: var(--s);
   padding: var(--s) calc(var(--s) * 1.5);
 }
 
 .btn.border {
-  background: transparent;
+  background: inherit;
   border: var(--bw) solid currentColor;
 }
 
 .btn:hover:not(:disabled) {
   /* wait for css color module 5, or fix bug in lightning css */
-  /* background: oklch(from var(--c-pri) calc(l + 10%) c h); */
+  /* background: lch(from var(--c-pri) calc(l + 10%) c h); */
   filter: brightness(0.9);
+}
+
+.btn:active:not(:disabled) {
+  transform: scale(0.99);
 }
 
 .btn:disabled {
   cursor: default;
   opacity: 0.5;
 }
-/* TODO more buttons */

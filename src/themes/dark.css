@@ -1,0 +1,33 @@
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --c-pri: #a5b2e3;
+    --c-inf: #90b5bf;
+    --c-suc: #97b982;
+    --c-wrn: #d68f00;
+    --c-err: #ea7c57;
+    --c-txt: #fafafa;
+    --c-inv: #1b1b1b;
+    --c-neu: #aaa;
+    --c-brd: #444;
+    --c-drk: #282828;
+    --ls: 0.05rem;
+    --img-filter: brightness(0.8) contrast(1.2);
+  }
+}
+
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --c-pri: #a5b2e3;
+  --c-inf: #90b5bf;
+  --c-suc: #97b982;
+  --c-wrn: #d68f00;
+  --c-err: #ea7c57;
+  --c-txt: #fafafa;
+  --c-inv: #1b1b1b;
+  --c-neu: #aaa;
+  --c-brd: #444;
+  --c-drk: #282828;
+  --ls: 0.05rem;
+  --img-filter: brightness(0.8) contrast(1.2);
+}

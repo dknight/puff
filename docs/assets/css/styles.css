@@ -1,0 +1,55 @@
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  display: grid;
+  grid-template-columns: max(250px, 15%) 1fr;
+}
+
+.doc-grid .col {
+  background-color: var(--c-brd);
+  padding: 0.5rem;
+}
+
+.doc-sidebar {
+  display: flex;
+  flex-direction: column;
+  background: var(--c-drk);
+  height: 100vh;
+  margin: 0;
+  overflow-y: auto;
+  position: sticky;
+  top: 0;
+}
+
+.doc-sidebar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.doc-sidebar ul li {
+  margin: 0.3rem 0;
+}
+
+.doc-sidebar ul ul {
+  padding-left: 1rem;
+  margin-top: 0.3rem;
+}
+
+.doc-sidebar .copy {
+  margin: auto 0 0;
+}
+
+@media (prefers-color-theme: dark) {
+  .demo-grid .col {
+    background: var(--c-drk);
+  }
+}

@@ -1,5 +1,5 @@
 :focus-visible {
-  outline: var(--bw) var(--c-foc) solid;
+  outline: calc(var(--bw) * 1.5) var(--c-fcs) solid;
 }
 
 body {
@@ -7,6 +7,7 @@ body {
   color: var(--c-txt);
   margin: 0;
   font: var(--font);
+  letter-spacing: var(--ls);
 }
 
 pre {
@@ -16,4 +17,12 @@ pre {
 hr {
   border: 0;
   border-bottom: var(--bw) solid var(--c-pri);
+}
+
+img {
+  filter: var(--img-filter);
+}
+
+summary {
+  cursor: pointer;
 }

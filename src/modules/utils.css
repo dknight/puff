@@ -1,8 +1,4 @@
 .caret::after {
-  padding-left: 0.3rem;
-  line-height: 0;
-}
-.caret::after {
   content: '▾';
 }
 .caret.up::after {
@@ -15,14 +11,6 @@
 
 .pill {
   border-radius: 999px;
-}
-
-.italic {
-  font-style: italic;
-}
-
-.bold {
-  font-weight: 700;
 }
 
 .border {

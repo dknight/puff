@@ -1,17 +1,8 @@
 /**
  * Text
  */
-.text {
-  color: var(--c-txt);
-}
-.invert {
-  color: var(--c-inv);
-}
 .primary {
   color: var(--c-pri);
-}
-.neutral {
-  color: var(--c-neu);
 }
 .info {
   color: var(--c-inf);
@@ -25,21 +16,21 @@
 .error {
   color: var(--c-err);
 }
+.text {
+  color: var(--c-txt);
+}
+.invert {
+  color: var(--c-inv);
+}
+.neutral {
+  color: var(--c-neu);
+}
 
 /**
  * Backgrounds
  */
-.bg-text {
-  background-color: var(--c-txt);
-}
-.bg-invert {
-  background-color: var(--c-inv);
-}
 .bg-primary {
   background-color: var(--c-pri);
-}
-.bg-neutral {
-  background-color: var(--c-neu);
 }
 .bg-info {
   background-color: var(--c-inf);
@@ -53,21 +44,21 @@
 .bg-error {
   background-color: var(--c-err);
 }
+.bg-text {
+  background-color: var(--c-txt);
+}
+.bg-invert {
+  background-color: var(--c-inv);
+}
+.bg-neutral {
+  background-color: var(--c-neu);
+}
 
 /**
  * Borders
  */
-.b-text {
-  border-color: var(--c-txt);
-}
-.b-invert {
-  border-color: var(--c-inv);
-}
 .b-primary {
   border-color: var(--c-pri);
-}
-.b-neutral {
-  border-color: var(--c-neu);
 }
 .b-info {
   border-color: var(--c-inf);
@@ -80,4 +71,13 @@
 }
 .b-error {
   border-color: var(--c-err);
+}
+.b-text {
+  border-color: var(--c-txt);
+}
+.b-invert {
+  border-color: var(--c-inv);
+}
+.b-neutral {
+  border-color: var(--c-neu);
 }
