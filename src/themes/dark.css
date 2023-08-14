@@ -11,6 +11,7 @@
     --c-neu: #aaa;
     --c-brd: #444;
     --c-dim: #282828;
+    --c-fcs: #da0;
     --img-filter: brightness(0.8) contrast(1.2);
     --ls: 0.06rem;
   }
@@ -28,6 +29,7 @@
   --c-neu: #aaa;
   --c-brd: #444;
   --c-dim: #282828;
+  --c-fcs: #da0;
   --ls: 0.06rem;
   --img-filter: brightness(0.8) contrast(1.2);
 }
