@@ -10,7 +10,7 @@
     --c-inv: #fafafa;
     --c-neu: #637779;
     --c-brd: #eee;
-    --c-drk: var(--c-brd);
+    --c-dim: var(--c-brd);
     --c-fcs: #da0;
   }
 }
@@ -26,6 +26,6 @@
   --c-inv: #fafafa;
   --c-neu: #637779;
   --c-brd: #eee;
-  --c-drk: var(--c-brd);
+  --c-dim: var(--c-brd);
   --c-fcs: #da0;
 }

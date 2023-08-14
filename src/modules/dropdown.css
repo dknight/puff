@@ -6,6 +6,6 @@
 }
 
 .dropdown {
-  background: var(--c-drk);
+  background: var(--c-dim);
   display: none;
 }
