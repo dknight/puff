@@ -23,7 +23,8 @@
       <nav>
         <h5 class="mt1 mb1">Docs</h5>
         <ul>
-          <li><a href="#intro">About</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#why">Why?</a></li>
           <li><a href="#wrapper">Wrapper</a></li>
           <li><a href="#grid">Grid</a></li>
           <li><a href="#tyography">Typography</a>
@@ -62,6 +63,7 @@
           <li><a href="#dropdown-menu">Dropdown menu</a></li>
           <li><a href="#details">Details</a></li>
           <li><a href="#hero">Hero</a></li>
+          <li><a href="#customize">Customize</a></li>
         </ul>
       </nav>
       <hr class="mt2 mb2">
@@ -72,7 +74,46 @@
 
 
     <main class="wrap">
-      <h1 id="intro">Intro</h1>
+      <h2 id="about">About</h2>
+      <p>
+        <em>kerge</em> (light in Estonian🇪🇪) is a micro full-featured framework with a tiny footprint. <em>kerge</em>
+        is based on design <a href="#tokens">tokens</a>. Combining just several tokens gives an almost limitless number
+        of UI combinations.
+      </p>
+
+      <h2 id="why">Why?</h2>
+      <p>
+        I was really overwhelmed by massive-monstrous frameworks like
+        <a href="https://getbootstrap.com/">Bootstap</a>,
+        <a href="https://mui.com/">MUI</a>, <a href="https://tailwindcss.com/">Tailwind</a>, etc.
+        Usually I use only 5&ndash;10% of the features of these large CSS frameworks. I need a small framework that is
+        easy to
+        install and has only basic core features for UI prototyping. The solution is to use micro CSS frameworks; there
+        are a huge number of options on the web like <a href="https://purecss.io/">PureCSS</a>,
+        <a href="https://ajusa.github.io/lit/">Lit</a>, <a href="https://jenil.github.io/chota/">Chota</a>,
+        <a href="https://selekkt.dk/skelet/v3/">Skelet</a>, etc. All of them are good, but... one
+        of them is missing a feature, that another has, and vice versa. The authors of these frameworks usually do not
+        maintain them. The last commit was about 3&ndash;5 years ago, and using outdated CSS techniques, bugs aren't
+        fixed and
+        aren't going to be fixed. This is why kerge was created. It has all the features I need, and I am going to
+        maintain it until the end of my days.
+      </p>
+
+      <h2 id="feature">Features</h2>
+      <ul class="plain l">
+        <li>🪶 Lightweight ~2kb (minified + gzipped)</li>
+        <li>🚀 Easy to install and launch</li>
+        <li>🚂 No dependencies</li>
+        <li>🌐 Supports all modern browsers</li>
+        <li>📐 Classic <a href="#grid">12-columns grid</a></li>
+        <li>🧱 Based on <a href="#tokens">tokens</a></li>
+        <li>🔩 Easy to <a href="#customize">customize</a> with CSS custom properties</li>
+        <li>🌙 Dark them included</li>
+        <li>💬 <a href="#dialog">Dialog</a> and <a href="#dropdown-menu">dropdown</a> out-of-box</li>
+        <li>🟩 Valid semantics</li>
+        <li>👨‍👩‍👦‍👦 Accessible</li>
+        <li>🖨️ Sustainable printing</li>
+      </ul>
 
       <h2 id="wrapper">Wrapper</h2>
       <div class="wrap">
@@ -204,7 +245,7 @@
       </form>
 
       <h2 id="tables">Tables</h2>
-      <table class="tbl w100">
+      <table class="table w100">
         <thead>
           <tr>
             <th>Name</th>
@@ -468,6 +509,23 @@
           <a class="btn invert pill primary ph4">A Button</a>
         </div>
       </div>
+
+      <h2 id="customize">Customize</h2>
+      <p>There only several customizable custom properties.</p>
+      <table class="table w100">
+        <thead>
+          <tr>
+            <th>Property name</th>
+            <th>Property value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
     </main>
   </body>
 </html>
