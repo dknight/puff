@@ -63,7 +63,12 @@
           <li><a href="#dropdown-menu">Dropdown menu</a></li>
           <li><a href="#details">Details</a></li>
           <li><a href="#hero">Hero</a></li>
-          <li><a href="#customize">Customize</a></li>
+          <li><a href="#customize">Customize</a>
+            <ul>
+              <li><a href="#customize-props">Custom properties</a></li>
+              <li><a href="#customize-colors">Colors properties</a></li>
+            </ul>
+          </li>
         </ul>
       </nav>
       <hr class="mt2 mb2">
@@ -511,21 +516,156 @@
       </div>
 
       <h2 id="customize">Customize</h2>
-      <p>There only several customizable custom properties.</p>
+      <p>There are only several global, customizable custom properties.</p>
+      <h3 id="customize-props">Custom properties</h3>
       <table class="table w100">
         <thead>
           <tr>
             <th>Property name</th>
             <th>Property value</th>
+            <th>Description</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td></td>
-            <td></td>
+            <td>--maxw</td>
+            <td>60rem</td>
+            <td>Maximum width of the <a href="#wrapper">wrapper</a></td>
+          </tr>
+          <tr>
+            <td>--ff</td>
+            <td>'Roboto', Helvetica Neue Light, Helvetica Neue, Helvetica, Arial,
+              Lucida Grande, sans-serif</td>
+            <td>Font family with font stack fallbacks</td>
+          </tr>
+          <tr>
+            <td>--fs</td>
+            <td>16px/1.5</td>
+            <td>Font size and line height</td>
+          </tr>
+          <tr>
+            <td>--fw</td>
+            <td>400</td>
+            <td>Font weight value.</td>
+          </tr>
+          <tr>
+            <td>--font</td>
+            <td>var(--fw) var(--fs) var(--ff)</td>
+            <td>Combined base font</td>
+          </tr>
+          <tr>
+            <td>--bw</td>
+            <td>0.125rem</td>
+            <td>Border width</td>
+          </tr>
+          <tr>
+            <td>--br</td>
+            <td>0.25rem</td>
+            <td>Border radius for rounded elements</td>
+          </tr>
+          <tr>
+            <td>--s</td>
+            <td>0.5rem</td>
+            <td>The spacing step is used for padding, margins, and gaps</td>
+          </tr>
+          <tr>
+            <td>--ls</td>
+            <td>0</td>
+            <td>Letter spacing</td>
+          </tr>
+          <tr>
+            <td>--img-filter</td>
+            <td>(empty)</td>
+            <td>Filter for images used for dark theming or images effers</td>
           </tr>
         </tbody>
       </table>
+
+      <h3 id="customize-colors">Colors properties</h3>
+      <table class="table w100">
+        <thead>
+          <tr>
+            <th>Property name</th>
+            <th>Property light theme value</th>
+            <th>Property dark theme value</th>
+            <th>Description and preview</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>--c-pri</td>
+            <td>#005cbd</td>
+            <td>#a5b2e3</td>
+            <td><span class="primary">Primary color</span></td>
+          </tr>
+          <tr>
+            <td>--c-txt</td>
+            <td>#333</td>
+            <td>#fafafa</td>
+            <td><span style="color: var(--c-text)">Color for tex</span>t</td>
+          </tr>
+          <tr>
+            <td>--c-inv</td>
+            <td>#fafafa</td>
+            <td>#1b1b1b</td>
+            <td>
+              <span style="color: var(--c-inv);background-color: var(--c-txt);">Inverted text color
+                (background)
+              </span>
+              <p class="s">* inverted background because text is the same color as background</p>
+            </td>
+          </tr>
+          <tr>
+            <td>--c-neu</td>
+            <td>#637779</td>
+            <td>#aaa</td>
+            <td><span style="color: var(--c-neu)">Neutral color</span></td>
+          </tr>
+          <tr>
+            <td>--c-brd</td>
+            <td>#eee</td>
+            <td>#444</td>
+            <td><span style="color: var(--c-brd)">Border color</span></td>
+          </tr>
+          <tr>
+            <td>--c-dim</td>
+            <td>#444</td>
+            <td>#282828</td>
+            <td><span class="primary">Dim color</span></td>
+          </tr>
+          <tr>
+            <td>--c-inf</td>
+            <td>#2f7c8e</td>
+            <td>#90b5bf</td>
+            <td><span class="info">Info color</span></td>
+          </tr>
+          <tr>
+            <td>--c-suc</td>
+            <td>#438221</td>
+            <td>#97b982</td>
+            <td><span class="success">Success color</span></td>
+          </tr>
+          <tr>
+            <td>--c-wrn</td>
+            <td>#fde74c</td>
+            <td>#d68f00</td>
+            <td><span class="warning">Warning color</span></td>
+          </tr>
+          <tr>
+            <td>--c-err</td>
+            <td>#da3125</td>
+            <td>#ea7c57</td>
+            <td><span class="error">Error color</span></td>
+          </tr>
+          <tr>
+            <td>--c-fcs</td>
+            <td>#da0</td>
+            <td>#da0</td>
+            <td><span style="color: var(--c-fcs)">Focus outline color</span></td>
+          </tr>
+        </tbody>
+      </table>
+
     </main>
   </body>
 </html>
