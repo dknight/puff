@@ -409,8 +409,11 @@
       <script type="module">
         const dropdown = document.getElementById('demo-dropdown');
         const openDropdownButton = document.getElementById('expand-dropdown-dialog');
+        const menu = dropdown.querySelector('.dropdown-menu');
         openDropdownButton.addEventListener('click', (e) => {
-          dropdown.classList.toggle('open');
+          const isOpen = dropdown.classList.contains('open');
+          dropdown.classList.toggle('open', !isOpen);
+          menu.setAttribute('aria-expanded', String(!isOpen));
           e.target.classList.toggle('up');
         });
       </script>
