@@ -1,11 +1,14 @@
-.dropdown.open,
-.dropdown-trigger.open + .dropdown {
-  display: block;
-  position: absolute;
-  transform: translateY(calc(var(--s) * -1));
+.dropdown {
+  position: relative;
 }
 
-.dropdown {
+.dropdown-menu {
   background: var(--c-dim);
   display: none;
+}
+
+.dropdown.open > .dropdown-menu {
+  display: block;
+  position: absolute;
+  z-index: 1;
 }

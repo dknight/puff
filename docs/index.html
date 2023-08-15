@@ -389,26 +389,21 @@
 
       <h3 id="dropdown-menu">Dropdown menu</h3>
       <p>TODO write docs</p>
-      <button id="expand-dropdown-dialog" class="btn bg-primary caret dropdown-trigger">Open menu</button>
-      <menu class="dropdown menu">
-        <li class="pv1 ph2"><a href="#!">First item</a></li>
-        <li class="pv1 ph2"><a href="#!">Second item</a></li>
-        <li class="pv1 ph2"><a href="#!">Third item</a></li>
-      </menu>
-
-      <!-- FIXME bug -->
-      <button class="btn bg-primary caret up dropdown-trigger">Open menu</button>
-      <menu class="dropdown menu open">
-        <li class="pv1 ph2"><a href="#!">First item 2</a></li>
-        <li class="pv1 ph2"><a href="#!">Second item 2</a></li>
-        <li class="pv1 ph2"><a href="#!">Third item 2</a></li>
-      </menu>
+      <div class="dropdown" id="demo-dropdown">
+        <button id="expand-dropdown-dialog" class="btn bg-primary caret dropdown-trigger">Open menu</button>
+        <menu class="menu dropdown-menu">
+          <li class="pv1 ph2"><a href="#!">First item</a></li>
+          <li class="pv1 ph2"><a href="#!">Second item</a></li>
+          <li class="pv1 ph2"><a href="#!">Third item</a></li>
+        </menu>
+      </div>
 
       <script type="module">
-        const btnDropdown = document.getElementById('expand-dropdown-dialog');
-        btnDropdown.addEventListener('click', () => {
-          btnDropdown.classList.toggle('open');
-          btnDropdown.classList.toggle('up');
+        const dropdown = document.getElementById('demo-dropdown');
+        const openDropdownButton = document.getElementById('expand-dropdown-dialog');
+        openDropdownButton.addEventListener('click', (e) => {
+          dropdown.classList.toggle('open');
+          e.target.classList.toggle('up');
         });
       </script>
 
