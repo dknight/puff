@@ -1,7 +1,7 @@
 class KergeThemeSwitcher extends HTMLElement {
   constructor() {
     super();
-    this.root = document.documentElement;
+    this.documentRoot = document.documentElement;
     this.attachShadow({mode: 'open'});
   }
 
@@ -46,7 +46,11 @@ class KergeThemeSwitcher extends HTMLElement {
    * @returns {boolean}
    */
   isDark() {
-    return this.root.dataset.theme === this.constructor.Themes.DARK;
+    const isForced = !!this.documentRoot.dataset.theme;
+    if (!isForced) {
+      return window.matchMedia('((prefers-color-scheme: dark)').matches;
+    }
+    return this.documentRoot.dataset.theme === this.constructor.Themes.DARK;
   }
 
   /**
@@ -111,7 +115,7 @@ class KergeThemeSwitcher extends HTMLElement {
    * @param {string} theme
    */
   setTheme(theme) {
-    this.root.dataset.theme = theme;
+    this.documentRoot.dataset.theme = theme;
     this.saveTheme(theme);
   }
 
