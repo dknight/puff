@@ -23,8 +23,9 @@
   border-style: solid;
 }
 
-.plain {
+.reset {
   list-style: none;
   margin: 0;
   padding: 0;
+  /* add more on demand */
 }
