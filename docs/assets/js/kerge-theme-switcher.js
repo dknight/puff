@@ -6,6 +6,58 @@ class KergeThemeSwitcher extends HTMLElement {
   }
 
   /**
+   * @returns {HTMLStyleElement}
+   */
+  renderStyles() {
+    const css = `
+    button:focus-visible {
+      outline: var(--c-fcs) solid;
+    }
+    button {
+      align-items: center;
+      border-radius: 333px;
+      border: 0;
+      color: var(--c-txt);
+      cursor: pointer;
+      display: flex;
+      font-size: 1rem;
+      line-height: 0;
+      padding: .5rem 1rem;
+      transition: background .2s ease-out;
+    }
+    .light {
+      background: #ddd;
+    }
+    .dark {
+      background: #111;
+    }
+    @media (prefers-color-scheme: dark) {
+      button {
+        background: #111;
+      }
+    }
+    .dark .icon {
+      -webkit-mask: url(/docs/assets/img/moon.svg) no-repeat left;
+      mask: url(/docs/assets/img/moon.svg) no-repeat left;
+    }
+    .light .icon {
+      -webkit-mask: url(/docs/assets/img/sun.svg) no-repeat left;
+      mask: url(/docs/assets/img/sun.svg) no-repeat left;
+    }
+    .icon {
+      display: inline-block;
+      background-color: var(--c-txt);
+      width: 1.5rem;
+      aspect-ratio: 1;
+      margin-right: .5rem;
+    }`;
+
+    const styles = document.createElement('style');
+    styles.textContent = css;
+    return styles;
+  }
+
+  /**
    * @type {Record<string, string>}
    */
   static get Themes() {
@@ -60,55 +112,6 @@ class KergeThemeSwitcher extends HTMLElement {
     return this.isDark()
       ? this.constructor.Themes.DARK
       : this.constructor.Themes.LIGHT;
-  }
-
-  /**
-   * @returns {HTMLStyleElement}
-   */
-  renderStyles() {
-    const css = `
-    button {
-      align-items: center;
-      border-radius: 333px;
-      border: 0;
-      color: var(--c-txt);
-      cursor: pointer;
-      display: flex;
-      font-size: 1rem;
-      line-height: 0;
-      padding: .5rem 1rem;
-      transition: all 0.2s ease-out;
-    }
-    .light {
-      background: #ddd;
-    }
-    .dark {
-      background: #111;
-    }
-    @media (prefers-color-scheme: dark) {
-      button {
-        background: #111;
-      }
-    }
-    .dark .icon {
-      -webkit-mask: url(/docs/assets/img/moon.svg) no-repeat left;
-      mask: url(/docs/assets/img/moon.svg) no-repeat left;
-    }
-    .light .icon {
-      -webkit-mask: url(/docs/assets/img/sun.svg) no-repeat left;
-      mask: url(/docs/assets/img/sun.svg) no-repeat left;
-    }
-    .icon {
-      display: inline-block;
-      background-color: var(--c-txt);
-      width: 1.5rem;
-      aspect-ratio: 1;
-      margin-right: .5rem;
-    }`;
-
-    const styles = document.createElement('style');
-    styles.textContent = css;
-    return styles;
   }
 
   /**

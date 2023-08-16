@@ -9,9 +9,10 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap"
       rel="stylesheet">
-    <link href="../dist/kerge.min.css" rel="stylesheet">
-    <link href="/docs//assets/css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="../dist/kerge.min.css">
+    <link rel="stylesheet" href="/docs/assets/css/styles.css">
     <script type="module" src="/docs/assets/js/kerge-theme-switcher.js"></script>
+    <script type="module" src="/docs/assets/js/kerge-doc-previewer.js"></script>
   </head>
   <body>
     <sidebar class="doc-sidebar p3">
@@ -122,10 +123,10 @@
 
       <h2 id="install">Install</h2>
       <p>Installation is straightforward; just include the CSS file into your HTML page in any possible way.</p>
-      <pre class="card"><code>&lt;link rel="stylesheet" href="kerge.min.css"></code></pre>
+      <pre><code>&lt;link rel="stylesheet" href="kerge.min.css"></code></pre>
 
       <p>or install it from <a href="https://www.npmjs.com/package/kerge">NPM</a>.</p>
-      <pre class="card"><code>npm install kerge</code></pre>
+      <pre><code>npm install kerge</code></pre>
 
       <h2 id="why">Why?</h2>
       <p>
@@ -152,47 +153,52 @@
         The wrapper centers the content and adds padding to the sides. Usually, a page has one main
         wrapper that wraps everything, but you are not limited to using multiple wrappers.
       </p>
-      <div class="wrap">
-        Wrapper example
-      </div>
+      <kerge-doc-previewer>
+        <div class="wrap">
+          Wrapper example
+        </div>
+      </kerge-doc-previewer>
 
       <h3 id="grid">Grid</h3>
       <p>TODO: write about grids</p>
       <div class="doc-grid">
-        <div class="row g1">
-          <div class="col col1">1 col</div>
-          <div class="col col11">11 col</div>
-        </div>
-        <div class="row g1">
-          <div class="col col2">2 col</div>
-          <div class="col col10">10 col</div>
-        </div>
-        <div class="row g1">
-          <div class="col col3">3 col</div>
-          <div class="col col9">9 col</div>
-        </div>
-        <div class="row g1">
-          <div class="col col4">4 col</div>
-          <div class="col col8">8 col</div>
-        </div>
-        <div class="row g1">
-          <div class="col col5">5 col</div>
-          <div class="col col7">7 col</div>
-        </div>
-        <div class="row g1">
-          <div class="col col6">6 col</div>
-          <div class="col col6">6 col</div>
-        </div>
-        <div class="row g1">
-          <div class="col">
-            Lorem ipsum dolor sit amet, consectetur.
+        <kerge-doc-previewer>
+          <div class="row g1">
+            <div class="col col1">1 col</div>
+            <div class="col col11">11 col</div>
           </div>
-          <div class="col">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, molestiae! Natus ipsum id sit dicta,
-            rem expedita deserunt voluptates. Amet voluptas officia atque laborum nam architecto distinctio magnam!
-            Maiores, cum?
+          <div class="row g1">
+            <div class="col col2">2 col</div>
+            <div class="col col10">10 col</div>
           </div>
-        </div>
+          <div class="row g1">
+            <div class="col col3">3 col</div>
+            <div class="col col9">9 col</div>
+          </div>
+          <div class="row g1">
+            <div class="col col4">4 col</div>
+            <div class="col col8">8 col</div>
+          </div>
+          <div class="row g1">
+            <div class="col col5">5 col</div>
+            <div class="col col7">7 col</div>
+          </div>
+          <div class="row g1">
+            <div class="col col6">6 col</div>
+            <div class="col col6">6 col</div>
+          </div>
+          <div class="row g1">
+            <div class="col">
+              Lorem ipsum dolor sit amet, consectetur.
+            </div>
+            <div class="col">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Similique, molestiae! Natus ipsum id sit dicta,
+              rem expedita deserunt voluptates. Amet voluptas officia atque
+              laborum nam architecto distinctio magnam! Maiores, cum?
+            </div>
+          </div>
+        </kerge-doc-previewer>
       </div>
 
       <h2 id="tokens">Tokens</h2>
@@ -201,360 +207,413 @@
 
       <h3 id="tyography">Typography</h3>
       <h3 id="headings">Headings</h3>
-      <h1>Heading 1</h1>
-      <h2>Heading 2</h2>
-      <h3>Heading 3</h3>
-      <h4>Heading 4</h4>
-      <h5>Heading 5</h5>
-      <h6>Heading 6</h6>
+      <kerge-doc-previewer>
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
+      </kerge-doc-previewer>
 
       <h3 id="text">Text</h3>
-      <p>
-        This is a paragraph. The font family is <a href="#!">Nunito</a>.
-        <b>Some bold text.</b> <i>Italics also looks nice.</i>
-        You can <u>underline</u> things you feel are important.
-        Lit has styles <mark>that</mark> override the default heading styles, including margin.
-      </p>
+      <kerge-doc-previewer>
+        <p>
+          This is a paragraph. The font family is <a href="#!">Nunito</a>.
+          <b>Some bold text.</b> <i>Italics also looks nice.</i>
+          You can <u>underline</u> things you feel are important.
+          Lit has styles <mark>that</mark> override the default
+          heading styles, including margin.
+        </p>
+      </kerge-doc-previewer>
 
       <h3 id="text-size">Text size</h3>
-      <p class="xs">Extra small</p>
-      <p class="s">Small</p>
-      <p class="">Normal</p>
-      <p class="l">Large</p>
-      <p class="xl">Extra large</p>
+      <kerge-doc-previewer>
+        <p class="xs">Extra small</p>
+        <p class="s">Small</p>
+        <p class="">Normal</p>
+        <p class="l">Large</p>
+        <p class="xl">Extra large</p>
+        <p class="xxl">Super Extra large</p>
+      </kerge-doc-previewer>
 
       <h3 id="colors">Colors</h3>
       <h4 id="text-colors">Text colors</h4>
-      <span class="p1 primary">primary</span>
-      <span class="p1 info">info</span>
-      <span class="p1 success">success</span>
-      <span class="p1 warning">warning</span>
-      <span class="p1 error">error</span>
-      <span class="p1 text">text</span>
-      <span class="p1 invert bg-text">invert</span>
-      <span class="p1 neutral">neutral</span>
+      <kerge-doc-previewer>
+        <span class="p1 primary">primary</span>
+        <span class="p1 info">info</span>
+        <span class="p1 success">success</span>
+        <span class="p1 warning">warning</span>
+        <span class="p1 error">error</span>
+        <span class="p1 text">text</span>
+        <span class="p1 invert bg-text">invert</span>
+        <span class="p1 neutral">neutral</span>
+      </kerge-doc-previewer>
 
       <h4 id="background-colors">Background colors</h4>
-      <div class="p1 invert bg-primary">bg-primary</div>
-      <div class="p1 invert bg-info">bg-info</div>
-      <div class="p1 invert bg-success">bg-success</div>
-      <div class="p1 bg-warning">bg-warning</div>
-      <div class="p1 invert bg-error">bg-error</div>
-      <div class="p1 invert bg-text">bg-text</div>
-      <div class="p1 text bg-invert">bg-invert</div>
-      <div class="p1 invert bg-neutral">bg-neutral</div>
+      <kerge-doc-previewer>
+        <div class="p1 invert bg-primary">bg-primary</div>
+        <div class="p1 invert bg-info">bg-info</div>
+        <div class="p1 invert bg-success">bg-success</div>
+        <div class="p1 bg-warning">bg-warning</div>
+        <div class="p1 invert bg-error">bg-error</div>
+        <div class="p1 invert bg-text">bg-text</div>
+        <div class="p1 text bg-invert">bg-invert</div>
+        <div class="p1 invert bg-neutral">bg-neutral</div>
+      </kerge-doc-previewer>
 
       <h4 id="border-colors">Border colors</h4>
-      <div class="border p1 b-primary">b-accent</div>
-      <div class="border p1 b-info">b-info</div>
-      <div class="border p1 b-success">b-success</div>
-      <div class="border p1 b-warning">b-warning</div>
-      <div class="border p1 b-error">b-error</div>
-      <div class="border p1 b-text">b-text</div>
-      <div class="border p1 b-invert">invert</div>
-      <div class="border p1 b-neutral">neutral</div>
+      <kerge-doc-previewer>
+        <div class="border p1 b-primary">b-accent</div>
+        <div class="border p1 b-info">b-info</div>
+        <div class="border p1 b-success">b-success</div>
+        <div class="border p1 b-warning">b-warning</div>
+        <div class="border p1 b-error">b-error</div>
+        <div class="border p1 b-text">b-text</div>
+        <div class="border p1 b-invert">invert</div>
+        <div class="border p1 b-neutral">neutral</div>
+      </kerge-doc-previewer>
 
       <h2>Components</h2>
       <h3 id="alerts">Alerts</h3>
-      <p>Combining design token you can easily build alert-like elements.</p>
-      <div class="p2 invert bg-info">
-        <h3 class="m0">Please update your data</h3>
-        <p>Please update your date before <time>2023-10-12</time>.</p>
-      </div>
-      <div class="p2 invert bg-success">
-        <h3 class="m0">Your data is updated</h3>
-        <p>Thanks your for updating your data.</p>
-      </div>
-      <div class="p2 bg-warning">
-        <h3 class="m0">Your data needs to be updated</h3>
-        <p>This is the final call to update your data.</p>
-      </div>
-      <div class="p2 invert bg-error">
-        <h3 class="m0">Error occured</h3>
-        <p>Due to technical reasons your data cannot be updated.</p>
-        <p>Please try again later.</p>
-      </div>
+      <kerge-doc-previewer>
+        <p>Combining design token you can easily build alert-like elements.</p>
+        <div class="p2 invert bg-info">
+          <h3 class="m0">Please update your data</h3>
+          <p>Please update your date before <time>2023-10-12</time>.</p>
+        </div>
+        <div class="p2 invert bg-success">
+          <h3 class="m0">Your data is updated</h3>
+          <p>Thanks your for updating your data.</p>
+        </div>
+        <div class="p2 bg-warning">
+          <h3 class="m0">Your data needs to be updated</h3>
+          <p>This is the final call to update your data.</p>
+        </div>
+        <div class="p2 invert bg-error">
+          <h3 class="m0">Error occured</h3>
+          <p>Due to technical reasons your data cannot be updated.</p>
+          <p>Please try again later.</p>
+        </div>
+      </kerge-doc-previewer>
 
       <h3 id="badges">Badges</h3>
-      <span class="tag invert round bg-info">New</span>
-      <span class="tag invert round bg-success">Great!</span>
-      <span class="tag round bg-warning">Something</span>
-      <span class="tag invert round bg-error bold">5</span>
+      <kerge-doc-previewer>
+        <span class="tag invert round bg-info">New</span>
+        <span class="tag invert round bg-success">Great!</span>
+        <span class="tag round bg-warning">Something</span>
+        <span class="tag invert round bg-error bold">5</span>
+      </kerge-doc-previewer>
 
       <h3 id="buttons">Buttons</h3>
       <h4 id="solid-buttons">Solid buttons</h4>
-      <button class="btn bg-primary">Primary button</button>
-      <button class="btn bg-neutral">Neutral button</button>
-      <button class="btn bg-info">Info button</button>
-      <button class="btn bg-success">Success button</button>
-      <button class="btn text bg-warning">Warning button</button>
-      <button class="btn bg-error">Error button</button>
-      <button class="btn" disabled>Disabled button</button>
+      <kerge-doc-previewer>
+        <button class="btn bg-primary">Primary button</button>
+        <button class="btn bg-neutral">Neutral button</button>
+        <button class="btn bg-info">Info button</button>
+        <button class="btn bg-success">Success button</button>
+        <button class="btn text bg-warning">Warning button</button>
+        <button class="btn bg-error">Error button</button>
+        <button class="btn" disabled>Disabled button</button>
+      </kerge-doc-previewer>
 
       <h4 id="rounded-buttons">Rounded buttons</h4>
-      <button class="btn round bg-primary">Primary button</button>
-      <button class="btn round invert bg-neutral">Neutral button</button>
-      <button class="btn round bg-info">Info button</button>
-      <button class="btn round bg-success">Success button</button>
-      <button class="btn round text bg-warning">Warning button</button>
-      <button class="btn round bg-error">Error button</button>
-      <button class="btn round" disabled>Disabled button</button>
+      <kerge-doc-previewer>
+        <button class="btn round bg-primary">Primary button</button>
+        <button class="btn round invert bg-neutral">Neutral button</button>
+        <button class="btn round bg-info">Info button</button>
+        <button class="btn round bg-success">Success button</button>
+        <button class="btn round text bg-warning">Warning button</button>
+        <button class="btn round bg-error">Error button</button>
+        <button class="btn round" disabled>Disabled button</button>
+      </kerge-doc-previewer>
 
       <h4 id="pill-buttons">Pill buttons</h4>
-      <button class="btn pill bg-primary">Primary button</button>
-      <button class="btn pill invert bg-neutral">Neutral button</button>
-      <button class="btn pill bg-info">Info button</button>
-      <button class="btn pill bg-success">Success button</button>
-      <button class="btn pill text bg-warning">Warning button</button>
-      <button class="btn pill bg-error">Error button</button>
-      <button class="btn pill" disabled>Disabled button</button>
+      <kerge-doc-previewer>
+        <button class="btn pill bg-primary">Primary button</button>
+        <button class="btn pill invert bg-neutral">Neutral button</button>
+        <button class="btn pill bg-info">Info button</button>
+        <button class="btn pill bg-success">Success button</button>
+        <button class="btn pill text bg-warning">Warning button</button>
+        <button class="btn pill bg-error">Error button</button>
+        <button class="btn pill" disabled>Disabled button</button>
+      </kerge-doc-previewer>
 
       <h4 id="outlined-buttons">Outlined buttons</h4>
-      <button class="btn border neutral">Neutral button</button>
-      <button class="btn border primary">Primary button</button>
-      <button class="btn border info">Info button</button>
-      <button class="btn border success">Success button</button>
-      <button class="btn border warning">Warning button</button>
-      <button class="btn border error">Error button</button>
-      <button class="btn border text">Text button</button>
-      <button class="btn text border" disabled>Disabled button</button>
+      <kerge-doc-previewer>
+        <button class="btn border neutral">Neutral button</button>
+        <button class="btn border primary">Primary button</button>
+        <button class="btn border info">Info button</button>
+        <button class="btn border success">Success button</button>
+        <button class="btn border warning">Warning button</button>
+        <button class="btn border error">Error button</button>
+        <button class="btn border text">Text button</button>
+        <button class="btn text border" disabled>Disabled button</button>
+      </kerge-doc-previewer>
 
       <h4 id="rounded-outlined-buttons">Rounded outlined buttons</h4>
-      <button class="btn round border primary">Primary button</button>
-      <button class="btn round border neutral">Neutral button</button>
-      <button class="btn round border info">Info button</button>
-      <button class="btn round border success">Success button</button>
-      <button class="btn round border warning">Warning button</button>
-      <button class="btn round border error">Error button</button>
-      <button class="btn round border text">Text button</button>
-      <button class="btn round text border" disabled>Disabled button</button>
+      <kerge-doc-previewer>
+        <button class="btn round border primary">Primary button</button>
+        <button class="btn round border neutral">Neutral button</button>
+        <button class="btn round border info">Info button</button>
+        <button class="btn round border success">Success button</button>
+        <button class="btn round border warning">Warning button</button>
+        <button class="btn round border error">Error button</button>
+        <button class="btn round border text">Text button</button>
+        <button class="btn round text border" disabled>Disabled button</button>
+      </kerge-doc-previewer>
 
       <h4 id="pill-outlined-buttons">Pill outlined buttons</h4>
-      <button class="btn pill border primary">Primary button</button>
-      <button class="btn pill border neutral">Neutral button</button>
-      <button class="btn pill border info">Info button</button>
-      <button class="btn pill border success">Success button</button>
-      <button class="btn pill border warning">Warning button</button>
-      <button class="btn pill border error">Error button</button>
-      <button class="btn pill border text">Text button</button>
-      <button class="btn pill text border" disabled>Disabled button</button>
+      <kerge-doc-previewer>
+        <button class="btn pill border primary">Primary button</button>
+        <button class="btn pill border neutral">Neutral button</button>
+        <button class="btn pill border info">Info button</button>
+        <button class="btn pill border success">Success button</button>
+        <button class="btn pill border warning">Warning button</button>
+        <button class="btn pill border error">Error button</button>
+        <button class="btn pill border text">Text button</button>
+        <button class="btn pill text border" disabled>Disabled button</button>
+      </kerge-doc-previewer>
 
       <h4 id="carets">Carets</h4>
-      <button class="btn bg-primary caret down">Caret down</button>
-      <button class="btn bg-primary caret up">Caret up</button>
+      <kerge-doc-previewer>
+        <button class="btn bg-primary caret down">Caret down</button>
+        <button class="btn bg-primary caret up">Caret up</button>
+      </kerge-doc-previewer>
 
       <h3 id="cards">Cards</h3>
-      <div class="row">
-        <div class="col card">
-          <img src="https://picsum.photos/400/300/?random" alt="Just random image" class="w100">
-          <h4>Card Title</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Consectetur adipisci, asperiores odit repellat, explicabo expedita atque aut illum. </p>
-          <button class="btn">Okay</button>
-          <button class="btn bg-neutral">Cancel</button>
+      <kerge-doc-previewer>
+        <div class="row">
+          <div class="col card">
+            <img src="https://picsum.photos/400/300/?random" alt="Just random image" class="w100">
+            <h4>Card Title</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Consectetur adipisci, asperiores odit repellat, explicabo expedita atque aut illum. </p>
+            <button class="btn">Okay</button>
+            <button class="btn bg-neutral">Cancel</button>
+          </div>
+          <div class="col card">
+            <img src="https://picsum.photos/400/301/?random" alt="ust random image" class="w100">
+            <h4>Card Title</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Consectetur adipisci, asperiores odit repellat, explicabo expedita atque aut illum. </p>
+            <button class="btn">Okay</button>
+            <button class="btn bg-neutral">Cancel</button>
+          </div>
         </div>
-        <div class="col card">
-          <img src="https://picsum.photos/400/301/?random" alt="ust random image" class="w100">
-          <h4>Card Title</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Consectetur adipisci, asperiores odit repellat, explicabo expedita atque aut illum. </p>
-          <button class="btn">Okay</button>
-          <button class="btn bg-neutral">Cancel</button>
-        </div>
-      </div>
+      </kerge-doc-previewer>
 
       <h3 id="details">Details</h3>
-      <details>
-        <summary>Click to expand</summary>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium expedita quas corrupti tempora veritatis
-          magnam distinctio nam cupiditate totam laudantium.</p>
-      </details>
+      <kerge-doc-previewer>
+        <details>
+          <summary>Click to expand</summary>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium expedita quas corrupti tempora
+            veritatis
+            magnam distinctio nam cupiditate totam laudantium.</p>
+        </details>
+      </kerge-doc-previewer>
 
       <h3 id="dialog">Dialog</h3>
-      <button class="btn bg-primary" id="open-dialog-btn">Open dialog</button>
-      <dialog id="demo-dialog" class="dialog round ph3">
-        <h2>Dialog</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ab dolorum rerum error vero laboriosam
-          modi quos quia eaque molestiae. Eaque facilis, voluptas magnam possimus beatae reiciendis sunt doloribus
-          nostrum?
-        </p>
-        <hr>
-        <div class="row">
-          <form method="dialog" class="f-end">
-            <button type="button" class="btn bg-primary">Submit</button>
-            <button type="submit" class="btn bg-neutral">Close</button>
-          </form>
-        </div>
-      </dialog>
-      <script type="module">
-        const btnDialog = document.getElementById('open-dialog-btn');
-        const dialog = document.getElementById('demo-dialog');
-        btnDialog.addEventListener('click', () => {
-          dialog.showModal();
-        });
-      </script>
+      <kerge-doc-previewer>
+        <button class="btn bg-primary" id="open-dialog-btn">Open dialog</button>
+        <dialog id="demo-dialog" class="dialog round ph3">
+          <h2>Dialog</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ab dolorum rerum error vero laboriosam
+            modi quos quia eaque molestiae. Eaque facilis, voluptas magnam possimus beatae reiciendis sunt doloribus
+            nostrum?
+          </p>
+          <hr>
+          <div class="row">
+            <form method="dialog" class="f-end">
+              <button type="button" class="btn bg-primary">Submit</button>
+              <button type="submit" class="btn bg-neutral">Close</button>
+            </form>
+          </div>
+        </dialog>
+        <script type="module">
+          const btnDialog = document.getElementById('open-dialog-btn');
+          const dialog = document.getElementById('demo-dialog');
+          btnDialog.addEventListener('click', () => {
+            dialog.showModal();
+          });
+        </script>
+      </kerge-doc-previewer>
 
       <h3 id="dropdown-menu">Dropdown menu</h3>
       <p>TODO write docs</p>
-      <div class="dropdown" id="demo-dropdown">
-        <button id="expand-dropdown-dialog" class="btn bg-primary caret dropdown-trigger">Open menu</button>
-        <menu class="menu dropdown-menu">
-          <li class="pv1 ph2"><a href="#!">First item</a></li>
-          <li class="pv1 ph2"><a href="#!">Second item</a></li>
-          <li class="pv1 ph2"><a href="#!">Third item</a></li>
-        </menu>
-      </div>
+      <kerge-doc-previewer>
+        <div class="dropdown" id="demo-dropdown">
+          <button id="expand-dropdown-dialog" class="btn bg-primary caret dropdown-trigger">Open menu</button>
+          <menu class="menu dropdown-menu">
+            <li class="pv1 ph2"><a href="#!">First item</a></li>
+            <li class="pv1 ph2"><a href="#!">Second item</a></li>
+            <li class="pv1 ph2"><a href="#!">Third item</a></li>
+          </menu>
+        </div>
 
-      <script type="module">
-        const dropdown = document.getElementById('demo-dropdown');
-        const openDropdownButton = document.getElementById('expand-dropdown-dialog');
-        const menu = dropdown.querySelector('.dropdown-menu');
-        openDropdownButton.addEventListener('click', (e) => {
-          const isOpen = dropdown.classList.contains('open');
-          dropdown.classList.toggle('open', !isOpen);
-          menu.setAttribute('aria-expanded', String(!isOpen));
-          e.target.classList.toggle('up');
-        });
-      </script>
+        <script type="module">
+          const dropdown = document.getElementById('demo-dropdown');
+          const openDropdownButton = document.getElementById('expand-dropdown-dialog');
+          const menu = dropdown.querySelector('.dropdown-menu');
+          openDropdownButton.addEventListener('click', (e) => {
+            const isOpen = dropdown.classList.contains('open');
+            dropdown.classList.toggle('open', !isOpen);
+            menu.setAttribute('aria-expanded', String(!isOpen));
+            e.target.classList.toggle('up');
+          });
+        </script>
+      </kerge-doc-previewer>
 
       <h3 id="forms">Forms</h3>
-      <form name="demo-form" id="demo-form">
-        <div class="row">
-          <div class="col">
-            <label for="name">Name</label>
-            <input type="text" class="input w100" name="name" id="name" placeholder="John Doe" required>
+      <kerge-doc-previewer>
+        <form name="demo-form" id="demo-form">
+          <div class="row">
+            <div class="col">
+              <label for="name">Name</label>
+              <input type="text" class="input w100" name="name" id="name" placeholder="John Doe" required>
+            </div>
+            <div class="col">
+              <label for="hobbies">Hobbies</label>
+              <select id="hobbies" class="input w100" required>
+                <option disabled selected>-- select --</option>
+                <option>Sport</option>
+                <option>Fishing</option>
+                <option>Cooking</option>
+              </select>
+            </div>
           </div>
-          <div class="col">
-            <label for="hobbies">Hobbies</label>
-            <select id="hobbies" class="input w100" required>
-              <option disabled selected>-- select --</option>
-              <option>Sport</option>
-              <option>Fishing</option>
-              <option>Cooking</option>
-            </select>
+          <div class="row">
+            <div class="col">
+              <label for="message">Message</label>
+              <textarea id="message" class="input w100" placeholder="Your message..." cols="3" required></textarea>
+            </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <label for="message">Message</label>
-            <textarea id="message" class="input w100" placeholder="Your message..." cols="3" required></textarea>
+          <div class="row">
+            <div class="col">
+              <label for="invalid">Invalid field</label>
+              <input type="text" class="input b-error w100" name="invalid" id="invalid" required>
+            </div>
+            <div class="col">
+              <label for="success">Success field</label>
+              <input type="text" class="input b-success w100" name="success" id="success" required>
+            </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <label for="invalid">Invalid field</label>
-            <input type="text" class="input b-error w100" name="invalid" id="invalid" required>
+          <div class="row">
+            <div class="col">
+              <label>
+                <input type="checkbox" name="agree" id="agree">
+                I agree on everything
+              </label>
+            </div>
           </div>
-          <div class="col">
-            <label for="success">Success field</label>
-            <input type="text" class="input b-success w100" name="success" id="success" required>
+          <div class="row">
+            <div class="col">
+              <button type="submit" class="btn">Submit</button>
+              <button type="reset" class="btn bg-neutral">Reset</button>
+            </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <label>
-              <input type="checkbox" name="agree" id="agree">
-              I agree on everything
-            </label>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <button type="submit" class="btn">Submit</button>
-            <button type="reset" class="btn bg-neutral">Reset</button>
-          </div>
-        </div>
-      </form>
+        </form>
+      </kerge-doc-previewer>
 
       <h3 id="lists">Lists</h3>
       <p>List are alsomst the same as default browser styles.</p>
-      <ul>
-        <li>First Item</li>
-        <li>
-          Second Item
-          <ul>
-            <li>Sub Item 1</li>
-            <li>Sub Item 2</li>
-          </ul>
-        </li>
-        <li>Third Item</li>
-      </ul>
+      <kerge-doc-previewer>
+        <ul>
+          <li>First Item</li>
+          <li>
+            Second Item
+            <ul>
+              <li>Sub Item 1</li>
+              <li>Sub Item 2</li>
+            </ul>
+          </li>
+          <li>Third Item</li>
+        </ul>
+      </kerge-doc-previewer>
 
       <h3 id="navbar">Navbar</h3>
-      <nav class="row p1 bg-primary">
-        <div class="col pv1">
-          <a href="#!" class="invert ph2">Main menu</a>
-          <a href="#!" class="invert ph2">Products</a>
-          <a href="#!" class="invert ph2">List</a>
-        </div>
-        <div class="col pv1 d-flex">
-          <a href="#!" class="invert ph2 f-end">Login</a>
-        </div>
-      </nav>
+      <kerge-doc-previewer>
+        <nav class="row p1 bg-primary">
+          <div class="col pv1">
+            <a href="#!" class="invert ph2">Main menu</a>
+            <a href="#!" class="invert ph2">Products</a>
+            <a href="#!" class="invert ph2">List</a>
+          </div>
+          <div class="col pv1 d-flex">
+            <a href="#!" class="invert ph2 f-end">Login</a>
+          </div>
+        </nav>
+      </kerge-doc-previewer>
 
       <h3 id="ruler">Ruler</h3>
       <p>TODO: write docs</p>
-      <hr>
+      <kerge-doc-previewer>
+        <hr>
+      </kerge-doc-previewer>
 
       <h3 id="tables">Tables</h3>
-      <table class="table w100">
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Region</th>
-            <th>Country</th>
-            <th>Currency</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>September Holloway</td>
-            <td>Flevoland</td>
-            <td>Germany</td>
-            <td>$60.69</td>
-          </tr>
-          <tr>
-            <td>Christen Alvarado</td>
-            <td>North Region</td>
-            <td>Lithuania</td>
-            <td>$72.39</td>
-          </tr>
-          <tr>
-            <td>Josiah Mercer</td>
-            <td>Andaman and Nicobar Islands</td>
-            <td>Colombia</td>
-            <td>$52.71</td>
-          </tr>
-          <tr>
-            <td>Shaeleigh Bruce</td>
-            <td>Piura</td>
-            <td>Singapore</td>
-            <td>$68.08</td>
-          </tr>
-          <tr>
-            <td>Basil Munoz</td>
-            <td>Limón</td>
-            <td>Philippines</td>
-            <td>$56.77</td>
-          </tr>
-        <tfoot>
-          <tr>
-            <td colspan="2"></td>
-            <td><b>Total</b></td>
-            <td><b>$310.64</b></td>
-          </tr>
-        </tfoot>
-        </tbody>
-      </table>
+      <kerge-doc-previewer>
+        <table class="table w100">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Region</th>
+              <th>Country</th>
+              <th>Currency</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>September Holloway</td>
+              <td>Flevoland</td>
+              <td>Germany</td>
+              <td>$60.69</td>
+            </tr>
+            <tr>
+              <td>Christen Alvarado</td>
+              <td>North Region</td>
+              <td>Lithuania</td>
+              <td>$72.39</td>
+            </tr>
+            <tr>
+              <td>Josiah Mercer</td>
+              <td>Andaman and Nicobar Islands</td>
+              <td>Colombia</td>
+              <td>$52.71</td>
+            </tr>
+            <tr>
+              <td>Shaeleigh Bruce</td>
+              <td>Piura</td>
+              <td>Singapore</td>
+              <td>$68.08</td>
+            </tr>
+            <tr>
+              <td>Basil Munoz</td>
+              <td>Limón</td>
+              <td>Philippines</td>
+              <td>$56.77</td>
+            </tr>
+          <tfoot>
+            <tr>
+              <td colspan="2"></td>
+              <td><b>Total</b></td>
+              <td><b>$310.64</b></td>
+            </tr>
+          </tfoot>
+          </tbody>
+        </table>
+      </kerge-doc-previewer>
 
-      <div class="tc vh100 d-flex m0" id="hero">
-        <div class="vc wrap">
-          <h2 class="m1 mega mb0">Hero Component</h2>
-          <h4 class="large mb2">Centered full width and heigh component</h4>
-          <a href="#!" class="btn invert pill primary ph4">Button</a>
+      <kerge-doc-previewer>
+        <div class="tc vh100 d-flex m0" id="hero">
+          <div class="vc wrap">
+            <h2 class="m1 mega mb0">Hero Component</h2>
+            <h4 class="large mb2">Centered full width and heigh component</h4>
+            <a href="#!" class="btn invert pill primary ph4">Button</a>
+          </div>
         </div>
-      </div>
+      </kerge-doc-previewer>
 
       <h2 id="customize">Customize</h2>
       <p>There are only several global, customizable custom properties.</p>

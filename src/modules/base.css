@@ -12,6 +12,8 @@ body {
 
 pre {
   overflow: auto;
+  padding: calc(var(--s) * 2);
+  background: var(--c-dim);
 }
 
 hr {
