@@ -127,11 +127,7 @@ class KergeThemeSwitcher extends HTMLElement {
    */
   renderButton() {
     const text = this.isDark() ? 'Dark' : 'Light';
-    const theme = this.isDark()
-      ? this.constructor.Themes.DARK
-      : this.constructor.Themes.LIGHT;
-
-    const tpl = `<button type="button" class="${theme}">
+    const tpl = `<button type="button" class="${this.theme}">
       <span class="icon"></span>
       <span class="label">${text}</span>
     </button>`;
@@ -156,11 +152,10 @@ class KergeThemeSwitcher extends HTMLElement {
       const light = this.constructor.Themes.LIGHT;
       let labelText = 'Light';
       let klass = light;
-      if (!this.isDark()) {
+      if (!e.target.classList.contains(dark)) {
         labelText = 'Dark';
         klass = dark;
       }
-      console.log(klass);
       label.textContent = labelText;
       e.target.className = klass;
       this.setTheme(klass);
