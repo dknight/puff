@@ -12,6 +12,8 @@
     --c-brd: #eee;
     --c-dim: var(--c-brd);
     --c-fcs: #da0;
+    --ls: 0;
+    --img-filter: ;
   }
 }
 
@@ -28,4 +30,6 @@
   --c-brd: #eee;
   --c-dim: var(--c-brd);
   --c-fcs: #da0;
+  --ls: 0;
+  --img-filter: ;
 }
