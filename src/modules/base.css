@@ -16,6 +16,10 @@ pre {
   background: var(--c-dim);
 }
 
+mark {
+  background-color: var(--c-pri);
+}
+
 hr {
   border: 0;
   border-bottom: var(--bw) solid var(--c-pri);
