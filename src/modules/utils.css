@@ -1,3 +1,8 @@
+.caret {
+  align-items: center;
+  display: inline-flex;
+  gap: var(--s);
+}
 .caret::after {
   content: '▾';
 }

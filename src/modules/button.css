@@ -1,12 +1,9 @@
 .btn {
-  align-items: center;
   background: var(--c-pri);
   border: var(--bw) solid transparent;
   color: var(--c-inv);
   cursor: pointer;
-  display: inline-flex;
   font: 1rem var(--ff);
-  gap: var(--s);
   padding: var(--s) calc(var(--s) * 1.5);
 }
 
