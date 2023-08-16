@@ -1,7 +1,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     color-scheme: dark;
-    --c-pri: #a5b2e3;
+    --c-pri: #7f93dd;
     --c-inf: #90b5bf;
     --c-suc: #97b982;
     --c-wrn: #d68f00;
@@ -19,7 +19,7 @@
 
 :root[data-theme='dark'] {
   color-scheme: dark;
-  --c-pri: #a5b2e3;
+  --c-pri: #7f93dd;
   --c-inf: #90b5bf;
   --c-suc: #97b982;
   --c-wrn: #d68f00;
