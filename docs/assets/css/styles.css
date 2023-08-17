@@ -82,8 +82,11 @@ body {
 }
 
 @media screen and (max-width: 60rem) {
+  body.expanded {
+    overflow-x: hidden;
+  }
   body:not(.expanded) {
-    grid-template-columns: 4rem 1fr;
+    grid-template-columns: 3rem 1fr;
   }
   body:not(.expanded) .doc-sidebar {
     align-items: center;

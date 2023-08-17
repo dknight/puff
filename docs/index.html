@@ -14,20 +14,18 @@
     <script type="module" src="assets/js/kerge-theme-switcher.js"></script>
     <script type="module" src="assets/js/kerge-doc-previewer.js"></script>
     <script type="module">
-      const collapse = () => {
-        document.body.classList.remove('expanded');
-      }
+      const collapse = () => document.body.classList.remove('expanded');
       const burger = document.querySelector('.burder');
       const wrap = document.querySelector('.wrap');
       const sidebar = document.getElementById('sidebar');
-      burger && burger.addEventListener('click', () => {
+      burger.addEventListener('click', () => {
         const isExpanded = document.body.classList.contains('expanded');
         document.body.classList.toggle('expanded', !isExpanded);
       });
-      sidebar && sidebar.addEventListener('click', (e) => {
-        (e.target.nodeName === 'A') && collapse();
-      });
-      wrap && wrap.addEventListener('click', collapse);
+      sidebar.addEventListener('click', (e) => (e.target.nodeName === 'A') && collapse());
+      wrap.addEventListener('click', collapse);
+      const noSidebar = new URL(window.location).search.includes('nosidebar');
+      noSidebar && sidebar.remove();
     </script>
   </head>
   <body>
