@@ -7,7 +7,7 @@
     --c-wrn: #fde74c;
     --c-err: #da3125;
     --c-txt: #333;
-    --c-inv: #fafafa;
+    --c-inv: #f8f8f8;
     --c-neu: #637779;
     --c-brd: #eee;
     --c-dim: var(--c-brd);
@@ -25,7 +25,7 @@
   --c-wrn: #fde74c;
   --c-err: #da3125;
   --c-txt: #333;
-  --c-inv: #fafafa;
+  --c-inv: #f8f8f8;
   --c-neu: #637779;
   --c-brd: #eee;
   --c-dim: var(--c-brd);

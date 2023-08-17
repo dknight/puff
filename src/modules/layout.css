@@ -80,6 +80,12 @@
   }
 }
 
+@media screen and (max-width: 36rem) {
+  .hide-small {
+    display: none;
+  }
+}
+
 /**
  * Width
  */
@@ -255,4 +261,18 @@
 
 .vop {
   transform: translateY(10%);
+}
+
+/**
+ * Visibility
+ */
+.visually-hidden {
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
