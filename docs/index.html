@@ -25,7 +25,10 @@
       sidebar.addEventListener('click', (e) => (e.target.nodeName === 'A') && collapse());
       wrap.addEventListener('click', collapse);
       const noSidebar = new URL(window.location).search.includes('nosidebar');
-      noSidebar && sidebar.remove();
+      if (noSidebar) {
+        document.body.style.display = 'block';
+        sidebar.remove();
+      }
     </script>
   </head>
   <body>
@@ -655,7 +658,7 @@
             </div>
             <div class="col">
               <label for="hobbies">Hobbies</label>
-              <select id="hobbies" class="input w100" size="3" required>
+              <select id="hobbies" class="input w100">
                 <option disabled selected>-- select --</option>
                 <option>Sport</option>
                 <option>Fishing</option>
@@ -675,7 +678,7 @@
               <input type="text" class="input b-error w100" name="invalid" id="invalid" required>
             </div>
             <div class="col">
-              <label for="success">Success field</label>
+              <label for="success">Valid field</label>
               <input type="text" class="input b-success w100" name="success" id="success" required>
             </div>
           </div>
