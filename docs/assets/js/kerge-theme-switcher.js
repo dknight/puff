@@ -25,10 +25,10 @@ class KergeThemeSwitcher extends HTMLElement {
       padding: .5rem 1rem;
       transition: background .2s ease-out;
     }
-    .light {
+    button[value=light] {
       background: #ddd;
     }
-    .dark {
+    button[value=dark] {
       background: #111;
     }
     @media (prefers-color-scheme: dark) {
@@ -36,11 +36,11 @@ class KergeThemeSwitcher extends HTMLElement {
         background: #111;
       }
     }
-    .dark .icon {
+    button[value=dark] .icon {
       -webkit-mask: url(/docs/assets/img/moon.svg) no-repeat left;
       mask: url(/docs/assets/img/moon.svg) no-repeat left;
     }
-    .light .icon {
+    button[value=light] .icon {
       -webkit-mask: url(/docs/assets/img/sun.svg) no-repeat left;
       mask: url(/docs/assets/img/sun.svg) no-repeat left;
     }
@@ -51,7 +51,6 @@ class KergeThemeSwitcher extends HTMLElement {
       aspect-ratio: 1;
       margin-right: .5rem;
     }`;
-
     const styles = document.createElement('style');
     styles.textContent = css;
     return styles;
@@ -85,16 +84,6 @@ class KergeThemeSwitcher extends HTMLElement {
   }
 
   /**
-   * @returns {string | null}
-   */
-  loadTheme() {
-    if (!window.localStorage) {
-      return;
-    }
-    return window.localStorage.getItem(this.constructor.StorageKey);
-  }
-
-  /**
    * @returns {boolean}
    */
   isDark() {
@@ -106,12 +95,27 @@ class KergeThemeSwitcher extends HTMLElement {
   }
 
   /**
-   * @type {string}
+   * @returns {string}
    */
-  get theme() {
-    return this.isDark()
-      ? this.constructor.Themes.DARK
-      : this.constructor.Themes.LIGHT;
+  getThemePreference() {
+    const theme = this.loadTheme();
+    if (theme) {
+      return theme;
+    } else {
+      return window.matchMedia('(prefers-color-scheme: dark)').matches
+        ? this.constructor.Themes.DARK
+        : this.constructor.Themes.LIGHT;
+    }
+  }
+
+  /**
+   * @returns {string | null}
+   */
+  loadTheme() {
+    if (!window.localStorage) {
+      return;
+    }
+    return window.localStorage.getItem(this.constructor.StorageKey);
   }
 
   /**
@@ -125,9 +129,9 @@ class KergeThemeSwitcher extends HTMLElement {
   /**
    * @returns {{label: HTMLSpanElement, button: HTMLButtonElement}}
    */
-  renderButton() {
-    const text = this.isDark() ? 'Dark' : 'Light';
-    const tpl = `<button type="button" class="${this.theme}">
+  renderButton(theme) {
+    const text = theme === this.constructor.Themes.DARK ? 'Dark' : 'Light';
+    const tpl = `<button type="button" value="${theme}">
       <span class="icon"></span>
       <span class="label">${text}</span>
     </button>`;
@@ -139,26 +143,19 @@ class KergeThemeSwitcher extends HTMLElement {
   }
 
   connectedCallback() {
-    const loadedTheme = this.loadTheme();
-    if (loadedTheme) {
-      this.setTheme(loadedTheme);
-    }
     this.innerHTML = '';
+    const theme = this.getThemePreference();
+    this.setTheme(theme);
     const styles = this.renderStyles();
 
-    const {button, label} = this.renderButton();
+    const {button, label} = this.renderButton(theme);
     button.addEventListener('click', (e) => {
       const dark = this.constructor.Themes.DARK;
       const light = this.constructor.Themes.LIGHT;
-      let labelText = 'Light';
-      let klass = light;
-      if (!e.target.classList.contains(dark)) {
-        labelText = 'Dark';
-        klass = dark;
-      }
-      label.textContent = labelText;
-      e.target.className = klass;
-      this.setTheme(klass);
+      const value = button.value;
+      button.value = value === dark ? light : dark;
+      label.textContent = value === dark ? 'Light' : 'Dark';
+      this.setTheme(button.value);
     });
     this.shadowRoot.prepend(styles, button);
   }
