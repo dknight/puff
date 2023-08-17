@@ -10,14 +10,14 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap"
       rel="stylesheet">
     <link rel="stylesheet" href="../dist/kerge.min.css">
-    <link rel="stylesheet" href="/docs/assets/css/styles.css">
-    <script type="module" src="/docs/assets/js/kerge-theme-switcher.js"></script>
-    <script type="module" src="/docs/assets/js/kerge-doc-previewer.js"></script>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script type="module" src="assets/js/kerge-theme-switcher.js"></script>
+    <script type="module" src="assets/js/kerge-doc-previewer.js"></script>
   </head>
   <body>
     <sidebar class="doc-sidebar p3">
       <div class=" d-flex f-acenter g1">
-        <img src="/docs/assets/img/feather.png" alt="kerge feather" width="50">
+        <img src="assets/img/feather.png" alt="kerge feather" width="50">
         <h3 lang="et">kerge</h3>
       </div>
       <kerge-theme-switcher></kerge-theme-switcher>
@@ -27,7 +27,6 @@
           <li><a href="#about">About</a></li>
           <li><a href="#features">Features</a></li>
           <li><a href="#install">Install</a></li>
-          <li><a href="#why">Why?</a></li>
         </ul>
         </ul>
 
@@ -35,6 +34,7 @@
         <ul>
           <li><a href="#wrapper">Wrapper</a></li>
           <li><a href="#grid">Grid</a></li>
+          <li><a href="#breakpoints">Breakpoints</a></li>
         </ul>
 
         <h4 class="mt1 mb1">Tokens</h4>
@@ -67,7 +67,7 @@
               <li><a href="#rounded-buttons">Rounded buttons</a></li>
               <li><a href="#pill-buttons">Pill buttons</a></li>
               <li><a href="#outlined-buttons">Outlined buttons</a></li>
-              <li><a href="#rounded-outlined-buttons">Rounded outlined buttons</a></li>
+              <li><a href="#rounded-outlined-buttons">Rounded-outlined buttons</a></li>
               <li><a href="#pill-outlined-buttons">Pill outlined buttons</a></li>
               <li><a href="#carets">Carets</a></li>
             </ul>
@@ -92,7 +92,7 @@
       </nav>
       <hr class="mt2 mb2">
       <p class="copy m0">
-        &copy; 2023 MIT <a href="">GitHub</a>
+        &copy; 2023 MIT <a href="https://github.com/dknight/kerge">Github</a>
       </p>
     </sidebar>
 
@@ -115,7 +115,7 @@
         <li>🌐 Supports all modern browsers</li>
         <li>📐 Classic <a href="#grid">12-column grid</a></li>
         <li>🧱 Design <a href="#tokens">tokens</a> based</li>
-        <li>🔩 Easy to <a href="#customize">customize</a> with CSS custom properties</li>
+        <li>🔩 <a href="#customize">Customize</a> with CSS custom properties</li>
         <li>🌙 Dark them included</li>
         <li>💬 <a href="#dialog">Dialog</a> and <a href="#dropdown-menu">dropdown</a> out-of-box</li>
         <li>🟩 Valid semantics</li>
@@ -129,25 +129,6 @@
 
       <p>or install it from <a href="https://www.npmjs.com/package/kerge">NPM</a>.</p>
       <pre><code>npm install kerge</code></pre>
-
-      <h2 id="why">Why?</h2>
-      <p>
-        I was really overwhelmed by massive-monstrous frameworks like
-        <a href="https://getbootstrap.com/">Bootstap</a>,
-        <a href="https://mui.com/">MUI</a>, <a href="https://tailwindcss.com/">Tailwind</a>, etc.
-        Usually I use only 5&ndash;10% of the features of these large CSS frameworks. I need a small framework that is
-        easy to
-        install and has only basic core features for UI prototyping. The solution is to use micro CSS frameworks; there
-        are a huge number of options on the web like <a href="https://purecss.io/">PureCSS</a>,
-        <a href="https://ajusa.github.io/lit/">Lit</a>, <a href="https://jenil.github.io/chota/">Chota</a>,
-        <a href="https://selekkt.dk/skelet/v3/">Skelet</a>, etc. All of them are good, but... one
-        of them is missing a feature, that another has, and vice versa. The authors of these frameworks usually do not
-        maintain them. The last commit was about 3&ndash;5 years ago, and using outdated CSS techniques, bugs aren't
-        fixed and
-        aren't going to be fixed. This is why <span lang="et">kerge</span> was created. It has all the features I need,
-        and I am going to
-        maintain it until the end of my days.
-      </p>
 
       <h2>Layout</h2>
       <h3 id="wrapper">Wrapper</h3>
@@ -207,15 +188,20 @@
         </kerge-doc-previewer>
       </div>
 
+      <h2 id="breakpoints">Breakpoints</h2>
+      <p>There is only one breakpoint, which equals the default <strong>36rem = 576px</strong>.</p>
+      <pre><code>@media screen and (max-width: 36rem) {
+  ...
+}</code></pre>
+
       <h2 id="tokens">Tokens</h2>
       <p>
-        Tokens are very small parts of the design. Combining tokens
-        help to achieve a huge amount of design variations.
+        Tokens are very small parts of the design. Combining tokens helps achieve a huge amount of design variation.
       </p>
       <h3 id="spacings">Spacing tokens</h3>
       <p>
-        These makes possible to make margins and paddings. There are 4 stops
-        for using the margin. By default each step has a size <strong>0.5rem</strong>.
+        These make it possible to make margins and paddings. There are 4 stops for using the margin.
+        By default, each step has a size <strong>0.5rem</strong>.
       </p>
 
       <h4>Examples</h4>
@@ -276,6 +262,10 @@
             <td>All padding</td>
             <td>p0, p1, p2, p3, p4</td>
           </tr>
+          <tr>
+            <td>Gaps</td>
+            <td>g0, g1, g2, g3, g4</td>
+          </tr>
         </tbody>
       </table>
 
@@ -294,9 +284,9 @@
       <h3 id="text">Text</h3>
       <kerge-doc-previewer>
         <p>
-          Common paragraph with text. Default font family is <a href="#!">Roboto</a> and
-          can be override with <code>--ff</code> CSS custom property.
-          Exaples of <b>bold text</b>, <em>italics</em> and <u>underline</u> text.
+          Common paragraph with text. The default font family is <a href="#!">Roboto</a> and
+          can be overridden with <code>--ff</code> CSS custom property.
+          Examples of <b>bold text</b>, <em>italics</em> and <u>underline</u> text.
           You can <mark>mark</mark> important things.
         </p>
       </kerge-doc-previewer>
@@ -304,17 +294,17 @@
       <h3 id="text-size">Text size</h3>
       <p>
         The size of the text is <strong>16px</strong> which is the standard for all modern browsers.
-        Line height is a bit increase and equals to <strong>1.6</strong>. There are some text
-        size tokens: xs, s, l, xl, xxl (plus one more xxxl which is very huge and useful only for
+        The line height is a bit higher and equals <strong>1.6</strong>. There are some text
+        size tokens: xs, s, l, xl, xxl (plus one more xxxl which is very huge and useful only for the
         <a href="#hero">hero</a> component).
       </p>
       <kerge-doc-previewer>
-        <p class="xs">Extra small</p>
+        <p class="xs">Extra-small</p>
         <p class="s">Small</p>
         <p class="">Normal</p>
         <p class="l">Large</p>
-        <p class="xl">Extra large</p>
-        <p class="xxl">Super Extra large</p>
+        <p class="xl">Extra-large</p>
+        <p class="xxl">Super extra-large</p>
       </kerge-doc-previewer>
 
       <h3 id="colors">Colors</h3>
@@ -369,35 +359,71 @@
         <tbody>
           <tr>
             <td>round</td>
-            <td>Add round corners to the element</td>
+            <td>Adds round corners to the element.</td>
           </tr>
           <tr>
             <td>pill</td>
-            <td>Add large round corners to the element</td>
+            <td>Adds large round corners to the element.</td>
           </tr>
           <tr>
             <td>border</td>
-            <td>Add border to the element</td>
+            <td>Adds a border to the element.</td>
           </tr>
           <tr>
             <td>w100</td>
-            <td>Sets element full width (<code>width: 100%</code>)</td>
+            <td><code>width: 100%</code></td>
+          </tr>
+          <tr>
+            <td>100vh</td>
+            <td><code>height: 100vh;</code></td>
           </tr>
           <tr>
             <td>reset</td>
-            <td>Resets element's styles so element looks like standard unstyled HTML element</td>
+            <td>Resets the element's styles so it looks like a standard unstyled HTML element.</td>
           </tr>
           <tr>
             <td>von</td>
-            <td>von (vertical offset negative) shift content upwards -10%.</td>
+            <td>von (vertical offset negative) shift content a bit upwards <code>transform: translateY(-10%)</code></td>
           </tr>
           <tr>
             <td>vop</td>
-            <td>vop (vertical offset positive) shift content upwards +10%.</td>
+            <td>vop (vertical offset positive) shift content downward <code>transform: translateY(10%)</code>.</td>
           </tr>
           <tr>
             <td>d-flex</td>
-            <td>display: flex</td>
+            <td><code>display: flex</code></td>
+          </tr>
+          <tr>
+            <td>f-jstart</td>
+            <td><code>justify-content: flex-start</code></td>
+          </tr>
+          <tr>
+            <td>f-jend</td>
+            <td><code>justify-content: flex-end</code></td>
+          </tr>
+          <tr>
+            <td>f-jcenter</td>
+            <td><code>justify-content: center</code></td>
+          </tr>
+          <tr>
+            <td>f-astart</td>
+            <td><code>align-itens: flex-start</code></td>
+          </tr>
+          <tr>
+            <td>f-aend</td>
+            <td><code>align-itens: flex-end</code></td>
+          </tr>
+          <tr>
+            <td>f-acenter</td>
+            <td><code>align-itens: center</code></td>
+          </tr>
+          <tr>
+            <td>visually-hidden</td>
+            <td>Visible only for screen readers, some assistive technologies, or robots.</td>
+          </tr>
+          <tr>
+            <td>hide-small</td>
+            <td>Hide content on the small screen after the <a href="#breakpoints">breakpoint</a>.</td>
           </tr>
         </tbody>
       </table>
@@ -480,7 +506,7 @@
         <button class="btn text border" disabled>Disabled button</button>
       </kerge-doc-previewer>
 
-      <h4 id="rounded-outlined-buttons">Rounded outlined buttons</h4>
+      <h4 id="rounded-outlined-buttons">Rounded-outlined buttons</h4>
       <kerge-doc-previewer>
         <button class="btn round border primary">Primary button</button>
         <button class="btn round border neutral">Neutral button</button>
@@ -492,7 +518,7 @@
         <button class="btn round text border" disabled>Disabled button</button>
       </kerge-doc-previewer>
 
-      <h4 id="pill-outlined-buttons">Pill outlined buttons</h4>
+      <h4 id="pill-outlined-buttons">Pill-outlined buttons</h4>
       <kerge-doc-previewer>
         <button class="btn pill border primary">Primary button</button>
         <button class="btn pill border neutral">Neutral button</button>
@@ -572,7 +598,7 @@
       </kerge-doc-previewer>
 
       <h3 id="dropdown-menu">Dropdown menu</h3>
-      <p>TODO write docs</p>
+      <p>This is an extremely simple dropdown menu. There is also a script on how to open the menu.</p>
       <kerge-doc-previewer>
         <div class="dropdown" id="demo-dropdown">
           <button id="expand-dropdown-dialog" class="btn bg-primary caret dropdown-trigger">Open menu</button>
@@ -582,7 +608,6 @@
             <li class="pv1 ph2"><a href="#!">Third item</a></li>
           </menu>
         </div>
-
         <script type="module">
           const dropdown = document.getElementById('demo-dropdown');
           const openDropdownButton = document.getElementById('expand-dropdown-dialog');
@@ -648,7 +673,7 @@
       </kerge-doc-previewer>
 
       <h3 id="lists">Lists</h3>
-      <p>List are alsomst the same as default browser styles.</p>
+      <p>Lists are very close to the default browser styles.</p>
       <kerge-doc-previewer>
         <ul>
           <li>First Item</li>
@@ -678,7 +703,7 @@
       </kerge-doc-previewer>
 
       <h3 id="ruler">Ruler</h3>
-      <p>TODO: write docs</p>
+      <p>Ruler is just a <code>&hr></code>. It is helpful to separate sections.</p>
       <kerge-doc-previewer>
         <hr>
       </kerge-doc-previewer>
@@ -740,7 +765,7 @@
         <div class="tc vh100 d-flex m0" id="hero">
           <div class="vc wrap">
             <h2 class="m1 mega mb0">Hero Component</h2>
-            <h4 class="large mb2">Centered full width and heigh component</h4>
+            <h4 class="large mb2">Centered full width and height component</h4>
             <a href="#!" class="btn invert pill primary ph4">Button</a>
           </div>
         </div>
@@ -807,7 +832,7 @@
           <tr>
             <td>--img-filter</td>
             <td>(empty)</td>
-            <td>Filter for images used for dark theming or images effers</td>
+            <td>Filter for images used for dark themeing or images effers</td>
           </tr>
         </tbody>
       </table>
@@ -832,12 +857,12 @@
           <tr>
             <td>--c-txt</td>
             <td>#333</td>
-            <td>#fafafa</td>
+            <td>#f8f8f8</td>
             <td><span style="color: var(--c-text)">Color for tex</span>t</td>
           </tr>
           <tr>
             <td>--c-inv</td>
-            <td>#fafafa</td>
+            <td>#f8f8f8</td>
             <td>#1b1b1b</td>
             <td>
               <span style="color: var(--c-inv);background-color: var(--c-txt);">Inverted text color
@@ -896,7 +921,11 @@
           </tr>
         </tbody>
       </table>
-
+      <div class="d-flex f-jcenter m1">
+        <p>
+          <a href="https://github.com/dknight/kerge">Source on Github</a>
+        </p>
+      </div>
     </main>
   </body>
 </html>
