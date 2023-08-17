@@ -3,9 +3,9 @@
     color-scheme: dark;
     --c-pri: #7f93dd;
     --c-inf: #90b5bf;
-    --c-suc: #97b982;
+    --c-suc: #8ac565;
     --c-wrn: #d68f00;
-    --c-err: #ea7c57;
+    --c-err: #f6764c;
     --c-txt: #fafafa;
     --c-inv: #1b1b1b;
     --c-neu: #aaa;
@@ -21,9 +21,9 @@
   color-scheme: dark;
   --c-pri: #7f93dd;
   --c-inf: #90b5bf;
-  --c-suc: #97b982;
+  --c-suc: #8ac565;
   --c-wrn: #d68f00;
-  --c-err: #ea7c57;
+  --c-err: #f6764c;
   --c-txt: #fafafa;
   --c-inv: #1b1b1b;
   --c-neu: #aaa;

@@ -54,6 +54,7 @@
               <li><a href="#border-colors">Border colors</a></li>
             </ul>
           </li>
+          <li><a href="#layout-tokens">Layout</a></li>
         </ul>
 
         <h4 class="mt1 mb1">Components</h4>
@@ -99,14 +100,15 @@
     <main class="wrap">
       <h2 id="about">About</h2>
       <p>
-        <em lang="et">kerge</em> (light in Estonian🇪🇪) is a micro full-featured framework with a tiny footprint.
+        <em lang="et">kerge</em> (light in Estonian🇪🇪) is a micro full-featured CSS framework for quick UI
+        prototyping.
         <em lang="et">kerge</em>
         is based on design <a href="#tokens">tokens</a>. Combining just several tokens gives an almost limitless number
         of UI combinations.
       </p>
 
       <h2 id="features">Features</h2>
-      <ul class="plain l">
+      <ul class="reset l">
         <li>🪶 Lightweight ~2kb (minified + gzipped)</li>
         <li>🚀 Easy to install and launch</li>
         <li>🚂 No dependencies</li>
@@ -160,7 +162,11 @@
       </kerge-doc-previewer>
 
       <h3 id="grid">Grid</h3>
-      <p>TODO: write about grids</p>
+      <p>
+        Classic 12-column layout based on Flexbox. Each grid has a size of 1/12 of
+        the width of the container. If no size is specified, then the grid takes all
+        remaining space. On small screens, grids collapse into column layout.
+      </p>
       <div class="doc-grid">
         <kerge-doc-previewer>
           <div class="row g1">
@@ -202,8 +208,77 @@
       </div>
 
       <h2 id="tokens">Tokens</h2>
+      <p>
+        Tokens are very small parts of the design. Combining tokens
+        help to achieve a huge amount of design variations.
+      </p>
       <h3 id="spacings">Spacing tokens</h3>
-      <p>TODO: write docs</p>
+      <p>
+        These makes possible to make margins and paddings. There are 4 stops
+        for using the margin. By default each step has a size <strong>0.5rem</strong>.
+      </p>
+
+      <h4>Examples</h4>
+      <div class="border b-primary">
+        <div class="mt2 mb2">
+          mt2 mb2 (margin-top: 2 * 0.5rem; margin-bottom: 2 * 0.5rem)
+        </div>
+      </div>
+
+      <div class="border b-primary">
+        <div class="pv2 ph4">
+          pv2 ph4 (vertical padding: 2 * 0.5rem; horizontal padding: 4 * 0.5rem)
+        </div>
+      </div>
+
+      <div class="border b-primary">
+        <div class="m4 p1">
+          m4 p1 (margin: 4 * 0.5rem; padding: 1 * 0.5rem)
+        </div>
+      </div>
+
+      <div class="border b-primary">
+        <div class="p0 m0">
+          p0 - resets padding to 0; m0 - resets margins to 0.
+        </div>
+      </div>
+
+      <h4>List of spacing tokens</h4>
+      <table class="table w100">
+        <thead>
+          <tr>
+            <th>Type</th>
+            <th>Classes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Top margins</td>
+            <td>mt1, mt2, mt3, mt4</td>
+          </tr>
+          <tr>
+            <td>Bottom margins</td>
+            <td>mb1, mb2, mb3, mb4</td>
+          </tr>
+          <tr>
+            <td>All margins</td>
+            <td>m0, m1, m2, m3, m4</td>
+          </tr>
+          <tr>
+            <td>Vertical padding</td>
+            <td>pv1, pv2, pv3, pv4</td>
+          </tr>
+          <tr>
+            <td>Horizontal padding</td>
+            <td>ph1, ph2, ph3, ph4</td>
+          </tr>
+          <tr>
+            <td>All padding</td>
+            <td>p0, p1, p2, p3, p4</td>
+          </tr>
+        </tbody>
+      </table>
+
 
       <h3 id="tyography">Typography</h3>
       <h3 id="headings">Headings</h3>
@@ -219,15 +294,20 @@
       <h3 id="text">Text</h3>
       <kerge-doc-previewer>
         <p>
-          This is a paragraph. The font family is <a href="#!">Nunito</a>.
-          <b>Some bold text.</b> <i>Italics also looks nice.</i>
-          You can <u>underline</u> things you feel are important.
-          Lit has styles <mark>that</mark> override the default
-          heading styles, including margin.
+          Common paragraph with text. Default font family is <a href="#!">Roboto</a> and
+          can be override with <code>--ff</code> CSS custom property.
+          Exaples of <b>bold text</b>, <em>italics</em> and <u>underline</u> text.
+          You can <mark>mark</mark> important things.
         </p>
       </kerge-doc-previewer>
 
       <h3 id="text-size">Text size</h3>
+      <p>
+        The size of the text is <strong>16px</strong> which is the standard for all modern browsers.
+        Line height is a bit increase and equals to <strong>1.6</strong>. There are some text
+        size tokens: xs, s, l, xl, xxl (plus one more xxxl which is very huge and useful only for
+        <a href="#hero">hero</a> component).
+      </p>
       <kerge-doc-previewer>
         <p class="xs">Extra small</p>
         <p class="s">Small</p>
@@ -274,17 +354,66 @@
         <div class="border p1 b-neutral">neutral</div>
       </kerge-doc-previewer>
 
+      <h3 id="layout-tokens">Layout</h3>
+      <p>
+        Layout tokens are used for various uncategorized purposes. Sometimes
+        in the CSS world, they might be called modifiers.
+      </p>
+      <table class="table w100">
+        <head>
+          <tr>
+            <th>Token</th>
+            <th>CSS equivalent</th>
+          </tr>
+        </head>
+        <tbody>
+          <tr>
+            <td>round</td>
+            <td>Add round corners to the element</td>
+          </tr>
+          <tr>
+            <td>pill</td>
+            <td>Add large round corners to the element</td>
+          </tr>
+          <tr>
+            <td>border</td>
+            <td>Add border to the element</td>
+          </tr>
+          <tr>
+            <td>w100</td>
+            <td>Sets element full width (<code>width: 100%</code>)</td>
+          </tr>
+          <tr>
+            <td>reset</td>
+            <td>Resets element's styles so element looks like standard unstyled HTML element</td>
+          </tr>
+          <tr>
+            <td>von</td>
+            <td>von (vertical offset negative) shift content upwards -10%.</td>
+          </tr>
+          <tr>
+            <td>vop</td>
+            <td>vop (vertical offset positive) shift content upwards +10%.</td>
+          </tr>
+          <tr>
+            <td>d-flex</td>
+            <td>display: flex</td>
+          </tr>
+        </tbody>
+      </table>
+
+
       <h2>Components</h2>
       <h3 id="alerts">Alerts</h3>
       <kerge-doc-previewer>
-        <p>Combining design token you can easily build alert-like elements.</p>
+        <p>The combination of design tokens helps create alert elements.</p>
         <div class="p2 invert bg-info">
           <h3 class="m0">Please update your data</h3>
           <p>Please update your date before <time>2023-10-12</time>.</p>
         </div>
         <div class="p2 invert bg-success">
           <h3 class="m0">Your data is updated</h3>
-          <p>Thanks your for updating your data.</p>
+          <p>Thanks for updating your data.</p>
         </div>
         <div class="p2 bg-warning">
           <h3 class="m0">Your data needs to be updated</h3>
@@ -292,17 +421,17 @@
         </div>
         <div class="p2 invert bg-error">
           <h3 class="m0">Error occured</h3>
-          <p>Due to technical reasons your data cannot be updated.</p>
+          <p>Due to technical reasons, your data cannot be updated.</p>
           <p>Please try again later.</p>
         </div>
       </kerge-doc-previewer>
 
       <h3 id="badges">Badges</h3>
       <kerge-doc-previewer>
-        <span class="tag invert round bg-info">New</span>
-        <span class="tag invert round bg-success">Great!</span>
-        <span class="tag round bg-warning">Something</span>
-        <span class="tag invert round bg-error bold">5</span>
+        <span class="badge invert round bg-info">New</span>
+        <span class="badge invert round bg-success">Great!</span>
+        <span class="badge round bg-warning">Something</span>
+        <span class="badge invert round bg-error bold">5</span>
       </kerge-doc-previewer>
 
       <h3 id="buttons">Buttons</h3>
@@ -376,9 +505,11 @@
       </kerge-doc-previewer>
 
       <h4 id="carets">Carets</h4>
+      <p>Caret is a small triangle-arrow, which is very useful for dropdowns. Also, they can be added to the links.</p>
       <kerge-doc-previewer>
         <button class="btn bg-primary caret down">Caret down</button>
         <button class="btn bg-primary caret up">Caret up</button>
+        <a href="#!" class="caret">Pandora box</a>
       </kerge-doc-previewer>
 
       <h3 id="cards">Cards</h3>
@@ -393,7 +524,7 @@
             <button class="btn bg-neutral">Cancel</button>
           </div>
           <div class="col card">
-            <img src="https://picsum.photos/400/301/?random" alt="ust random image" class="w100">
+            <img src="https://picsum.photos/400/299/?random" alt="ust random image" class="w100">
             <h4>Card Title</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Consectetur adipisci, asperiores odit repellat, explicabo expedita atque aut illum. </p>
@@ -695,7 +826,7 @@
           <tr>
             <td>--c-pri</td>
             <td>#005cbd</td>
-            <td>#a5b2e3</td>
+            <td>#7f93dd</td>
             <td><span class="primary">Primary color</span></td>
           </tr>
           <tr>
@@ -742,7 +873,7 @@
           <tr>
             <td>--c-suc</td>
             <td>#438221</td>
-            <td>#97b982</td>
+            <td>#8ac565</td>
             <td><span class="success">Success color</span></td>
           </tr>
           <tr>
@@ -754,7 +885,7 @@
           <tr>
             <td>--c-err</td>
             <td>#da3125</td>
-            <td>#ea7c57</td>
+            <td>#f6764c</td>
             <td><span class="error">Error color</span></td>
           </tr>
           <tr>

@@ -10,6 +10,7 @@
 @import 'modules/utils.css' layer(core);
 
 /* Components */
+@import 'modules/badge.css' layer(components);
 @import 'modules/button.css' layer(components);
 @import 'modules/card.css' layer(components);
 @import 'modules/dialog.css' layer(components);
@@ -17,7 +18,6 @@
 @import 'modules/input.css' layer(components);
 @import 'modules/menu.css' layer(components);
 @import 'modules/table.css' layer(components);
-@import 'modules/tag.css' layer(components);
 
 /** Themes */
 @import 'themes/light.css' layer(themes);
