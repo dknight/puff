@@ -16,7 +16,7 @@
  */
 .wrap {
   max-width: var(--maxw);
-  padding: calc(var(--s) * 2);
+  padding: var(--s);
   margin: auto;
 }
 
@@ -28,6 +28,10 @@
 }
 
 @media (min-width: 36rem) {
+  .wrap {
+    padding: calc(var(--s) * 2);
+  }
+
   .row {
     display: flex;
     gap: 0.5rem;

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>kerge</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,9 +13,25 @@
     <link rel="stylesheet" href="assets/css/styles.css">
     <script type="module" src="assets/js/kerge-theme-switcher.js"></script>
     <script type="module" src="assets/js/kerge-doc-previewer.js"></script>
+    <script type="module">
+      const collapse = () => {
+        document.body.classList.remove('expanded');
+      }
+      const burger = document.querySelector('.burder');
+      const wrap = document.querySelector('.wrap');
+      const sidebar = document.getElementById('sidebar');
+      burger && burger.addEventListener('click', () => {
+        const isExpanded = document.body.classList.contains('expanded');
+        document.body.classList.toggle('expanded', !isExpanded);
+      });
+      sidebar && sidebar.addEventListener('click', (e) => {
+        (e.target.nodeName === 'A') && collapse();
+      });
+      wrap && wrap.addEventListener('click', collapse);
+    </script>
   </head>
   <body>
-    <sidebar class="doc-sidebar p3">
+    <aside class="doc-sidebar p3" id="sidebar">
       <div class=" d-flex f-acenter g1">
         <img src="assets/img/feather.png" alt="kerge feather" width="50">
         <h3 lang="et">kerge</h3>
@@ -27,7 +43,6 @@
           <li><a href="#about">About</a></li>
           <li><a href="#features">Features</a></li>
           <li><a href="#install">Install</a></li>
-        </ul>
         </ul>
 
         <h4 class="mt1 mb1">Layout</h4>
@@ -90,12 +105,16 @@
           <li><a href="#customize-colors">Colors properties</a></li>
         </ul>
       </nav>
+      <button class="burder" onclick="window.location.hash = '#sidebar'">
+        <ins></ins>
+        <ins></ins>
+        <ins></ins>
+      </button>
       <hr class="mt2 mb2">
       <p class="copy m0">
         &copy; 2023 MIT <a href="https://github.com/dknight/kerge">Github</a>
       </p>
-    </sidebar>
-
+    </aside>
 
     <main class="wrap">
       <h2 id="about">About</h2>
@@ -103,7 +122,8 @@
         <em lang="et">kerge</em> (light in Estonian🇪🇪) is a micro full-featured CSS framework for quick UI
         prototyping.
         <em lang="et">kerge</em>
-        is based on design <a href="#tokens">tokens</a>. Combining just several tokens gives an almost limitless number
+        is based on design <a href="#tokens">tokens</a>. Combining just several tokens gives an almost limitless
+        number
         of UI combinations.
       </p>
 
@@ -230,45 +250,46 @@
       </div>
 
       <h4>List of spacing tokens</h4>
-      <table class="table w100">
-        <thead>
-          <tr>
-            <th>Type</th>
-            <th>Classes</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Top margins</td>
-            <td>mt1, mt2, mt3, mt4</td>
-          </tr>
-          <tr>
-            <td>Bottom margins</td>
-            <td>mb1, mb2, mb3, mb4</td>
-          </tr>
-          <tr>
-            <td>All margins</td>
-            <td>m0, m1, m2, m3, m4</td>
-          </tr>
-          <tr>
-            <td>Vertical padding</td>
-            <td>pv1, pv2, pv3, pv4</td>
-          </tr>
-          <tr>
-            <td>Horizontal padding</td>
-            <td>ph1, ph2, ph3, ph4</td>
-          </tr>
-          <tr>
-            <td>All padding</td>
-            <td>p0, p1, p2, p3, p4</td>
-          </tr>
-          <tr>
-            <td>Gaps</td>
-            <td>g0, g1, g2, g3, g4</td>
-          </tr>
-        </tbody>
-      </table>
-
+      <div class="table">
+        <table>
+          <thead>
+            <tr>
+              <th>Type</th>
+              <th>Classes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Top margins</td>
+              <td>mt1, mt2, mt3, mt4</td>
+            </tr>
+            <tr>
+              <td>Bottom margins</td>
+              <td>mb1, mb2, mb3, mb4</td>
+            </tr>
+            <tr>
+              <td>All margins</td>
+              <td>m0, m1, m2, m3, m4</td>
+            </tr>
+            <tr>
+              <td>Vertical padding</td>
+              <td>pv1, pv2, pv3, pv4</td>
+            </tr>
+            <tr>
+              <td>Horizontal padding</td>
+              <td>ph1, ph2, ph3, ph4</td>
+            </tr>
+            <tr>
+              <td>All padding</td>
+              <td>p0, p1, p2, p3, p4</td>
+            </tr>
+            <tr>
+              <td>Gaps</td>
+              <td>g0, g1, g2, g3, g4</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
       <h3 id="tyography">Typography</h3>
       <h3 id="headings">Headings</h3>
@@ -349,84 +370,87 @@
         Layout tokens are used for various uncategorized purposes. Sometimes
         in the CSS world, they might be called modifiers.
       </p>
-      <table class="table w100">
-        <head>
-          <tr>
-            <th>Token</th>
-            <th>CSS equivalent</th>
-          </tr>
-        </head>
-        <tbody>
-          <tr>
-            <td>round</td>
-            <td>Adds round corners to the element.</td>
-          </tr>
-          <tr>
-            <td>pill</td>
-            <td>Adds large round corners to the element.</td>
-          </tr>
-          <tr>
-            <td>border</td>
-            <td>Adds a border to the element.</td>
-          </tr>
-          <tr>
-            <td>w100</td>
-            <td><code>width: 100%</code></td>
-          </tr>
-          <tr>
-            <td>100vh</td>
-            <td><code>height: 100vh;</code></td>
-          </tr>
-          <tr>
-            <td>reset</td>
-            <td>Resets the element's styles so it looks like a standard unstyled HTML element.</td>
-          </tr>
-          <tr>
-            <td>von</td>
-            <td>von (vertical offset negative) shift content a bit upwards <code>transform: translateY(-10%)</code></td>
-          </tr>
-          <tr>
-            <td>vop</td>
-            <td>vop (vertical offset positive) shift content downward <code>transform: translateY(10%)</code>.</td>
-          </tr>
-          <tr>
-            <td>d-flex</td>
-            <td><code>display: flex</code></td>
-          </tr>
-          <tr>
-            <td>f-jstart</td>
-            <td><code>justify-content: flex-start</code></td>
-          </tr>
-          <tr>
-            <td>f-jend</td>
-            <td><code>justify-content: flex-end</code></td>
-          </tr>
-          <tr>
-            <td>f-jcenter</td>
-            <td><code>justify-content: center</code></td>
-          </tr>
-          <tr>
-            <td>f-astart</td>
-            <td><code>align-itens: flex-start</code></td>
-          </tr>
-          <tr>
-            <td>f-aend</td>
-            <td><code>align-itens: flex-end</code></td>
-          </tr>
-          <tr>
-            <td>f-acenter</td>
-            <td><code>align-itens: center</code></td>
-          </tr>
-          <tr>
-            <td>visually-hidden</td>
-            <td>Visible only for screen readers, some assistive technologies, or robots.</td>
-          </tr>
-          <tr>
-            <td>hide-small</td>
-            <td>Hide content on the small screen after the <a href="#breakpoints">breakpoint</a>.</td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="table">
+        <table>
+          <thead>
+            <tr>
+              <th>Token</th>
+              <th>CSS equivalent</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>round</td>
+              <td>Adds round corners to the element.</td>
+            </tr>
+            <tr>
+              <td>pill</td>
+              <td>Adds large round corners to the element.</td>
+            </tr>
+            <tr>
+              <td>border</td>
+              <td>Adds a border to the element.</td>
+            </tr>
+            <tr>
+              <td>w100</td>
+              <td><code>width: 100%</code></td>
+            </tr>
+            <tr>
+              <td>100vh</td>
+              <td><code>height: 100vh;</code></td>
+            </tr>
+            <tr>
+              <td>reset</td>
+              <td>Resets the element's styles so it looks like a standard unstyled HTML element.</td>
+            </tr>
+            <tr>
+              <td>von</td>
+              <td>von (vertical offset negative) shift content a bit upwards <code>transform: translateY(-10%)</code>
+              </td>
+            </tr>
+            <tr>
+              <td>vop</td>
+              <td>vop (vertical offset positive) shift content downward <code>transform: translateY(10%)</code>.</td>
+            </tr>
+            <tr>
+              <td>d-flex</td>
+              <td><code>display: flex</code></td>
+            </tr>
+            <tr>
+              <td>f-jstart</td>
+              <td><code>justify-content: flex-start</code></td>
+            </tr>
+            <tr>
+              <td>f-jend</td>
+              <td><code>justify-content: flex-end</code></td>
+            </tr>
+            <tr>
+              <td>f-jcenter</td>
+              <td><code>justify-content: center</code></td>
+            </tr>
+            <tr>
+              <td>f-astart</td>
+              <td><code>align-itens: flex-start</code></td>
+            </tr>
+            <tr>
+              <td>f-aend</td>
+              <td><code>align-itens: flex-end</code></td>
+            </tr>
+            <tr>
+              <td>f-acenter</td>
+              <td><code>align-itens: center</code></td>
+            </tr>
+            <tr>
+              <td>visually-hidden</td>
+              <td>Visible only for screen readers, some assistive technologies, or robots.</td>
+            </tr>
+            <tr>
+              <td>hide-small</td>
+              <td>Hide content on the small screen after the <a href="#breakpoints">breakpoint</a>.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
 
       <h2>Components</h2>
@@ -531,7 +555,8 @@
       </kerge-doc-previewer>
 
       <h4 id="carets">Carets</h4>
-      <p>Caret is a small triangle-arrow, which is very useful for dropdowns. Also, they can be added to the links.</p>
+      <p>Caret is a small triangle-arrow, which is very useful for dropdowns. Also, they can be added to the links.
+      </p>
       <kerge-doc-previewer>
         <button class="btn bg-primary caret down">Caret down</button>
         <button class="btn bg-primary caret up">Caret up</button>
@@ -576,7 +601,8 @@
         <dialog id="demo-dialog" class="dialog round ph3">
           <h2>Dialog</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ab dolorum rerum error vero laboriosam
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ab dolorum rerum error vero
+            laboriosam
             modi quos quia eaque molestiae. Eaque facilis, voluptas magnam possimus beatae reiciendis sunt doloribus
             nostrum?
           </p>
@@ -631,7 +657,7 @@
             </div>
             <div class="col">
               <label for="hobbies">Hobbies</label>
-              <select id="hobbies" class="input w100" required>
+              <select id="hobbies" class="input w100" size="3" required>
                 <option disabled selected>-- select --</option>
                 <option>Sport</option>
                 <option>Fishing</option>
@@ -703,62 +729,65 @@
       </kerge-doc-previewer>
 
       <h3 id="ruler">Ruler</h3>
-      <p>Ruler is just a <code>&hr></code>. It is helpful to separate sections.</p>
+      <p>Ruler is just a <code>&lt;hr></code> tag. It is helpful to separate sections.</p>
       <kerge-doc-previewer>
         <hr>
       </kerge-doc-previewer>
 
       <h3 id="tables">Tables</h3>
+      <p>To make tables responsive with horizontal scroll, wrap a table into a <code>div.table</code> container.</p>
       <kerge-doc-previewer>
-        <table class="table w100">
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Region</th>
-              <th>Country</th>
-              <th>Currency</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>September Holloway</td>
-              <td>Flevoland</td>
-              <td>Germany</td>
-              <td>$60.69</td>
-            </tr>
-            <tr>
-              <td>Christen Alvarado</td>
-              <td>North Region</td>
-              <td>Lithuania</td>
-              <td>$72.39</td>
-            </tr>
-            <tr>
-              <td>Josiah Mercer</td>
-              <td>Andaman and Nicobar Islands</td>
-              <td>Colombia</td>
-              <td>$52.71</td>
-            </tr>
-            <tr>
-              <td>Shaeleigh Bruce</td>
-              <td>Piura</td>
-              <td>Singapore</td>
-              <td>$68.08</td>
-            </tr>
-            <tr>
-              <td>Basil Munoz</td>
-              <td>Limón</td>
-              <td>Philippines</td>
-              <td>$56.77</td>
-            </tr>
-          <tfoot>
-            <tr>
-              <td colspan="2"></td>
-              <td><b>Total</b></td>
-              <td><b>$310.64</b></td>
-            </tr>
-          </tfoot>
-          </tbody>
-        </table>
+        <div class="table">
+          <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Region</th>
+                <th>Country</th>
+                <th>Currency</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>September Holloway</td>
+                <td>Flevoland</td>
+                <td>Germany</td>
+                <td>$60.69</td>
+              </tr>
+              <tr>
+                <td>Christen Alvarado</td>
+                <td>North Region</td>
+                <td>Lithuania</td>
+                <td>$72.39</td>
+              </tr>
+              <tr>
+                <td>Josiah Mercer</td>
+                <td>Andaman and Nicobar Islands</td>
+                <td>Colombia</td>
+                <td>$52.71</td>
+              </tr>
+              <tr>
+                <td>Shaeleigh Bruce</td>
+                <td>Piura</td>
+                <td>Singapore</td>
+                <td>$68.08</td>
+              </tr>
+              <tr>
+                <td>Basil Munoz</td>
+                <td>Limón</td>
+                <td>Philippines</td>
+                <td>$56.77</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="2"></td>
+                <td><b>Total</b></td>
+                <td><b>$310.64</b></td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
       </kerge-doc-previewer>
 
       <kerge-doc-previewer>
@@ -774,158 +803,162 @@
       <h2 id="customize">Customize</h2>
       <p>There are only several global, customizable custom properties.</p>
       <h3 id="customize-props">Custom properties</h3>
-      <table class="table w100">
-        <thead>
-          <tr>
-            <th>Property name</th>
-            <th>Property value</th>
-            <th>Description</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>--maxw</td>
-            <td>60rem</td>
-            <td>Maximum width of the <a href="#wrapper">wrapper</a></td>
-          </tr>
-          <tr>
-            <td>--ff</td>
-            <td>'Roboto', Helvetica Neue Light, Helvetica Neue, Helvetica, Arial,
-              Lucida Grande, sans-serif</td>
-            <td>Font family with font stack fallbacks</td>
-          </tr>
-          <tr>
-            <td>--fs</td>
-            <td>16px/1.5</td>
-            <td>Font size and line height</td>
-          </tr>
-          <tr>
-            <td>--fw</td>
-            <td>400</td>
-            <td>Font weight value.</td>
-          </tr>
-          <tr>
-            <td>--font</td>
-            <td>var(--fw) var(--fs) var(--ff)</td>
-            <td>Combined base font</td>
-          </tr>
-          <tr>
-            <td>--bw</td>
-            <td>0.125rem</td>
-            <td>Border width</td>
-          </tr>
-          <tr>
-            <td>--br</td>
-            <td>0.25rem</td>
-            <td>Border radius for rounded elements</td>
-          </tr>
-          <tr>
-            <td>--s</td>
-            <td>0.5rem</td>
-            <td>The spacing step is used for padding, margins, and gaps</td>
-          </tr>
-          <tr>
-            <td>--ls</td>
-            <td>0</td>
-            <td>Letter spacing</td>
-          </tr>
-          <tr>
-            <td>--img-filter</td>
-            <td>(empty)</td>
-            <td>Filter for images used for dark themeing or images effers</td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="table">
+        <table>
+          <thead>
+            <tr>
+              <th>Property name</th>
+              <th>Property value</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>--maxw</td>
+              <td>60rem</td>
+              <td>Maximum width of the <a href="#wrapper">wrapper</a></td>
+            </tr>
+            <tr>
+              <td>--ff</td>
+              <td>'Roboto', Helvetica Neue Light, Helvetica Neue, Helvetica, Arial,
+                Lucida Grande, sans-serif</td>
+              <td>Font family with font stack fallbacks</td>
+            </tr>
+            <tr>
+              <td>--fs</td>
+              <td>16px/1.5</td>
+              <td>Font size and line height</td>
+            </tr>
+            <tr>
+              <td>--fw</td>
+              <td>400</td>
+              <td>Font weight value.</td>
+            </tr>
+            <tr>
+              <td>--font</td>
+              <td>var(--fw) var(--fs) var(--ff)</td>
+              <td>Combined base font</td>
+            </tr>
+            <tr>
+              <td>--bw</td>
+              <td>0.125rem</td>
+              <td>Border width</td>
+            </tr>
+            <tr>
+              <td>--br</td>
+              <td>0.25rem</td>
+              <td>Border radius for rounded elements</td>
+            </tr>
+            <tr>
+              <td>--s</td>
+              <td>0.5rem</td>
+              <td>The spacing step is used for padding, margins, and gaps</td>
+            </tr>
+            <tr>
+              <td>--ls</td>
+              <td>0</td>
+              <td>Letter spacing</td>
+            </tr>
+            <tr>
+              <td>--img-filter</td>
+              <td>(empty)</td>
+              <td>Filter for images used for dark themeing or images effers</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
       <h3 id="customize-colors">Colors properties</h3>
-      <table class="table w100">
-        <thead>
-          <tr>
-            <th>Property name</th>
-            <th>Property light theme value</th>
-            <th>Property dark theme value</th>
-            <th>Description and preview</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>--c-pri</td>
-            <td>#005cbd</td>
-            <td>#7f93dd</td>
-            <td><span class="primary">Primary color</span></td>
-          </tr>
-          <tr>
-            <td>--c-txt</td>
-            <td>#333</td>
-            <td>#f8f8f8</td>
-            <td><span style="color: var(--c-text)">Color for tex</span>t</td>
-          </tr>
-          <tr>
-            <td>--c-inv</td>
-            <td>#f8f8f8</td>
-            <td>#1b1b1b</td>
-            <td>
-              <span style="color: var(--c-inv);background-color: var(--c-txt);">Inverted text color
-                (background)
-              </span>
-              <p class="s">* inverted background because text is the same color as background</p>
-            </td>
-          </tr>
-          <tr>
-            <td>--c-neu</td>
-            <td>#637779</td>
-            <td>#aaa</td>
-            <td><span style="color: var(--c-neu)">Neutral color</span></td>
-          </tr>
-          <tr>
-            <td>--c-brd</td>
-            <td>#eee</td>
-            <td>#444</td>
-            <td><span style="color: var(--c-brd)">Border color</span></td>
-          </tr>
-          <tr>
-            <td>--c-dim</td>
-            <td>#444</td>
-            <td>#282828</td>
-            <td><span class="primary">Dim color</span></td>
-          </tr>
-          <tr>
-            <td>--c-inf</td>
-            <td>#2f7c8e</td>
-            <td>#90b5bf</td>
-            <td><span class="info">Info color</span></td>
-          </tr>
-          <tr>
-            <td>--c-suc</td>
-            <td>#438221</td>
-            <td>#8ac565</td>
-            <td><span class="success">Success color</span></td>
-          </tr>
-          <tr>
-            <td>--c-wrn</td>
-            <td>#fde74c</td>
-            <td>#d68f00</td>
-            <td><span class="warning">Warning color</span></td>
-          </tr>
-          <tr>
-            <td>--c-err</td>
-            <td>#da3125</td>
-            <td>#f6764c</td>
-            <td><span class="error">Error color</span></td>
-          </tr>
-          <tr>
-            <td>--c-fcs</td>
-            <td>#da0</td>
-            <td>#da0</td>
-            <td><span style="color: var(--c-fcs)">Focus outline color</span></td>
-          </tr>
-        </tbody>
-      </table>
-      <div class="d-flex f-jcenter m1">
+      <div class="table">
+        <table>
+          <thead>
+            <tr>
+              <th>Property name</th>
+              <th>Property light theme value</th>
+              <th>Property dark theme value</th>
+              <th>Description and preview</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>--c-pri</td>
+              <td>#005cbd</td>
+              <td>#7f93dd</td>
+              <td><span class="primary">Primary color</span></td>
+            </tr>
+            <tr>
+              <td>--c-txt</td>
+              <td>#333</td>
+              <td>#f8f8f8</td>
+              <td><span style="color: var(--c-text)">Color for tex</span>t</td>
+            </tr>
+            <tr>
+              <td>--c-inv</td>
+              <td>#f8f8f8</td>
+              <td>#1b1b1b</td>
+              <td>
+                <span style="color: var(--c-inv);background-color: var(--c-txt);">Inverted text color
+                  (background)
+                </span>
+                <p class="s">* inverted background because text is the same color as background</p>
+              </td>
+            </tr>
+            <tr>
+              <td>--c-neu</td>
+              <td>#637779</td>
+              <td>#aaa</td>
+              <td><span style="color: var(--c-neu)">Neutral color</span></td>
+            </tr>
+            <tr>
+              <td>--c-brd</td>
+              <td>#eee</td>
+              <td>#444</td>
+              <td><span style="color: var(--c-brd)">Border color</span></td>
+            </tr>
+            <tr>
+              <td>--c-dim</td>
+              <td>#444</td>
+              <td>#282828</td>
+              <td><span class="primary">Dim color</span></td>
+            </tr>
+            <tr>
+              <td>--c-inf</td>
+              <td>#2f7c8e</td>
+              <td>#90b5bf</td>
+              <td><span class="info">Info color</span></td>
+            </tr>
+            <tr>
+              <td>--c-suc</td>
+              <td>#438221</td>
+              <td>#8ac565</td>
+              <td><span class="success">Success color</span></td>
+            </tr>
+            <tr>
+              <td>--c-wrn</td>
+              <td>#fde74c</td>
+              <td>#d68f00</td>
+              <td><span class="warning">Warning color</span></td>
+            </tr>
+            <tr>
+              <td>--c-err</td>
+              <td>#da3125</td>
+              <td>#f6764c</td>
+              <td><span class="error">Error color</span></td>
+            </tr>
+            <tr>
+              <td>--c-fcs</td>
+              <td>#da0</td>
+              <td>#da0</td>
+              <td><span style="color: var(--c-fcs)">Focus outline color</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <footer class="d-flex f-jcenter m1">
         <p>
           <a href="https://github.com/dknight/kerge">Source on Github</a>
         </p>
-      </div>
+      </footer>
     </main>
   </body>
 </html>

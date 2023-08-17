@@ -5,19 +5,16 @@
 body {
   background: var(--c-inv);
   color: var(--c-txt);
-  margin: 0;
   font: var(--font);
   letter-spacing: var(--ls);
+  margin: 0;
 }
 
 pre {
+  background: var(--c-dim);
+  font: initial;
   overflow: auto;
   padding: calc(var(--s) * 2);
-  background: var(--c-dim);
-}
-
-mark {
-  background-color: var(--c-pri);
 }
 
 hr {

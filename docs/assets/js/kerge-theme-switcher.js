@@ -50,6 +50,17 @@ class KergeThemeSwitcher extends HTMLElement {
       width: 1.5rem;
       aspect-ratio: 1;
       margin-right: .5rem;
+    }
+    @media screen and (max-width: 60rem) {
+      button {
+        padding: .5rem;
+      }
+      .label {
+        display: none;
+      }
+      .icon {
+        margin-right: 0;
+      }
     }`;
     const styles = document.createElement('style');
     styles.textContent = css;
