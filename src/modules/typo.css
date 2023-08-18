@@ -55,18 +55,7 @@ h6 {
   font-size: 7rem;
 }
 
-/**
- * Text weight
- */
-.italic {
-  font-style: italic;
-}
-
-.bold {
-  font-weight: 700;
-}
-
-/**
+/**  
  * Text alignemnt
  */
 .ts {
