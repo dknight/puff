@@ -1,7 +1,7 @@
 > [!WARNING]
 > This is still a beta version; no feature compatibility is guaranteed.
 
-![kerge](docs/assets/img/feather-small.png)
+![kerge](docs/assets/img/feather.png)
 
 # kerge
 
