@@ -1,6 +1,6 @@
 {
   "name": "kerge",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Full-featured, lightweight  CSS framework that maintained",
   "main": "kerge.css",
   "type": "module",
