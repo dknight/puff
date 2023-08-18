@@ -216,6 +216,19 @@
   gap: calc(var(--s) * 4);
 }
 
+/**
+ * Block 
+ */
+.d-block {
+  display: block;
+}
+.d-inline {
+  display: inline;
+}
+.d-iblock {
+  display: inline-block;
+}
+
 /*
  * Flex
  */

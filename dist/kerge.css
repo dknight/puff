@@ -458,6 +458,18 @@ summary {
   gap: calc(var(--s) * 4);
 }
 
+.d-block {
+  display: block;
+}
+
+.d-inline {
+  display: inline;
+}
+
+.d-iblock {
+  display: inline-block;
+}
+
 .d-flex {
   display: flex;
 }
