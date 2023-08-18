@@ -263,51 +263,51 @@ summary {
 
 @media (min-width: 36rem) {
   .row {
-    gap: .5rem;
+    gap: var(--s);
     display: flex;
   }
 
-  .col, .col1, .col12 {
+  .col, .\31 , .\31 2 {
     flex: 1;
   }
 
-  .col2 {
+  .\32  {
     flex: 2;
   }
 
-  .col3 {
+  .\33  {
     flex: 3;
   }
 
-  .col4 {
+  .\34  {
     flex: 4;
   }
 
-  .col5 {
+  .\35  {
     flex: 5;
   }
 
-  .col6 {
+  .\36  {
     flex: 6;
   }
 
-  .col7 {
+  .\37  {
     flex: 7;
   }
 
-  .col8 {
+  .\38  {
     flex: 8;
   }
 
-  .col9 {
+  .\39  {
     flex: 9;
   }
 
-  .col10 {
+  .\31 0 {
     flex: 10;
   }
 
-  .col11 {
+  .\31 1 {
     flex: 11;
   }
 }
