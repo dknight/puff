@@ -33,7 +33,7 @@ Installation is straightforward; just include the CSS file into your HTML page i
 or install it from <a href="https://www.npmjs.com/package/kerge">NPM</a>.
 
 ```sh
-npm install kerge
+npm install @dknight/kerge
 ```
 
 ## Usage
