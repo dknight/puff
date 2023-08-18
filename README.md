@@ -27,7 +27,7 @@ kerge (light in Estonian🇪🇪) is a micro full-featured CSS framework for qui
 Installation is straightforward; just include the CSS file into your HTML page in any possible way.
 
 ```html
-<link rel="stylesheet" href="kerge.min.css"></code></pre>
+<link rel="stylesheet" href="kerge.min.css" />
 ```
 
 or install it from <a href="https://www.npmjs.com/package/kerge">NPM</a>.
