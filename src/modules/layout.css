@@ -241,6 +241,9 @@
 .f-row {
   flex-direction: row;
 }
+.f-wrap {
+  flex-wrap: wrap;
+}
 .f-jstart {
   justify-content: flex-start;
 }
