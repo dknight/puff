@@ -462,6 +462,14 @@ summary {
   display: flex;
 }
 
+.f-col {
+  flex-direction: column;
+}
+
+.f-row {
+  flex-direction: row;
+}
+
 .f-jstart {
   justify-content: flex-start;
 }
