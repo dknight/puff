@@ -3,6 +3,7 @@ import {
   createReadStream,
   createWriteStream,
   statSync,
+  mkdirSync,
 } from 'node:fs';
 import path from 'node:path';
 import {createGzip} from 'node:zlib';
@@ -17,18 +18,32 @@ const distDir = 'dist';
 const inputFile = 'kerge.css';
 const outputFile = 'kerge.min.css';
 const input = path.join('.', srcDir, inputFile);
-const output = path.join('.', distDir, outputFile);
+const output = path.join('.', distDir, inputFile);
+const outputMin = path.join('.', distDir, outputFile);
+
+try {
+  mkdirSync(distDir);
+} catch (e) {
+  // console.warn(e);
+}
 
 const targets = browserslistToTargets(browserslist('>= 0.25%'));
 
-const {code} = bundle({
+let bundleStuct = bundle({
   filename: input,
-  minify: true,
+  minify: false,
   include: Features.Colors,
   targets,
 });
 
-writeFileSync(output, code);
+writeFileSync(output, bundleStuct.code);
+
+bundleStuct = bundle({
+  filename: output,
+  minify: true,
+});
+
+writeFileSync(outputMin, bundleStuct.code);
 
 const zip = async (input, output) => {
   const gzip = createGzip({
@@ -43,7 +58,7 @@ const zip = async (input, output) => {
   return Promise.resolve([insize, outsize]);
 };
 
-zip(output, `${output}.gz`)
+zip(outputMin, `${outputMin}.gz`)
   .then((sizes) => {
     console.log(`Normal: ${sizes[0]} bytes`);
     console.log(`Gzip: ${sizes[1]} bytes`);
