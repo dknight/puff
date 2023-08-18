@@ -1,9 +1,12 @@
 > [!WARNING]
 > This is still a beta version; no feature compatibility is guaranteed.
 
-![kerge](docs/assets/img/feather.png)
+![kerge](https://github.com/dknight/kerge/blob/main/docs/assets/img/feather.png?raw=true)
 
 # kerge
+
+[![License MIT](https://img.shields.io/npm/l/@dknight/kerge)](https://github.com/dknight/kerge/blob/main/LICENSE)
+[![Version](https://img.shields.io/npm/v/@dknight/kerge)](https://www.npmjs.com/package/@dknight/kerge)
 
 kerge (light in Estonian🇪🇪) is a micro full-featured CSS framework for quick UI prototyping. kerge is based on design tokens. Combining just several tokens gives an almost limitless number of UI combinations.
 
