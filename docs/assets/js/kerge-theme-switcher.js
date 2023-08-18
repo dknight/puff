@@ -37,12 +37,12 @@ class KergeThemeSwitcher extends HTMLElement {
       }
     }
     button[value=dark] .icon {
-      -webkit-mask: url(/docs/assets/img/moon.svg) no-repeat left;
-      mask: url(/docs/assets/img/moon.svg) no-repeat left;
+      -webkit-mask: url(assets/img/moon.svg) no-repeat left;
+      mask: url(assets/img/moon.svg) no-repeat left;
     }
     button[value=light] .icon {
-      -webkit-mask: url(/docs/assets/img/sun.svg) no-repeat left;
-      mask: url(/docs/assets/img/sun.svg) no-repeat left;
+      -webkit-mask: url(assets/img/sun.svg) no-repeat left;
+      mask: url(assets/img/sun.svg) no-repeat left;
     }
     .icon {
       display: inline-block;
