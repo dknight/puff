@@ -15,14 +15,16 @@
 }
 
 .pill {
-  border-radius: 999px;
+  border-radius: 99px;
 }
 
 .border {
-  border-width: var(--bw);
-  border-style: solid;
+  /* border-width: var(--bw); */
+  /* border-style: solid; */
+  border: var(--bw) solid;
 }
 
+.menu,
 .reset {
   list-style: none;
   margin: 0;

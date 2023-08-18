@@ -1,15 +1,13 @@
 .btn {
+  all: unset;
   background: var(--c-pri);
-  border: var(--bw) solid transparent;
   color: var(--c-inv);
   cursor: pointer;
-  font: 1rem var(--ff);
   padding: var(--s) calc(var(--s) * 1.5);
 }
 
 .btn.border {
   background: inherit;
-  border: var(--bw) solid currentColor;
 }
 
 .btn:hover:not(:disabled) {

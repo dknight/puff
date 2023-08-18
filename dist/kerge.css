@@ -3,17 +3,15 @@
 }
 
 .btn {
+  all: unset;
   background: var(--c-pri);
-  border: var(--bw) solid transparent;
   color: var(--c-inv);
   cursor: pointer;
-  font: 1rem var(--ff);
   padding: var(--s) calc(var(--s) * 1.5);
 }
 
 .btn.border {
   background: inherit;
-  border: var(--bw) solid currentColor;
 }
 
 .btn:hover:not(:disabled) {
@@ -33,7 +31,7 @@
 
 .card {
   padding: calc(var(--s) * 2);
-  background: var(--c-brd);
+  background: var(--c-dim);
 }
 
 .dialog {
@@ -69,7 +67,7 @@
 
 .input {
   background: var(--c-dim);
-  border: var(--bw) solid var(--c-neu);
+  border: solid var(--c-neu);
   color: var(--c-txt);
   font-size: var(--fs);
   padding: var(--s);
@@ -87,12 +85,6 @@ textarea {
   font: inherit;
 }
 
-.menu {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
 .menu li {
   padding: var(--s) calc(var(--s) * 2);
   margin: 0;
@@ -108,7 +100,7 @@ textarea {
 }
 
 td, th {
-  border-bottom: var(--bw) solid var(--c-brd);
+  border-bottom: solid var(--c-brd);
   padding: calc(var(--s) * 2);
   text-align: left;
 }
@@ -654,15 +646,14 @@ h6 {
 }
 
 .pill {
-  border-radius: 999px;
+  border-radius: 99px;
 }
 
 .border {
-  border-width: var(--bw);
-  border-style: solid;
+  border: var(--bw) solid;
 }
 
-.reset {
+.menu, .reset {
   margin: 0;
   padding: 0;
   list-style: none;
