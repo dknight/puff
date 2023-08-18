@@ -1,7 +1,7 @@
 #!/bin/bash
 
 type=$1
-if [ -z "$ver" ]; then
+if [ -z "$type" ]; then
   type="patch"
 fi
 
