@@ -9,7 +9,7 @@
   },
   "scripts": {
     "build": "node build.js",
-    "watch": "npx nodemon --watch './src' -e 'css'  build.js",
+    "watch": "npx nodemon --watch './src' -e 'css' build.js",
     "serve": "node build.js && browser-sync ."
   },
   "repository": {
