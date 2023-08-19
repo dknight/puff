@@ -59,7 +59,7 @@ body {
   margin: auto 0 0;
 }
 
-.burder {
+.burger {
   border-radius: 0.125rem;
   width: 2rem;
   background: 0 0;
@@ -67,7 +67,7 @@ body {
   cursor: pointer;
   display: none;
 }
-.burder ins {
+.burger ins {
   display: block;
   width: 100%;
   height: 0.1875rem;
@@ -99,7 +99,7 @@ body {
   body:not(.expanded) .doc-sidebar nav {
     display: none;
   }
-  body:not(.expanded) .burder {
+  body:not(.expanded) .burger {
     display: inline-block;
   }
 }

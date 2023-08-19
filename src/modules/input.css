@@ -1,6 +1,6 @@
 .input {
   background: var(--c-dim);
-  border: solid var(--c-neu);
+  border: var(--bw) solid var(--c-neu);
   color: var(--c-txt);
   font-size: var(--fs);
   padding: var(--s);

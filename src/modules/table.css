@@ -9,7 +9,7 @@
 
 td,
 th {
-  border-bottom: solid var(--c-brd);
+  border-bottom: var(--bw) solid var(--c-brd);
   padding: calc(var(--s) * 2);
   text-align: left;
 }

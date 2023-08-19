@@ -19,8 +19,6 @@
 }
 
 .border {
-  /* border-width: var(--bw); */
-  /* border-style: solid; */
   border: var(--bw) solid;
 }
 

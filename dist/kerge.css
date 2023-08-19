@@ -67,7 +67,7 @@
 
 .input {
   background: var(--c-dim);
-  border: solid var(--c-neu);
+  border: var(--bw) solid var(--c-neu);
   color: var(--c-txt);
   font-size: var(--fs);
   padding: var(--s);
@@ -100,9 +100,41 @@ textarea {
 }
 
 td, th {
-  border-bottom: solid var(--c-brd);
+  border-bottom: var(--bw) solid var(--c-brd);
   padding: calc(var(--s) * 2);
   text-align: left;
+}
+
+.caret {
+  align-items: center;
+  gap: var(--s);
+  display: inline-flex;
+}
+
+.caret:after {
+  content: "▾";
+}
+
+.caret.up:after {
+  content: "▴";
+}
+
+.round {
+  border-radius: var(--br);
+}
+
+.pill {
+  border-radius: 99px;
+}
+
+.border {
+  border: var(--bw) solid;
+}
+
+.menu, .reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 :focus-visible {
@@ -236,7 +268,6 @@ summary {
 
 * {
   box-sizing: border-box;
-  border-width: var(--bw);
 }
 
 * + :not(body):not(dialog):not(menu) {
@@ -625,38 +656,6 @@ h6 {
 
 .tc {
   text-align: center;
-}
-
-.caret {
-  align-items: center;
-  gap: var(--s);
-  display: inline-flex;
-}
-
-.caret:after {
-  content: "▾";
-}
-
-.caret.up:after {
-  content: "▴";
-}
-
-.round {
-  border-radius: var(--br);
-}
-
-.pill {
-  border-radius: 99px;
-}
-
-.border {
-  border: var(--bw) solid;
-}
-
-.menu, .reset {
-  margin: 0;
-  padding: 0;
-  list-style: none;
 }
 
 @media (prefers-color-scheme: light) {

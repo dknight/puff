@@ -3,7 +3,6 @@
  */
 * {
   box-sizing: border-box;
-  border-width: var(--bw);
 }
 
 /* this is doubtful  */
