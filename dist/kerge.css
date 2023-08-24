@@ -7,7 +7,7 @@
   background: var(--c-pri);
   color: var(--c-inv);
   cursor: pointer;
-  padding: var(--s) calc(var(--s) * 1.5);
+  padding: calc(var(--s) / 2) calc(var(--s) * 1.5);
   white-space: nowrap;
   border: solid rgba(0, 0, 0, 0);
 }

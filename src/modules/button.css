@@ -4,7 +4,7 @@
   border: solid #0000;
   color: var(--c-inv);
   cursor: pointer;
-  padding: var(--s) calc(var(--s) * 1.5);
+  padding: calc(var(--s) / 2) calc(var(--s) * 1.5);
   white-space: nowrap;
 }
 
