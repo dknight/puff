@@ -5,11 +5,11 @@
 .btn {
   all: unset;
   background: var(--c-pri);
+  border: var(--bw) solid rgba(0, 0, 0, 0);
   color: var(--c-inv);
   cursor: pointer;
   padding: calc(var(--s) / 2) calc(var(--s) * 1.5);
   white-space: nowrap;
-  border: solid rgba(0, 0, 0, 0);
 }
 
 .btn.border {

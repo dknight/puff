@@ -1,7 +1,7 @@
 .btn {
   all: unset;
   background: var(--c-pri);
-  border: solid #0000;
+  border: var(--bw) solid #0000;
   color: var(--c-inv);
   cursor: pointer;
   padding: calc(var(--s) / 2) calc(var(--s) * 1.5);
