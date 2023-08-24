@@ -22,6 +22,10 @@
   border: var(--bw) solid;
 }
 
+.nowrap {
+  white-space: nowrap;
+}
+
 .menu,
 .reset {
   list-style: none;

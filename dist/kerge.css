@@ -133,6 +133,10 @@ td, th {
   border: var(--bw) solid;
 }
 
+.nowrap {
+  white-space: nowrap;
+}
+
 .menu, .reset {
   margin: 0;
   padding: 0;
