@@ -103,3 +103,13 @@ body {
     display: inline-block;
   }
 }
+
+kerge-doc-previewer.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s);
+}
+
+kerge-doc-previewer.grid details {
+  flex: 1 1 100%;
+}
