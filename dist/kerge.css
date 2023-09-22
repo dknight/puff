@@ -6,6 +6,7 @@
   all: unset;
   background: var(--c-pri);
   border: var(--bw) solid rgba(0, 0, 0, 0);
+  border-radius: var(--br);
   color: var(--c-inv);
   cursor: pointer;
   padding: calc(var(--s) / 2) calc(var(--s) * 1.5);
@@ -19,11 +20,6 @@
 .btn:hover:not(:disabled) {
   -webkit-filter: brightness(.9);
   filter: brightness(.9);
-}
-
-.btn:active:not(:disabled) {
-  -webkit-transform: scale(.99);
-  transform: scale(.99);
 }
 
 .btn:disabled {
@@ -70,6 +66,7 @@
 .input {
   background: var(--c-dim);
   border: var(--bw) solid var(--c-neu);
+  border-radius: var(--br);
   color: var(--c-txt);
   font-size: var(--fs);
   padding: var(--s);
@@ -123,10 +120,6 @@ td, th {
 
 .round {
   border-radius: var(--br);
-}
-
-.pill {
-  border-radius: 99px;
 }
 
 .border {

@@ -14,10 +14,6 @@
   border-radius: var(--br);
 }
 
-.pill {
-  border-radius: 99px;
-}
-
 .border {
   border: var(--bw) solid;
 }

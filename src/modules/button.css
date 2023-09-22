@@ -2,6 +2,7 @@
   all: unset;
   background: var(--c-pri);
   border: var(--bw) solid #0000;
+  border-radius: var(--br);
   color: var(--c-inv);
   cursor: pointer;
   padding: calc(var(--s) / 2) calc(var(--s) * 1.5);
@@ -16,10 +17,6 @@
   /* wait for css color module 5, or fix bug in lightning css */
   /* background: lch(from var(--c-pri) calc(l + 10%) c h); */
   filter: brightness(0.9);
-}
-
-.btn:active:not(:disabled) {
-  transform: scale(0.99);
 }
 
 .btn:disabled {
