@@ -546,16 +546,6 @@ summary {
   }
 }
 
-.von {
-  -webkit-transform: translateY(-10%);
-  transform: translateY(-10%);
-}
-
-.vop {
-  -webkit-transform: translateY(10%);
-  transform: translateY(10%);
-}
-
 .visually-hidden {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;

@@ -273,17 +273,6 @@
 }
 
 /**
- * Postision
- */
-.von {
-  transform: translateY(-10%);
-}
-
-.vop {
-  transform: translateY(10%);
-}
-
-/**
  * Visibility
  */
 .visually-hidden {
