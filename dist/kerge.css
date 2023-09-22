@@ -488,12 +488,16 @@ summary {
   display: inline;
 }
 
-.d-iblock {
+.d-inline-block {
   display: inline-block;
 }
 
 .d-flex {
   display: flex;
+}
+
+.d-inline-flex {
+  display: inline-flex;
 }
 
 .f-col {
@@ -508,27 +512,27 @@ summary {
   flex-wrap: wrap;
 }
 
-.f-jstart {
+.f-justify-start {
   justify-content: flex-start;
 }
 
-.f-jend {
+.f-justify-end {
   justify-content: flex-end;
 }
 
-.f-jcenter {
+.f-justify-center {
   justify-content: center;
 }
 
-.f-astart {
+.f-align-start {
   align-items: flex-start;
 }
 
-.f-aend {
+.f-align-end {
   align-items: flex-end;
 }
 
-.f-acenter {
+.f-aalign-center {
   align-items: center;
 }
 
