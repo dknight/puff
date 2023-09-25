@@ -1,6 +1,6 @@
 {
   "name": "@dknight/kerge",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Full-featured, lightweight  CSS framework that maintained",
   "main": "dist/kerge.css",
   "type": "module",
