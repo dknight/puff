@@ -260,7 +260,7 @@
 .f-align-end {
   align-items: flex-end;
 }
-.f-aalign-center {
+.f-align-center {
   align-items: center;
 }
 @media screen and (min-width: 36rem) {
