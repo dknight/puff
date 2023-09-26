@@ -524,6 +524,18 @@ summary {
   justify-content: center;
 }
 
+.f-justify-between {
+  justify-content: space-between;
+}
+
+.f-justify-around {
+  justify-content: space-around;
+}
+
+.f-justify-evenly {
+  justify-content: space-evenly;
+}
+
 .f-align-start {
   align-items: flex-start;
 }
