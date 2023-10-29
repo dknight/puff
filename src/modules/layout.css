@@ -201,21 +201,18 @@
 .g1 {
   gap: var(--s);
 }
-
 .g2 {
   gap: calc(var(--s) * 2);
 }
-
 .g3 {
   gap: calc(var(--s) * 3);
 }
-
 .g4 {
   gap: calc(var(--s) * 4);
 }
 
 /**
- * Block 
+ * Display 
  */
 .d-block {
   display: block;

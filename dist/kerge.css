@@ -583,7 +583,7 @@ summary {
 
 :root {
   --maxw: 60rem;
-  --ff: "Roboto", Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;
+  --ff: Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;
   --fs: 16px / 1.6;
   --fw: 400;
   --font: var(--fw) var(--fs) var(--ff);
