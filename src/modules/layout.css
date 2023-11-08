@@ -5,11 +5,6 @@
   box-sizing: border-box;
 }
 
-/* this is doubtful  */
-* + *:not(body, dialog, menu) {
-  margin: var(--s) 0;
-}
-
 /**
  * Wrapper
  */
@@ -27,55 +22,57 @@
 }
 
 @media (min-width: 36rem) {
-  .row {
-    display: flex;
-    gap: var(--s);
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
   }
 
-  .col,
-  .\31,
   .\31\32 {
-    flex: 1;
+    grid-column: span 12;
+  }
+
+  .\31 {
+    grid-column: span 1;
   }
 
   .\32 {
-    flex: 2;
+    grid-column: span 2;
   }
 
   .\33 {
-    flex: 3;
+    grid-column: span 3;
   }
 
   .\34 {
-    flex: 4;
+    grid-column: span 4;
   }
 
   .\35 {
-    flex: 5;
+    grid-column: span 5;
   }
 
   .\36 {
-    flex: 6;
+    grid-column: span 6;
   }
 
   .\37 {
-    flex: 7;
+    grid-column: span 7;
   }
 
   .\38 {
-    flex: 8;
+    grid-column: span 8;
   }
 
   .\39 {
-    flex: 9;
+    grid-column: span 9;
   }
 
   .\31\30 {
-    flex: 10;
+    grid-column: span 10;
   }
 
   .\31\31 {
-    flex: 11;
+    grid-column: span 11;
   }
 }
 
@@ -242,41 +239,41 @@
 .f-wrap {
   flex-wrap: wrap;
 }
-.f-justify-start {
-  justify-content: flex-start;
+.justify-start {
+  justify-content: start;
 }
-.f-justify-end {
-  justify-content: flex-end;
+.justify-end {
+  justify-content: end;
 }
-.f-justify-center {
+.justify-center {
   justify-content: center;
 }
-.f-justify-between {
+.justify-between {
   justify-content: space-between;
 }
-.f-justify-around {
+.justify-around {
   justify-content: space-around;
 }
-.f-justify-evenly {
+.justify-evenly {
   justify-content: space-evenly;
 }
-.f-align-start {
-  align-items: flex-start;
+.align-start {
+  align-items: start;
 }
-.f-align-end {
-  align-items: flex-end;
+.align-end {
+  align-items: end;
 }
-.f-align-center {
+.align-center {
   align-items: center;
 }
 @media screen and (min-width: 36rem) {
-  .f-start {
+  .start {
     margin-right: auto;
   }
-  .f-end {
+  .end {
     margin-left: auto;
   }
-  .f-center {
+  .center {
     margin: auto;
   }
 }

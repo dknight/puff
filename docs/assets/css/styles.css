@@ -14,7 +14,7 @@ body {
   transition: grid-template-columns 0.2s;
 }
 
-.doc-grid .col {
+.doc-grid .grid > div {
   background-color: var(--c-brd);
   padding: 0.5rem;
 }

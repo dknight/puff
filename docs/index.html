@@ -17,7 +17,7 @@
   </head>
   <body>
     <aside class="doc-sidebar p3" id="sidebar">
-      <div class=" d-flex f-align-center g1">
+      <div class="grid align-center g1">
         <img src="assets/img/feather.png" alt="kerge feather" width="50">
         <h3 lang="et">kerge</h3>
       </div>
@@ -111,7 +111,7 @@
       </p>
 
       <h2 id="features">Features</h2>
-      <ul class="reset l">
+      <ul class="reset">
         <li>🪶 Lightweight ~2kb (minified + gzipped)</li>
         <li>🚀 Easy to install and launch</li>
         <li>🚂 No dependencies</li>
@@ -153,35 +153,23 @@
       </p>
       <div class="doc-grid">
         <kerge-doc-previewer>
-          <div class="row g1">
-            <div class="col 1">1 col</div>
-            <div class="col 11">11 col</div>
-          </div>
-          <div class="row g1">
-            <div class="col 2">2 col</div>
-            <div class="col 10">10 col</div>
-          </div>
-          <div class="row g1">
-            <div class="col 3">3 col</div>
-            <div class="col 9">9 col</div>
-          </div>
-          <div class="row g1">
-            <div class="col 4">4 col</div>
-            <div class="col 8">8 col</div>
-          </div>
-          <div class="row g1">
-            <div class="col 5">5 col</div>
-            <div class="col 7">7 col</div>
-          </div>
-          <div class="row g1">
-            <div class="col 6">6 col</div>
-            <div class="col 6">6 col</div>
-          </div>
-          <div class="row g1">
-            <div class="col">
+          <div class="grid g1">
+            <div class="1">1 column</div>
+            <div class="11">11 column</div>
+            <div class="2">2 column</div>
+            <div class="10">10 column</div>
+            <div class="3">3 column</div>
+            <div class="9">9 column</div>
+            <div class="4">4 column</div>
+            <div class="8">8 column</div>
+            <div class="5">5 column</div>
+            <div class="7">7 column</div>
+            <div class="6">6 column</div>
+            <div class="6">6 column</div>
+            <div class="12">
               Lorem ipsum dolor sit amet, consectetur.
             </div>
-            <div class="col">
+            <div class="12">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Similique, molestiae! Natus ipsum id sit dicta,
               rem expedita deserunt voluptates. Amet voluptas officia atque
@@ -208,25 +196,25 @@
       </p>
 
       <h4>Examples</h4>
-      <div class="border b-primary">
+      <div class="border b-primary mb1">
         <div class="mt2 mb2">
           mt2 mb2 (margin-top: 2 * 0.5rem; margin-bottom: 2 * 0.5rem)
         </div>
       </div>
 
-      <div class="border b-primary">
+      <div class="border b-primary mb1">
         <div class="pv2 ph4">
           pv2 ph4 (vertical padding: 2 * 0.5rem; horizontal padding: 4 * 0.5rem)
         </div>
       </div>
 
-      <div class="border b-primary">
+      <div class="border b-primary mb1">
         <div class="m4 p1">
           m4 p1 (margin: 4 * 0.5rem; padding: 1 * 0.5rem)
         </div>
       </div>
 
-      <div class="border b-primary">
+      <div class="border b-primary mb1">
         <div class="p0 m0">
           p0 - resets padding to 0; m0 - resets margins to 0.
         </div>
@@ -345,26 +333,26 @@
 
       <h4 id="background-colors">Background colors</h4>
       <kerge-doc-previewer>
-        <div class="p1 invert bg-primary">bg-primary</div>
-        <div class="p1 invert bg-info">bg-info</div>
-        <div class="p1 invert bg-success">bg-success</div>
-        <div class="p1 bg-warning">bg-warning</div>
-        <div class="p1 invert bg-error">bg-error</div>
-        <div class="p1 invert bg-text">bg-text</div>
-        <div class="p1 text bg-invert">bg-invert</div>
-        <div class="p1 invert bg-neutral">bg-neutral</div>
+        <div class="p1 invert bg-primary mb1">bg-primary</div>
+        <div class="p1 invert bg-info mb1">bg-info</div>
+        <div class="p1 invert bg-success mb1">bg-success</div>
+        <div class="p1 bg-warning mb1">bg-warning</div>
+        <div class="p1 invert bg-error mb1">bg-error</div>
+        <div class="p1 invert bg-text mb1">bg-text</div>
+        <div class="p1 text bg-invert mb1">bg-invert</div>
+        <div class="p1 invert bg-neutral mb1">bg-neutral</div>
       </kerge-doc-previewer>
 
       <h4 id="border-colors">Border colors</h4>
       <kerge-doc-previewer>
-        <div class="border p1 b-primary">b-accent</div>
-        <div class="border p1 b-info">b-info</div>
-        <div class="border p1 b-success">b-success</div>
-        <div class="border p1 b-warning">b-warning</div>
-        <div class="border p1 b-error">b-error</div>
-        <div class="border p1 b-text">b-text</div>
-        <div class="border p1 b-invert">invert</div>
-        <div class="border p1 b-neutral">neutral</div>
+        <div class="border p1 b-primary mb1">b-accent</div>
+        <div class="border p1 b-info mb1">b-info</div>
+        <div class="border p1 b-success mb1">b-success</div>
+        <div class="border p1 b-warning mb1">b-warning</div>
+        <div class="border p1 b-error mb1">b-error</div>
+        <div class="border p1 b-text mb1">b-text</div>
+        <div class="border p1 b-invert mb1">invert</div>
+        <div class="border p1 b-neutral mb1">neutral</div>
       </kerge-doc-previewer>
 
       <h3 id="layout-tokens">Layout</h3>
@@ -433,39 +421,39 @@
               <td><code>flex-direction: row</code></td>
             </tr>
             <tr>
-              <td>f-justify-start</td>
-              <td><code>justify-content: flex-start</code></td>
+              <td>justify-start</td>
+              <td><code>justify-content: start</code></td>
             </tr>
             <tr>
-              <td>f-justify-end</td>
-              <td><code>justify-content: flex-end</code></td>
+              <td>justify-end</td>
+              <td><code>justify-content: end</code></td>
             </tr>
             <tr>
-              <td>f-justify-center</td>
+              <td>justify-center</td>
               <td><code>justify-content: center</code></td>
             </tr>
             <tr>
-              <td>f-justify-around</td>
+              <td>justify-around</td>
               <td><code>justify-content: space-around</code></td>
             </tr>
             <tr>
-              <td>f-justify-between</td>
+              <td>justify-between</td>
               <td><code>justify-content: space-between</code></td>
             </tr>
             <tr>
-              <td>f-justify-evenly</td>
+              <td>justify-evenly</td>
               <td><code>justify-content: space-evenly</code></td>
             </tr>
             <tr>
-              <td>f-align-start</td>
-              <td><code>align-items: flex-start</code></td>
+              <td>align-start</td>
+              <td><code>align-items: start</code></td>
             </tr>
             <tr>
-              <td>f-align-end</td>
-              <td><code>align-items: flex-end</code></td>
+              <td>align-end</td>
+              <td><code>align-items: end</code></td>
             </tr>
             <tr>
-              <td>f-align-center</td>
+              <td>align-center</td>
               <td><code>align-items: center</code></td>
             </tr>
             <tr>
@@ -485,19 +473,19 @@
       <h3 id="alerts">Alerts</h3>
       <kerge-doc-previewer>
         <p>The combination of design tokens helps create alert elements.</p>
-        <div class="p2 invert bg-info">
+        <div class="p2 mb1 invert bg-info">
           <h3 class="m0">Please update your data</h3>
           <p>Please update your date before <time>2023-10-12</time>.</p>
         </div>
-        <div class="p2 invert bg-success">
+        <div class="p2 mb1 invert bg-success">
           <h3 class="m0">Your data is updated</h3>
           <p>Thanks for updating your data.</p>
         </div>
-        <div class="p2 bg-warning">
+        <div class="p2 mb1 bg-warning">
           <h3 class="m0">Your data needs to be updated</h3>
           <p>This is the final call to update your data.</p>
         </div>
-        <div class="p2 invert bg-error">
+        <div class="p2 mb1 invert bg-error">
           <h3 class="m0">Error occured</h3>
           <p>Due to technical reasons, your data cannot be updated.</p>
           <p>Please try again later.</p>
@@ -547,8 +535,8 @@
 
       <h3 id="cards">Cards</h3>
       <kerge-doc-previewer>
-        <div class="row">
-          <div class="col card">
+        <div class="grid g1">
+          <div class="6 card">
             <img src="https://picsum.photos/400/300/?random" alt="Just random image" class="w100">
             <h4>Card Title</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -556,7 +544,7 @@
             <button class="btn">Okay</button>
             <button class="btn bg-neutral">Cancel</button>
           </div>
-          <div class="col card">
+          <div class="6 card">
             <img src="https://picsum.photos/400/299/?random" alt="ust random image" class="w100">
             <h4>Card Title</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -589,8 +577,8 @@
             nostrum?
           </p>
           <hr>
-          <div class="row">
-            <form method="dialog" class="f-end">
+          <div class="grid">
+            <form method="dialog" class="12 mt1">
               <button type="button" class="btn bg-primary">Submit</button>
               <button type="submit" class="btn bg-neutral">Close</button>
             </form>
@@ -632,12 +620,12 @@
       <h3 id="forms">Forms</h3>
       <kerge-doc-previewer>
         <form name="demo-form" id="demo-form">
-          <div class="row">
-            <div class="col">
+          <div class="grid">
+            <div class="12 mb1">
               <label for="name">Name</label>
               <input type="text" class="input w100" name="name" id="name" placeholder="John Doe" required>
             </div>
-            <div class="col">
+            <div class="12 mb1">
               <label for="hobbies">Hobbies</label>
               <select id="hobbies" class="input w100">
                 <option disabled selected>-- select --</option>
@@ -647,32 +635,32 @@
               </select>
             </div>
           </div>
-          <div class="row">
-            <div class="col">
+          <div class="grid">
+            <div class="12">
               <label for="message">Message</label>
               <textarea id="message" class="input w100" placeholder="Your message..." cols="3" required></textarea>
             </div>
           </div>
-          <div class="row">
-            <div class="col">
+          <div class="grid g1">
+            <div class="6">
               <label for="invalid">Invalid field</label>
               <input type="text" class="input b-error w100" name="invalid" id="invalid" required>
             </div>
-            <div class="col">
+            <div class="6">
               <label for="success">Valid field</label>
               <input type="text" class="input b-success w100" name="success" id="success" required>
             </div>
           </div>
-          <div class="row">
-            <div class="col">
+          <div class="grid">
+            <div class="12 mt1 mb1">
               <label>
                 <input type="checkbox" name="agree" id="agree">
                 I agree on everything
               </label>
             </div>
           </div>
-          <div class="row">
-            <div class="col">
+          <div class="grid">
+            <div class="12">
               <button type="submit" class="btn">Submit</button>
               <button type="reset" class="btn bg-neutral">Reset</button>
             </div>
@@ -698,14 +686,14 @@
 
       <h3 id="navbar">Navbar</h3>
       <kerge-doc-previewer>
-        <nav class="row p1 bg-primary">
-          <div class="col pv1">
+        <nav class="grid p1 bg-primary justify-between">
+          <div class="6 pv1">
             <a href="#!" class="invert ph2">Main menu</a>
             <a href="#!" class="invert ph2">Products</a>
             <a href="#!" class="invert ph2">List</a>
           </div>
-          <div class="col pv1 d-flex">
-            <a href="#!" class="invert ph2 f-end">Login</a>
+          <div class="6 pv1 d-flex justify-end">
+            <a href="#!" class="invert ph2">Login</a>
           </div>
         </nav>
       </kerge-doc-previewer>
@@ -936,7 +924,7 @@
           </tbody>
         </table>
       </div>
-      <footer class="d-flex f-justify-center m1">
+      <footer class="d-flex justify-center m1">
         <p>
           <a href="https://github.com/dknight/kerge">Source on Github</a>
         </p>
