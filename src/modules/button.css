@@ -33,7 +33,7 @@
 
 .button:hover:not(:disabled) {
   /* wait for css color module 5, or fix bug in lightning css */
-  /* background: lch(from var(--c-pri) calc(l + 10%) c h); */
+  /* background: lch(from var(--c-primary) calc(l + 10%) c h); */
   /* filter: brightness(0.9); */
 }
 

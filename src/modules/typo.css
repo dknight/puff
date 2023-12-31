@@ -2,7 +2,7 @@
  * Links
  */
 a {
-  color: var(--c-pri);
+  color: var(--c-primary);
   text-decoration: none;
 }
 a:hover {

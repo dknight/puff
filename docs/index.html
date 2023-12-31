@@ -323,37 +323,27 @@
       <kerge-doc-previewer>
         <span class="p1 text">text</span>
         <span class="p1 primary">primary</span>
-        <span class="p1 secondary">secondary</span>
-        <span class="p1 info">info</span>
-        <span class="p1 success">success</span>
-        <span class="p1 warning">warning</span>
-        <span class="p1 error">error</span>
+        <span class="p1 accent">accent</span>
+        <span class="p1 warn">warning</span>
         <span class="p1 invert bg-text">invert</span>
       </kerge-doc-previewer>
 
       <h4 id="background-colors">Background colors</h4>
       <kerge-doc-previewer>
-        <div class="p1 invert bg-primary mb1 round">bg-primary</div>
-        <div class="p1 invert bg-secondary mb1 round">bg-secondary</div>
-        <div class="p1 invert bg-info mb1 round">bg-info</div>
-        <div class="p1 invert bg-success mb1 round">bg-success</div>
-        <div class="p1 invert bg-warning mb1 round">bg-warning</div>
-        <div class="p1 invert bg-error mb1 round">bg-error</div>
         <div class="p1 invert bg-text mb1 round">bg-text</div>
+        <div class="p1 invert bg-primary mb1 round">bg-primary</div>
+        <div class="p1 invert bg-accent mb1 round">bg-accent</div>
+        <div class="p1 invert bg-warn mb1 round">bg-warning</div>
         <div class="p1 text bg-invert mb1 round">bg-invert</div>
       </kerge-doc-previewer>
 
       <h4 id="border-colors">Border colors</h4>
       <kerge-doc-previewer>
         <div class="border p1 b-primary mb1 round">b-primary</div>
-        <div class="border p1 b-secondary mb1 round">b-secondary</div>
-        <div class="border p1 b-info mb1 round">b-info</div>
-        <div class="border p1 b-success mb1 round">b-success</div>
-        <div class="border p1 b-warning mb1 round">b-warning</div>
-        <div class="border p1 b-error mb1 round">b-error</div>
+        <div class="border p1 b-accent mb1 round">b-accent</div>
+        <div class="border p1 b-warn mb1 round">b-warning</div>
         <div class="border p1 b-text mb1 round">b-text</div>
         <div class="border p1 b-invert mb1 round">invert</div>
-        <div class="border p1 b-neutral mb1 round">neutral</div>
       </kerge-doc-previewer>
 
       <h3 id="layout-tokens">Layout</h3>
@@ -474,16 +464,13 @@
       <h3 id="alerts">Alerts</h3>
       <kerge-doc-previewer>
         <p>The combination of design tokens helps create alert elements.</p>
-        <div class="alert mb1 bg-info">
-          <p>Please update your date before <time>2023-10-12</time>.</p>
-        </div>
-        <div class="alert mb1 bg-success">
+        <div class="alert mb1 bg-primary">
           <p>Thanks for updating your data.</p>
         </div>
-        <div class="alert mb1 bg-warning">
+        <div class="alert mb1 bg-accent">
           <p>This is the final call to update your data.</p>
         </div>
-        <div class="alert mb1 bg-error">
+        <div class="alert mb1 bg-warn">
           <p>Due to technical reasons, your data cannot be updated.</p>
           <p>Please try again later.</p>
         </div>
@@ -491,10 +478,9 @@
 
       <h3 id="badges">Badges</h3>
       <kerge-doc-previewer>
-        <span class="badge bg-info">New</span>
-        <span class="badge bg-success">Great!</span>
-        <span class="badge bg-warning">Something</span>
-        <strong class="badge bg-error">5</strong>
+        <span class="badge bg-primary">Great!</span>
+        <span class="badge bg-accent">Something</span>
+        <strong class="badge bg-warn">5</strong>
       </kerge-doc-previewer>
 
       <h3 id="buttons">Buttons</h3>
@@ -550,7 +536,7 @@
         <dialog id="demo-dialog" class="dialog round ph3">
           <h2>Dialog</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ab dolorum rerum error vero
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ab dolorum rerum warn vero
             laboriosam
             modi quos quia eaque molestiae. Eaque facilis, voluptas magnam possimus beatae reiciendis sunt doloribus
             nostrum?
@@ -623,11 +609,11 @@
           <div class="grid g1">
             <div class="6">
               <label for="invalid">Invalid field</label>
-              <input type="text" class="input b-error w100" name="invalid" id="invalid" required>
+              <input type="text" class="input b-warn w100" name="invalid" id="invalid" required>
             </div>
             <div class="6">
               <label for="success">Valid field</label>
-              <input type="text" class="input b-success w100" name="success" id="success" required>
+              <input type="text" class="input w100" name="success" id="success" required>
             </div>
           </div>
           <div class="grid">
@@ -831,10 +817,22 @@
           </thead>
           <tbody>
             <tr>
-              <td>--c-pri</td>
+              <td>--c-primary</td>
               <td>#005cbd</td>
               <td>#7f93dd</td>
               <td><span class="primary">Primary color</span></td>
+            </tr>
+            <tr>
+              <td>--c-accent</td>
+              <td>#98a008</td>
+              <td>#f3f98a</td>
+              <td><span class="accent">Accent color</span></td>
+            </tr>
+            <tr>
+              <td>--c-warn</td>
+              <td>#da3125</td>
+              <td>#f6764c</td>
+              <td><span class="warn">warn color</span></td>
             </tr>
             <tr>
               <td>--c-txt</td>
@@ -852,36 +850,6 @@
                 </span>
                 <p class="s">* inverted background because text is the same color as background</p>
               </td>
-            </tr>
-            <tr>
-              <td>--c-brd</td>
-              <td>#444</td>
-              <td>#282828</td>
-              <td><span class="primary">Border color</span></td>
-            </tr>
-            <tr>
-              <td>--c-inf</td>
-              <td>#2f7c8e</td>
-              <td>#90b5bf</td>
-              <td><span class="info">Info color</span></td>
-            </tr>
-            <tr>
-              <td>--c-suc</td>
-              <td>#438221</td>
-              <td>#8ac565</td>
-              <td><span class="success">Success color</span></td>
-            </tr>
-            <tr>
-              <td>--c-wrn</td>
-              <td>#fde74c</td>
-              <td>#d68f00</td>
-              <td><span class="warning">Warning color</span></td>
-            </tr>
-            <tr>
-              <td>--c-err</td>
-              <td>#da3125</td>
-              <td>#f6764c</td>
-              <td><span class="error">Error color</span></td>
             </tr>
           </tbody>
         </table>

@@ -18,7 +18,7 @@ pre {
 hr {
   border: 0;
   border-bottom: var(--brd);
-  border-bottom-color: var(--c-pri);
+  border-bottom-color: var(--c-primary);
 }
 
 img {

@@ -1,17 +1,14 @@
 @media (prefers-color-scheme: light) {
   :root {
     color-scheme: light;
-    --c-pri: #105460;
-    --c-sec: #98a008;
+    --c-primary: #105460;
+    --c-accent: #98a008;
+    --c-warn: #b22222;
+
     --c-bg: #f8f8f8;
     --c-txt: #151417;
     --c-brd: #e4e3e6;
     --c-dim: var(--c-brd);
-
-    --c-inf: #008b8b;
-    --c-suc: #008000;
-    --c-wrn: #b8860b;
-    --c-err: #b22222;
 
     --img-filter: ;
   }
@@ -19,17 +16,14 @@
 
 :root[data-theme='light'] {
   color-scheme: light;
-  --c-pri: #105460;
-  --c-sec: #98a008;
+  --c-primary: #105460;
+  --c-accent: #98a008;
+  --c-warn: #b22222;
+
   --c-bg: #f8f8f8;
   --c-txt: #151417;
   --c-brd: #e4e3e6;
   --c-dim: var(--c-brd);
-
-  --c-inf: #008b8b;
-  --c-suc: #008000;
-  --c-wrn: #b8860b;
-  --c-err: #b22222;
 
   --img-filter: ;
 }
