@@ -15,7 +15,8 @@ body {
 }
 
 .doc-grid .grid > div {
-  background-color: var(--c-brd);
+  background-color: var(--c-dim);
+  border: var(--brd);
   padding: 0.5rem;
 }
 
@@ -73,12 +74,6 @@ body {
   height: 0.1875rem;
   margin: 0.25rem 0;
   background-color: var(--c-txt);
-}
-
-@media (prefers-color-theme: dark) {
-  .demo-grid .col {
-    background: var(--c-dim);
-  }
 }
 
 @media screen and (max-width: 60rem) {

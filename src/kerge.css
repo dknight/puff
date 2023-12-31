@@ -5,6 +5,7 @@
 /* @layer components, core, themes; */
 
 /* Components */
+@import 'modules/alert.css' /*layer(components)*/;
 @import 'modules/badge.css' /*layer(components)*/;
 @import 'modules/button.css' /*layer(components)*/;
 @import 'modules/card.css' /*layer(components)*/;

@@ -1,4 +1,6 @@
 .card {
   padding: calc(var(--s) * 2);
+  border: var(--brd);
   background: var(--c-dim);
+  border-radius: var(--br);
 }

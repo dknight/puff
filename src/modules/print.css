@@ -1,7 +1,7 @@
 @media print {
   :root {
     --c-txt: #000;
-    --c-inv: #fff;
+    --c-bg: #fff;
     print-color-adjust: economy;
   }
 }

@@ -4,6 +4,9 @@
 .primary {
   color: var(--c-pri);
 }
+.secondary {
+  color: var(--c-sec);
+}
 .info {
   color: var(--c-inf);
 }
@@ -20,10 +23,7 @@
   color: var(--c-txt);
 }
 .invert {
-  color: var(--c-inv);
-}
-.neutral {
-  color: var(--c-neu);
+  color: var(--c-bg);
 }
 
 /**
@@ -31,6 +31,9 @@
  */
 .bg-primary {
   background-color: var(--c-pri);
+}
+.bg-secondary {
+  background-color: var(--c-sec);
 }
 .bg-info {
   background-color: var(--c-inf);
@@ -47,18 +50,15 @@
 .bg-text {
   background-color: var(--c-txt);
 }
-.bg-invert {
-  background-color: var(--c-inv);
-}
-.bg-neutral {
-  background-color: var(--c-neu);
-}
 
 /**
  * Borders
  */
 .b-primary {
   border-color: var(--c-pri);
+}
+.b-secondary {
+  border-color: var(--c-sec);
 }
 .b-info {
   border-color: var(--c-inf);
@@ -76,8 +76,5 @@
   border-color: var(--c-txt);
 }
 .b-invert {
-  border-color: var(--c-inv);
-}
-.b-neutral {
-  border-color: var(--c-neu);
+  border-color: var(--c-bg);
 }

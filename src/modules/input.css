@@ -1,10 +1,15 @@
 .input {
   background: var(--c-dim);
-  border: var(--bw) solid var(--c-neu);
+  border: var(--bw) solid var(--c-brd);
   border-radius: var(--br);
   color: var(--c-txt);
   font-size: var(--fs);
   padding: var(--s);
+  transition: border-color var(--time) ease-in;
+}
+
+.input:focus {
+  border-color: var(--c-text);
 }
 
 .input[type]:read-only, /* handle <select>, kind of bug? */

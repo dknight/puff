@@ -1,9 +1,5 @@
-:focus-visible {
-  outline: calc(var(--bw) * 1.5) var(--c-fcs) solid;
-}
-
 body {
-  background: var(--c-inv);
+  background: var(--c-bg);
   color: var(--c-txt);
   font: var(--font);
   letter-spacing: var(--ls);
@@ -12,6 +8,8 @@ body {
 
 pre {
   background: var(--c-dim);
+  border: var(--bw) solid var(--c-brd);
+  border-radius: var(--br);
   font: initial;
   overflow: auto;
   padding: calc(var(--s) * 2);
@@ -19,7 +17,8 @@ pre {
 
 hr {
   border: 0;
-  border-bottom: var(--bw) solid var(--c-pri);
+  border-bottom: var(--brd);
+  border-bottom-color: var(--c-pri);
 }
 
 img {

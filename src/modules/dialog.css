@@ -1,5 +1,5 @@
 .dialog {
-  background: var(--c-dim);
+  background: var(--c-bg);
   border: 0;
   color: var(--c-txt);
   margin: auto;

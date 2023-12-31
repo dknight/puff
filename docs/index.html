@@ -196,25 +196,25 @@
       </p>
 
       <h4>Examples</h4>
-      <div class="border b-primary mb1">
+      <div class="border mb1">
         <div class="mt2 mb2">
           mt2 mb2 (margin-top: 2 * 0.5rem; margin-bottom: 2 * 0.5rem)
         </div>
       </div>
 
-      <div class="border b-primary mb1">
+      <div class="border mb1">
         <div class="pv2 ph4">
           pv2 ph4 (vertical padding: 2 * 0.5rem; horizontal padding: 4 * 0.5rem)
         </div>
       </div>
 
-      <div class="border b-primary mb1">
+      <div class="border mb1">
         <div class="m4 p1">
           m4 p1 (margin: 4 * 0.5rem; padding: 1 * 0.5rem)
         </div>
       </div>
 
-      <div class="border b-primary mb1">
+      <div class="border mb1">
         <div class="p0 m0">
           p0 - resets padding to 0; m0 - resets margins to 0.
         </div>
@@ -321,38 +321,39 @@
       <h3 id="colors">Colors</h3>
       <h4 id="text-colors">Text colors</h4>
       <kerge-doc-previewer>
+        <span class="p1 text">text</span>
         <span class="p1 primary">primary</span>
+        <span class="p1 secondary">secondary</span>
         <span class="p1 info">info</span>
         <span class="p1 success">success</span>
         <span class="p1 warning">warning</span>
         <span class="p1 error">error</span>
-        <span class="p1 text">text</span>
         <span class="p1 invert bg-text">invert</span>
-        <span class="p1 neutral">neutral</span>
       </kerge-doc-previewer>
 
       <h4 id="background-colors">Background colors</h4>
       <kerge-doc-previewer>
-        <div class="p1 invert bg-primary mb1">bg-primary</div>
-        <div class="p1 invert bg-info mb1">bg-info</div>
-        <div class="p1 invert bg-success mb1">bg-success</div>
-        <div class="p1 bg-warning mb1">bg-warning</div>
-        <div class="p1 invert bg-error mb1">bg-error</div>
-        <div class="p1 invert bg-text mb1">bg-text</div>
-        <div class="p1 text bg-invert mb1">bg-invert</div>
-        <div class="p1 invert bg-neutral mb1">bg-neutral</div>
+        <div class="p1 invert bg-primary mb1 round">bg-primary</div>
+        <div class="p1 invert bg-secondary mb1 round">bg-secondary</div>
+        <div class="p1 invert bg-info mb1 round">bg-info</div>
+        <div class="p1 invert bg-success mb1 round">bg-success</div>
+        <div class="p1 invert bg-warning mb1 round">bg-warning</div>
+        <div class="p1 invert bg-error mb1 round">bg-error</div>
+        <div class="p1 invert bg-text mb1 round">bg-text</div>
+        <div class="p1 text bg-invert mb1 round">bg-invert</div>
       </kerge-doc-previewer>
 
       <h4 id="border-colors">Border colors</h4>
       <kerge-doc-previewer>
-        <div class="border p1 b-primary mb1">b-accent</div>
-        <div class="border p1 b-info mb1">b-info</div>
-        <div class="border p1 b-success mb1">b-success</div>
-        <div class="border p1 b-warning mb1">b-warning</div>
-        <div class="border p1 b-error mb1">b-error</div>
-        <div class="border p1 b-text mb1">b-text</div>
-        <div class="border p1 b-invert mb1">invert</div>
-        <div class="border p1 b-neutral mb1">neutral</div>
+        <div class="border p1 b-primary mb1 round">b-primary</div>
+        <div class="border p1 b-secondary mb1 round">b-secondary</div>
+        <div class="border p1 b-info mb1 round">b-info</div>
+        <div class="border p1 b-success mb1 round">b-success</div>
+        <div class="border p1 b-warning mb1 round">b-warning</div>
+        <div class="border p1 b-error mb1 round">b-error</div>
+        <div class="border p1 b-text mb1 round">b-text</div>
+        <div class="border p1 b-invert mb1 round">invert</div>
+        <div class="border p1 b-neutral mb1 round">neutral</div>
       </kerge-doc-previewer>
 
       <h3 id="layout-tokens">Layout</h3>
@@ -473,20 +474,16 @@
       <h3 id="alerts">Alerts</h3>
       <kerge-doc-previewer>
         <p>The combination of design tokens helps create alert elements.</p>
-        <div class="p2 mb1 invert bg-info">
-          <h3 class="m0">Please update your data</h3>
+        <div class="alert mb1 bg-info">
           <p>Please update your date before <time>2023-10-12</time>.</p>
         </div>
-        <div class="p2 mb1 invert bg-success">
-          <h3 class="m0">Your data is updated</h3>
+        <div class="alert mb1 bg-success">
           <p>Thanks for updating your data.</p>
         </div>
-        <div class="p2 mb1 bg-warning">
-          <h3 class="m0">Your data needs to be updated</h3>
+        <div class="alert mb1 bg-warning">
           <p>This is the final call to update your data.</p>
         </div>
-        <div class="p2 mb1 invert bg-error">
-          <h3 class="m0">Error occured</h3>
+        <div class="alert mb1 bg-error">
           <p>Due to technical reasons, your data cannot be updated.</p>
           <p>Please try again later.</p>
         </div>
@@ -494,42 +491,24 @@
 
       <h3 id="badges">Badges</h3>
       <kerge-doc-previewer>
-        <span class="badge invert round bg-info">New</span>
-        <span class="badge invert round bg-success">Great!</span>
-        <span class="badge round bg-warning">Something</span>
-        <strong class="badge invert round bg-error">5</strong>
+        <span class="badge bg-info">New</span>
+        <span class="badge bg-success">Great!</span>
+        <span class="badge bg-warning">Something</span>
+        <strong class="badge bg-error">5</strong>
       </kerge-doc-previewer>
 
       <h3 id="buttons">Buttons</h3>
-      <h4 id="solid-buttons">Solid buttons</h4>
       <kerge-doc-previewer class="grid">
-        <button class="btn bg-primary">Primary button</button>
-        <button class="btn bg-neutral">Neutral button</button>
-        <button class="btn bg-info">Info button</button>
-        <button class="btn bg-success">Success button</button>
-        <button class="btn text bg-warning">Warning button</button>
-        <button class="btn bg-error">Error button</button>
-        <button class="btn" disabled>Disabled button</button>
-      </kerge-doc-previewer>
-
-      <h4 id="outlined-buttons">Outlined buttons</h4>
-      <kerge-doc-previewer class="grid">
-        <button class="btn border primary">Primary button</button>
-        <button class="btn border neutral">Neutral button</button>
-        <button class="btn border info">Info button</button>
-        <button class="btn border success">Success button</button>
-        <button class="btn border warning">Warning button</button>
-        <button class="btn border error">Error button</button>
-        <button class="btn border text">Text button</button>
-        <button class="btn text border" disabled>Disabled button</button>
+        <button class="button">Cool button</button>
+        <button class="button" disabled>Disabled button</button>
       </kerge-doc-previewer>
 
       <h4 id="carets">Carets</h4>
       <p>Caret is a small triangle-arrow, which is very useful for dropdowns. Also, they can be added to the links.
       </p>
       <kerge-doc-previewer>
-        <button class="btn bg-primary caret down">Caret down</button>
-        <button class="btn bg-primary caret up">Caret up</button>
+        <button class="button caret">Caret down</button>
+        <button class="button caret up">Caret up</button>
         <a href="#!" class="caret">Pandora box</a>
       </kerge-doc-previewer>
 
@@ -541,16 +520,16 @@
             <h4>Card Title</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Consectetur adipisci, asperiores odit repellat, explicabo expedita atque aut illum. </p>
-            <button class="btn">Okay</button>
-            <button class="btn bg-neutral">Cancel</button>
+            <button class="button">Okay</button>
+            <button class="button">Cancel</button>
           </div>
           <div class="6 card">
             <img src="https://picsum.photos/400/299/?random" alt="ust random image" class="w100">
             <h4>Card Title</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Consectetur adipisci, asperiores odit repellat, explicabo expedita atque aut illum. </p>
-            <button class="btn">Okay</button>
-            <button class="btn bg-neutral">Cancel</button>
+            <button class="button">Okay</button>
+            <button class="button">Cancel</button>
           </div>
         </div>
       </kerge-doc-previewer>
@@ -567,7 +546,7 @@
 
       <h3 id="dialog">Dialog</h3>
       <kerge-doc-previewer>
-        <button class="btn bg-primary" id="open-dialog-btn">Open dialog</button>
+        <button class="button" id="open-dialog-btn">Open dialog</button>
         <dialog id="demo-dialog" class="dialog round ph3">
           <h2>Dialog</h2>
           <p>
@@ -579,8 +558,8 @@
           <hr>
           <div class="grid">
             <form method="dialog" class="12 mt1">
-              <button type="button" class="btn bg-primary">Submit</button>
-              <button type="submit" class="btn bg-neutral">Close</button>
+              <button type="button" class="button">Submit</button>
+              <button type="submit" class="button">Close</button>
             </form>
           </div>
         </dialog>
@@ -597,7 +576,7 @@
       <p>This is an extremely simple dropdown menu. There is also a script on how to open the menu.</p>
       <kerge-doc-previewer>
         <div class="dropdown" id="demo-dropdown">
-          <button id="expand-dropdown-dialog" class="btn bg-primary caret dropdown-trigger">Open menu</button>
+          <button id="expand-dropdown-dialog" class="button caret dropdown-trigger">Open menu</button>
           <menu class="menu dropdown-menu">
             <li class="pv1 ph2"><a href="#!">First item</a></li>
             <li class="pv1 ph2"><a href="#!">Second item</a></li>
@@ -661,8 +640,8 @@
           </div>
           <div class="grid">
             <div class="12">
-              <button type="submit" class="btn">Submit</button>
-              <button type="reset" class="btn bg-neutral">Reset</button>
+              <button type="submit" class="button">Submit</button>
+              <button type="reset" class="button">Reset</button>
             </div>
           </div>
         </form>
@@ -686,14 +665,15 @@
 
       <h3 id="navbar">Navbar</h3>
       <kerge-doc-previewer>
-        <nav class="grid p1 bg-primary justify-between">
+        <nav class="grid p1 border round justify-between">
           <div class="6 pv1">
-            <a href="#!" class="invert ph2">Main menu</a>
-            <a href="#!" class="invert ph2">Products</a>
-            <a href="#!" class="invert ph2">List</a>
+            <a href="#!" class="ph2">Main menu</a>
+            <a href="#!" class="ph2">Products</a>
+            <a href="#!" class="ph2">List</a>
           </div>
           <div class="6 pv1 d-flex justify-end">
-            <a href="#!" class="invert ph2">Login</a>
+            <a href="#!" class="ph2 caret">Manage</a>
+            <a href="#!" class="ph2">Login</a>
           </div>
         </nav>
       </kerge-doc-previewer>
@@ -765,7 +745,7 @@
           <div class="wrap">
             <h2 class="m1 mb0 xxxl">Hero Component</h2>
             <h4 class="large mb2">Centered full width and height component</h4>
-            <a href="#!" class="btn invert primary ph4">Button</a>
+            <a href="#!" class="button ph4">Button</a>
           </div>
         </div>
       </kerge-doc-previewer>
@@ -863,33 +843,21 @@
               <td><span style="color: var(--c-text)">Color for tex</span>t</td>
             </tr>
             <tr>
-              <td>--c-inv</td>
+              <td>--c-bg</td>
               <td>#f8f8f8</td>
               <td>#1b1b1b</td>
               <td>
-                <span style="color: var(--c-inv);background-color: var(--c-txt);">Inverted text color
+                <span style="color: var(--c-bg);background-color: var(--c-txt);">Inverted text color
                   (background)
                 </span>
                 <p class="s">* inverted background because text is the same color as background</p>
               </td>
             </tr>
             <tr>
-              <td>--c-neu</td>
-              <td>#637779</td>
-              <td>#aaa</td>
-              <td><span style="color: var(--c-neu)">Neutral color</span></td>
-            </tr>
-            <tr>
               <td>--c-brd</td>
-              <td>#eee</td>
-              <td>#444</td>
-              <td><span style="color: var(--c-brd)">Border color</span></td>
-            </tr>
-            <tr>
-              <td>--c-dim</td>
               <td>#444</td>
               <td>#282828</td>
-              <td><span class="primary">Dim color</span></td>
+              <td><span class="primary">Border color</span></td>
             </tr>
             <tr>
               <td>--c-inf</td>
@@ -914,12 +882,6 @@
               <td>#da3125</td>
               <td>#f6764c</td>
               <td><span class="error">Error color</span></td>
-            </tr>
-            <tr>
-              <td>--c-fcs</td>
-              <td>#da0</td>
-              <td>#da0</td>
-              <td><span style="color: var(--c-fcs)">Focus outline color</span></td>
             </tr>
           </tbody>
         </table>

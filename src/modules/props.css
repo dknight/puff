@@ -11,9 +11,15 @@
   /* Base font */
   --font: var(--fw) var(--fs) var(--ff);
   /* Border width */
-  --bw: 0.125rem;
+  --bw: 0.0625rem;
+  /* Border */
+  --brd: var(--bw) solid var(--c-brd);
   /* Border radius */
   --br: 0.25rem;
   /* Spacings */
   --s: 0.5rem;
+  /* transition time */
+  --time: 0.2s;
+  /* Gradient angle */
+  --grad: linear-gradient(45deg, var(--c-pri), var(--c-sec));
 }

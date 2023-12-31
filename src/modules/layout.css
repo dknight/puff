@@ -17,10 +17,6 @@
 /*
  * Grid
  */
-.col {
-  margin: 0;
-}
-
 @media (min-width: 36rem) {
   .grid {
     display: grid;

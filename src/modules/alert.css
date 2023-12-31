@@ -1,0 +1,10 @@
+.alert {
+  color: var(--c-bg);
+  border-radius: var(--br);
+  margin-block: 0;
+  padding: calc(var(--s) * 2);
+}
+
+.alert p:last-of-type {
+  margin-block: 0;
+}

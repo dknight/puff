@@ -1,3 +1,5 @@
 .badge {
   padding: calc(var(--s) / 2) var(--s);
+  border-radius: var(--br);
+  color: var(--c-bg);
 }

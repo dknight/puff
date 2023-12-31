@@ -10,9 +10,6 @@ class KergeThemeSwitcher extends HTMLElement {
    */
   renderStyles() {
     const css = `
-    button:focus-visible {
-      outline: var(--c-fcs) solid;
-    }
     button {
       align-items: center;
       border-radius: 333px;

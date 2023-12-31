@@ -15,7 +15,7 @@
 }
 
 .border {
-  border: var(--bw) solid;
+  border: var(--brd);
 }
 
 .nowrap {
