@@ -1,9 +1,9 @@
 @media (prefers-color-scheme: dark) {
   :root {
     color-scheme: dark;
-    --c-primary: #95e0ed;
-    --c-accent: #f3f98a;
-    --c-warn: #ffa07a;
+    --c-primary: #2eb499;
+    --c-accent: #d4d589;
+    --c-warn: #ec4d3c;
     --c-bg: #0f0f11;
     --c-txt: #f1f1f1;
     --c-brd: #413e46;
@@ -15,9 +15,9 @@
 
 :root[data-theme='dark'] {
   color-scheme: dark;
-  --c-primary: #95e0ed;
-  --c-accent: #f3f98a;
-  --c-warn: #ffa07a;
+  --c-primary: #2eb499;
+  --c-accent: #d4d589;
+  --c-warn: #ec4d3c;
 
   --c-bg: #0f0f11;
   --c-txt: #f1f1f1;
