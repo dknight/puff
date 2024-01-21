@@ -1,7 +1,6 @@
 ## general
 
-- After node >= 19 use nodejs --watch flag instead of nodemon.
-  In node 18.11+ --watch seems to be very unstable and buggy.
+- Figure out is there possible to check css change with `node --watch`.
 
 ## current
 
