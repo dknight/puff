@@ -1,8 +1,8 @@
 .input {
-  background: var(--c-dim);
-  border: var(--bw) solid var(--c-brd);
+  background: var(--c-surface);
+  border: var(--bw) solid var(--c-outline);
   border-radius: var(--br);
-  color: var(--c-txt);
+  color: var(--c-text);
   font-size: var(--fs);
   padding: var(--s);
   transition: border-color var(--time) ease-in;
@@ -14,7 +14,7 @@
 
 .input[type]:read-only, /* handle <select>, kind of bug? */
 .input:disabled {
-  background: var(--c-brd);
+  background: var(--c-outline);
 }
 
 textarea {

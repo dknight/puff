@@ -1,29 +1,13 @@
 .button {
   all: unset;
-  background: var(--c-bg);
-  background-clip: padding-box; /* !importanté */
-  border: var(--bw) solid transparent; /* !importanté */
-  border-radius: var(--br);
-  color: var(--c-txt);
+  background: var(--grad);
+  border-radius: 99px;
+  color: var(--c-bg);
   cursor: pointer;
-  padding: var(--s) calc(var(--s) * 1.75);
-  white-space: nowrap;
-  position: relative;
   font-weight: 600;
-}
-
-.button::before {
-  content: '';
-  display: block;
-  position: absolute;
-  z-index: -1;
-  margin: calc(var(--bw) * -1);
-  border-radius: var(--br);
-  background-image: var(--grad);
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  padding: calc(var(--s) * 0.75) calc(var(--s) * 2);
+  position: relative;
+  white-space: nowrap;
 }
 
 .button:focus-visible {
@@ -34,15 +18,17 @@
 .button:hover:not(:disabled) {
   /* wait for css color module 5, or fix bug in lightning css */
   /* background: lch(from var(--c-primary) calc(l + 10%) c h); */
-  /* filter: brightness(0.9); */
+  filter: brightness(0.9);
+  outline-offset: calc(var(--bw) * 2);
+  outline: calc(var(--bw) * 2) solid var(--c-primary);
 }
 
 .button:disabled {
+  border: var(--brd);
   cursor: default;
   opacity: 0.7;
-  border: var(--brd);
 }
 .button:disabled::before {
-  filter: saturate(0);
   background-image: none;
+  filter: saturate(0);
 }

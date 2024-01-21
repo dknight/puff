@@ -3,7 +3,7 @@
 }
 
 .dropdown-menu {
-  background: var(--c-dim);
+  background: var(--c-surface);
   display: none;
 }
 

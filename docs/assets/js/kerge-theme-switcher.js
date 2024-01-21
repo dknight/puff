@@ -14,19 +14,16 @@ class KergeThemeSwitcher extends HTMLElement {
       align-items: center;
       border-radius: 333px;
       border: 0;
-      color: var(--c-txt);
+      color: var(--c-text);
       cursor: pointer;
       display: flex;
       font-size: 1rem;
       line-height: 0;
-      padding: .5rem 1rem;
-      transition: background .2s ease-out;
+      padding: .5rem;
+      background: transparent !important;
     }
-    button[value=light] {
-      background: #ddd;
-    }
-    button[value=dark] {
-      background: #111;
+    .label {
+      display: none;
     }
     @media (prefers-color-scheme: dark) {
       button {
@@ -43,17 +40,13 @@ class KergeThemeSwitcher extends HTMLElement {
     }
     .icon {
       display: inline-block;
-      background-color: var(--c-txt);
+      background-color: var(--c-text);
       width: 1.5rem;
-      aspect-ratio: 1;
-      margin-right: .5rem;
+      aspect-ratio: 1 / 1;
     }
     @media screen and (max-width: 60rem) {
       button {
         padding: .5rem;
-      }
-      .label {
-        display: none;
       }
       .icon {
         margin-right: 0;

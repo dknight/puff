@@ -2,6 +2,7 @@
   align-items: center;
   display: inline-flex;
   gap: var(--s);
+  text-decoration: none;
 }
 .caret::after {
   content: '▾';

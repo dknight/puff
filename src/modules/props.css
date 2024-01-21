@@ -13,7 +13,7 @@
   /* Border width */
   --bw: 0.0625rem;
   /* Border */
-  --brd: var(--bw) solid var(--c-brd);
+  --brd: var(--bw) solid var(--c-outline);
   /* Border radius */
   --br: 0.25rem;
   /* Spacings */
@@ -21,5 +21,5 @@
   /* transition time */
   --time: 0.2s;
   /* Gradient angle */
-  --grad: linear-gradient(45deg, var(--c-primary), var(--c-accent));
+  --grad: linear-gradient(45deg, var(--c-primary), var(--c-secondary));
 }

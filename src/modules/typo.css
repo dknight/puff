@@ -3,7 +3,6 @@
  */
 a {
   color: var(--c-primary);
-  text-decoration: none;
 }
 a:hover {
   opacity: 0.8;

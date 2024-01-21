@@ -1,14 +1,14 @@
 body {
   background: var(--c-bg);
-  color: var(--c-txt);
+  color: var(--c-text);
   font: var(--font);
   letter-spacing: var(--ls);
   margin: 0;
 }
 
 pre {
-  background: var(--c-dim);
-  border: var(--bw) solid var(--c-brd);
+  background: var(--c-surface);
+  border: var(--bw) solid var(--c-outline);
   border-radius: var(--br);
   font: initial;
   overflow: auto;

@@ -4,11 +4,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>kerge</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap"
-      rel="stylesheet">
     <link rel="stylesheet" href="../dist/kerge.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <script type="module" src="assets/js/kerge-theme-switcher.js"></script>
@@ -17,11 +12,11 @@
   </head>
   <body>
     <aside class="doc-sidebar p3" id="sidebar">
-      <div class="grid align-center g1">
+      <div class="grid align-center g1 logo">
         <img src="assets/img/feather.png" alt="kerge feather" width="50">
         <h3 lang="et">kerge</h3>
+        <kerge-theme-switcher></kerge-theme-switcher>
       </div>
-      <kerge-theme-switcher></kerge-theme-switcher>
       <nav>
         <h4 class="mt1 mb1">Docs</h4>
         <ul>
@@ -88,9 +83,6 @@
         <ins></ins>
       </button>
       <hr class="mt2 mb2">
-      <p class="copy m0">
-        &copy; 2023 MIT <a href="https://github.com/dknight/kerge">Github</a>
-      </p>
     </aside>
 
     <main class="wrap">
@@ -291,6 +283,7 @@
         <p class="l">Large</p>
         <p class="xl">Extra-large</p>
         <p class="xxl">Super extra-large</p>
+        <p>* Triple X for <code>.xxxl</code> <a href="#hero">hero component</a> only.</p>
       </kerge-doc-previewer>
 
       <h3 id="text-alignment">Text alignment</h3>
@@ -317,8 +310,9 @@
       <kerge-doc-previewer>
         <span class="p1 text">text</span>
         <span class="p1 primary">primary</span>
-        <span class="p1 accent">accent</span>
-        <span class="p1 warn">warning</span>
+        <span class="p1 secondary">secondary</span>
+        <span class="p1 error">error</span>
+        <span class="p1 success">success</span>
         <span class="p1 invert bg-text">invert</span>
       </kerge-doc-previewer>
 
@@ -326,16 +320,17 @@
       <kerge-doc-previewer>
         <div class="p1 invert bg-text mb1 round">bg-text</div>
         <div class="p1 invert bg-primary mb1 round">bg-primary</div>
-        <div class="p1 invert bg-accent mb1 round">bg-accent</div>
-        <div class="p1 invert bg-warn mb1 round">bg-warning</div>
+        <div class="p1 invert bg-secondary mb1 round">bg-secondary</div>
+        <div class="p1 invert bg-error mb1 round">bg-error</div>
+        <div class="p1 invert bg-success mb1 round">bg-success</div>
         <div class="p1 text bg-invert mb1 round">bg-invert</div>
       </kerge-doc-previewer>
 
       <h4 id="border-colors">Border colors</h4>
       <kerge-doc-previewer>
         <div class="border p1 b-primary mb1 round">b-primary</div>
-        <div class="border p1 b-accent mb1 round">b-accent</div>
-        <div class="border p1 b-warn mb1 round">b-warning</div>
+        <div class="border p1 b-secondary mb1 round">b-secondary</div>
+        <div class="border p1 b-error mb1 round">b-error</div>
         <div class="border p1 b-text mb1 round">b-text</div>
         <div class="border p1 b-invert mb1 round">invert</div>
       </kerge-doc-previewer>
@@ -461,20 +456,23 @@
         <div class="alert mb1 bg-primary">
           <p>Thanks for updating your data.</p>
         </div>
-        <div class="alert mb1 bg-accent">
+        <div class="alert mb1 bg-secondary">
           <p>This is the final call to update your data.</p>
         </div>
-        <div class="alert mb1 bg-warn">
+        <div class="alert mb1 bg-error">
           <p>Due to technical reasons, your data cannot be updated.</p>
           <p>Please try again later.</p>
+        </div>
+        <div class="alert mb1 bg-success">
+          <p>Operation successful, you are save to quit.</p>
         </div>
       </kerge-doc-previewer>
 
       <h3 id="badges">Badges</h3>
       <kerge-doc-previewer>
         <span class="badge bg-primary">Great!</span>
-        <span class="badge bg-accent">Something</span>
-        <strong class="badge bg-warn">5</strong>
+        <span class="badge bg-secondary">Something</span>
+        <strong class="badge bg-error">5</strong>
       </kerge-doc-previewer>
 
       <h3 id="buttons">Buttons</h3>
@@ -603,11 +601,11 @@
           <div class="grid g1">
             <div class="6">
               <label for="invalid">Invalid field</label>
-              <input type="text" class="input b-warn w100" name="invalid" id="invalid" required>
+              <input type="text" class="input b-error w100" name="invalid" id="invalid" required>
             </div>
             <div class="6">
               <label for="success">Valid field</label>
-              <input type="text" class="input w100" name="success" id="success" required>
+              <input type="text" class="input b-success w100" name="success" id="success" required>
             </div>
           </div>
           <div class="grid">
@@ -724,8 +722,8 @@
         <div class="tc vh100 d-flex m0" id="hero">
           <div class="wrap">
             <h2 class="m1 mb0 xxxl">Hero Component</h2>
-            <h4 class="large mb2">Centered full width and height component</h4>
-            <a href="#!" class="button ph4">Button</a>
+            <h3 class="xxl mb2">Centered full width and height component</h3>
+            <button class="button ph4 mt4">Button</button>
           </div>
         </div>
       </kerge-doc-previewer>
@@ -746,18 +744,17 @@
             <tr>
               <td>--maxw</td>
               <td>60rem</td>
-              <td>Maximum width of the <a href="#wrapper">wrapper</a></td>
+              <td>Maximum width of the <a href="#wrapper">wrapper</a>.</td>
             </tr>
             <tr>
               <td>--ff</td>
-              <td>Helvetica Neue Light, Helvetica Neue, Helvetica, Arial,
-                Lucida Grande, sans-serif</td>
-              <td>Font family with font stack fallbacks</td>
+              <td>ui-sans-serif, system-ui, -apple-system, Helvetica Neue, Arial, sans-serif</td>
+              <td>Font family with font stack fallbacks.</td>
             </tr>
             <tr>
               <td>--fs</td>
-              <td>16px/1.5</td>
-              <td>Font size and line height</td>
+              <td>16px/1.6</td>
+              <td>Font size and line height.</td>
             </tr>
             <tr>
               <td>--fw</td>
@@ -767,32 +764,47 @@
             <tr>
               <td>--font</td>
               <td>var(--fw) var(--fs) var(--ff)</td>
-              <td>Combined base font</td>
+              <td>Combined base font.</td>
             </tr>
             <tr>
               <td>--bw</td>
-              <td>0.125rem</td>
+              <td>0.0625rem</td>
               <td>Border width</td>
+            </tr>
+            <tr>
+              <td>--brd</td>
+              <td>var(--bw) solid var(--c-outline)</td>
+              <td>Border</td>
             </tr>
             <tr>
               <td>--br</td>
               <td>0.25rem</td>
-              <td>Border radius for rounded elements</td>
+              <td>Border radius for rounded elements.</td>
             </tr>
             <tr>
               <td>--s</td>
               <td>0.5rem</td>
-              <td>The spacing step is used for padding, margins, and gaps</td>
+              <td>The spacing step is used for padding, margins, and gaps.</td>
+            </tr>
+            <tr>
+              <td>--time</td>
+              <td>0.2s</td>
+              <td>Animations duration.</td>
             </tr>
             <tr>
               <td>--ls</td>
               <td>0</td>
-              <td>Letter spacing</td>
+              <td>Letter spacing.</td>
             </tr>
             <tr>
               <td>--img-filter</td>
               <td>(empty)</td>
-              <td>Filter for images used for dark themeing or images effers</td>
+              <td>Filter for images used for dark themeing or images effers.</td>
+            </tr>
+            <tr>
+              <td>--grad</td>
+              <td>linear-gradient(45deg, var(--c-primary), var(--c-secondary))</td>
+              <td>Gradient with 45 degree angle, used for decorations and common styling.</td>
             </tr>
           </tbody>
         </table>
@@ -804,53 +816,83 @@
           <thead>
             <tr>
               <th>Property name</th>
-              <th>Property light theme value</th>
-              <th>Property dark theme value</th>
-              <th>Description and preview</th>
+              <th>Light theme</th>
+              <th>Dark theme</th>
+              <th>Description / preview</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td>--c-primary</td>
-              <td>#005cbd</td>
-              <td>#7f93dd</td>
+              <td>#8a00d4</td>
+              <td>#b86ce4</td>
               <td><span class="primary">Primary color</span></td>
             </tr>
             <tr>
-              <td>--c-accent</td>
-              <td>#98a008</td>
-              <td>#f3f98a</td>
-              <td><span class="accent">Accent color</span></td>
+              <td>--c-secondary</td>
+              <td>#c224a8</td>
+              <td>#db7ac5</td>
+              <td><span class="secondary">Secondary color</span></td>
             </tr>
             <tr>
-              <td>--c-warn</td>
-              <td>#da3125</td>
-              <td>#f6764c</td>
-              <td><span class="warn">warn color</span></td>
+              <td>--c-error</td>
+              <td>#f33</td>
+              <td>#ff8672</td>
+              <td><span class="error">Error color</span></td>
             </tr>
             <tr>
-              <td>--c-txt</td>
-              <td>#333</td>
-              <td>#f8f8f8</td>
-              <td><span style="color: var(--c-text)">Color for tex</span>t</td>
+              <td>--c-success</td>
+              <td>#007800</td>
+              <td>#6ba55d</td>
+              <td><span class="success">Success color</span></td>
+            </tr>
+            <tr>
+              <td>--c-text</td>
+              <td>#151417</td>
+              <td>#f1f1f1</td>
+              <td><span style="color: var(--c-text)">Color for text</span></td>
             </tr>
             <tr>
               <td>--c-bg</td>
-              <td>#f8f8f8</td>
-              <td>#1b1b1b</td>
+              <td>#fff</td>
+              <td>#0f0f11</td>
               <td>
-                <span style="color: var(--c-bg);background-color: var(--c-txt);">Inverted text color
-                  (background)
-                </span>
-                <p class="s">* inverted background because text is the same color as background</p>
+                <span style="color: var(--c-bg);background-color: var(--c-text);">
+                  Inverted text color (background)</span>&nbsp;*
+              </td>
+            </tr>
+            <tr>
+              <td>--c-outline</td>
+              <td>#d3d3d3</td>
+              <td>#413e46</td>
+              <td>
+                <span style="color: var(--c-outline);background-color: var(--c-text);">Color for outline</span>.
+                Used for borders and outlines. *
+              </td>
+            </tr>
+            <tr>
+              <td>--c-surface</td>
+              <td>#f3f3f3</td>
+              <td>#151417</td>
+              <td>
+                <span style="color: var(--c-surface);background-color: var(--c-text);">Color for surface</span>.
+                Used for dimmed backgrounds. *
               </td>
             </tr>
           </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="4" class="s">
+                * Inverted background because text has similar or the same color as background.
+              </td>
+            </tr>
+          </tfoot>
         </table>
       </div>
-      <footer class="d-flex justify-center m1">
+      <footer class="d-flex justify-center mt3">
         <p>
-          <a href="https://github.com/dknight/kerge">Source on Github</a>
+          &copy; 2023&mdash;2024 MIT
+          <a href="https://github.com/dknight/kerge">GitHub</a>
         </p>
       </footer>
     </main>
