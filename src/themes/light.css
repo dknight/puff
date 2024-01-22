@@ -1,23 +1,4 @@
-@media (prefers-color-scheme: light) {
-  :root {
-    color-scheme: light;
-    --c-primary: #8a00d4;
-    --c-secondary: #c224a8;
-
-    --c-error: #f33;
-    --c-success: #007800;
-    --c-tertiary: #f9c46b;
-
-    --c-text: #151417;
-    --c-bg: #fff;
-    --c-outline: #d3d3d3;
-    --c-surface: #f3f3f3;
-
-    --img-filter: ;
-  }
-}
-
-:root[data-theme='light'] {
+:root {
   color-scheme: light;
   --c-primary: #8a00d4;
   --c-secondary: #c224a8;
@@ -30,6 +11,4 @@
   --c-bg: #fff;
   --c-outline: #d3d3d3;
   --c-surface: #f3f3f3;
-
-  --img-filter: ;
 }
