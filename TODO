@@ -1,8 +1,4 @@
-## general
-
 - Figure out is there possible to check css change with `node --watch`.
-
-## current
-
 - make simple js framework for interaction?
 - automate insertion ofs custom props values into html docs
+- try to find way to simplify switch between light/dark themes
