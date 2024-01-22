@@ -11,6 +11,8 @@
 
 kerge (light in Estonian🇪🇪) is a micro full-featured CSS framework for quick UI prototyping. kerge is based on design tokens. Combining just several tokens gives an almost limitless number of UI combinations.
 
+[Documentation](https://dknight.github.io/kerge/)
+
 ## Features
 
 - 🪶 Lightweight ~2kb (minified + gzipped)
