@@ -321,6 +321,7 @@
         <div class="p1 invert bg-text mb1 round">bg-text</div>
         <div class="p1 invert bg-primary mb1 round">bg-primary</div>
         <div class="p1 invert bg-secondary mb1 round">bg-secondary</div>
+        <div class="p1 invert bg-tertiary mb1 round">bg-tertiary</div>
         <div class="p1 invert bg-error mb1 round">bg-error</div>
         <div class="p1 invert bg-success mb1 round">bg-success</div>
         <div class="p1 text bg-invert mb1 round">bg-invert</div>
@@ -459,6 +460,12 @@
         <div class="alert mb1 bg-secondary">
           <p>This is the final call to update your data.</p>
         </div>
+        <div class="alert mb1 bg-tertiary">
+          <p>
+            Warning! This can be use as warning, but have accessility issues.
+            <br>At this version isn't recommended to use.
+          </p>
+        </div>
         <div class="alert mb1 bg-error">
           <p>Due to technical reasons, your data cannot be updated.</p>
           <p>Please try again later.</p>
@@ -472,6 +479,8 @@
       <kerge-doc-previewer>
         <span class="badge bg-primary">Great!</span>
         <span class="badge bg-secondary">Something</span>
+        <span class="badge bg-tertiary">Hello</span>
+        <span class="badge bg-success">OK</span>
         <strong class="badge bg-error">5</strong>
       </kerge-doc-previewer>
 
@@ -833,6 +842,15 @@
               <td>#c224a8</td>
               <td>#db7ac5</td>
               <td><span class="secondary">Secondary color</span></td>
+            </tr>
+            <tr>
+              <td>--c-tertiary</td>
+              <td>#f9c46b</td>
+              <td>#f9c46b</td>
+              <td>
+                <span class="tertiary">Tertiary color</span>.
+                Used only for minor elemets.
+              </td>
             </tr>
             <tr>
               <td>--c-error</td>

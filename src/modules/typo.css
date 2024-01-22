@@ -4,8 +4,8 @@
 a {
   color: var(--c-primary);
 }
-a:hover {
-  opacity: 0.8;
+a:not(.button):hover {
+  color: var(--c-secondary);
 }
 
 p {

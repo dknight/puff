@@ -33,6 +33,7 @@ let bundleStuct = bundle({
   filename: input,
   minify: false,
   include: Features.Colors,
+  exclude: Features.Nesting,
   targets,
 });
 

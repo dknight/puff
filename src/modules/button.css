@@ -16,9 +16,9 @@
 }
 
 .button:hover:not(:disabled) {
+  /* Possible experiment
   /* wait for css color module 5, or fix bug in lightning css */
   /* background: lch(from var(--c-primary) calc(l + 10%) c h); */
-  filter: brightness(0.9);
   outline-offset: calc(var(--bw) * 2);
   outline: calc(var(--bw) * 2) solid var(--c-primary);
 }
@@ -31,4 +31,8 @@
 .button:disabled::before {
   background-image: none;
   filter: saturate(0);
+}
+.button + a,
+.button + .button {
+  margin-left: var(--s);
 }

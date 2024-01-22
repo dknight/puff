@@ -7,6 +7,9 @@
 .secondary {
   color: var(--c-secondary);
 }
+.tertiary {
+  color: var(--c-tertiary);
+}
 .text {
   color: var(--c-text);
 }
@@ -29,6 +32,9 @@
 .bg-secondary {
   background-color: var(--c-secondary);
 }
+.bg-tertiary {
+  background-color: var(--c-tertiary);
+}
 .bg-text {
   background-color: var(--c-text);
 }
@@ -47,6 +53,9 @@
 }
 .b-secondary {
   border-color: var(--c-secondary);
+}
+.b-tertiary {
+  border-color: var(--c-tertiary);
 }
 .b-text {
   border-color: var(--c-text);

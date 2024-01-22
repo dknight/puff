@@ -28,3 +28,7 @@ img {
 summary {
   cursor: pointer;
 }
+
+mark {
+  background-color: var(--c-tertiary);
+}
