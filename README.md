@@ -44,7 +44,7 @@ npm install @dknight/kerge
 
 ## Usage
 
-For detailed usage instructions, please go to the [documentation page](https://www.whoop.ee/kerge).
+For detailed usage instructions, please go to the [documentation page](https://dknight.github.io/kerge/).
 
 ## Development
 
