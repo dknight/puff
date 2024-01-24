@@ -5,11 +5,9 @@
   --ff: ui-sans-serif, system-ui, -apple-system, Helvetica Neue, Arial,
     sans-serif;
   /* Bsse font-size*/
-  --fs: 16px/1.6;
+  --fs: 18px/1.6;
   /* Font weight */
   --fw: 400;
-  /* Base font */
-  --font: var(--fw) var(--fs) var(--ff);
   /* Border width */
   --bw: 0.0625rem;
   /* Border */
@@ -18,8 +16,6 @@
   --br: 0.25rem;
   /* Spacings */
   --s: 0.5rem;
-  /* transition time */
-  --time: 0.2s;
   /* Gradient angle */
   --grad: linear-gradient(45deg, var(--c-primary), var(--c-secondary));
 }

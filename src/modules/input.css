@@ -3,9 +3,8 @@
   border: var(--bw) solid var(--c-outline);
   border-radius: var(--br);
   color: var(--c-text);
-  font-size: var(--fs);
+  font-size: inherit;
   padding: var(--s);
-  transition: border-color var(--time) ease-in;
 }
 
 .input:focus {

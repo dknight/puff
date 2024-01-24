@@ -3,7 +3,10 @@
  */
 a {
   color: var(--c-primary);
+  background-image: linear-gradient(-90deg, blue, red);
+  background-clip: text;
 }
+
 a:not(.button):hover {
   color: var(--c-secondary);
 }

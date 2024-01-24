@@ -94,9 +94,8 @@
   border: var(--bw) solid var(--c-outline);
   border-radius: var(--br);
   color: var(--c-text);
-  font-size: var(--fs);
+  font-size: inherit;
   padding: var(--s);
-  transition: border-color var(--time) ease-in;
 }
 
 .input:focus {
@@ -164,10 +163,13 @@ td, th {
   list-style: none;
 }
 
+:root {
+  font: var(--fw) var(--fs) var(--ff);
+}
+
 body {
   background: var(--c-bg);
   color: var(--c-text);
-  font: var(--font);
   letter-spacing: var(--ls);
   margin: 0;
 }
@@ -176,9 +178,8 @@ pre {
   background: var(--c-surface);
   border: var(--bw) solid var(--c-outline);
   border-radius: var(--br);
-  font: initial;
+  overflow-x: scoll;
   padding: calc(var(--s) * 2);
-  overflow: auto;
 }
 
 hr {
@@ -603,19 +604,20 @@ mark {
 :root {
   --maxw: 60rem;
   --ff: ui-sans-serif, system-ui, -apple-system, Helvetica Neue, Arial, sans-serif;
-  --fs: 16px / 1.6;
+  --fs: 18px / 1.6;
   --fw: 400;
-  --font: var(--fw) var(--fs) var(--ff);
   --bw: .0625rem;
   --brd: var(--bw) solid var(--c-outline);
   --br: .25rem;
   --s: .5rem;
-  --time: .2s;
   --grad: linear-gradient(45deg, var(--c-primary), var(--c-secondary));
 }
 
 a {
   color: var(--c-primary);
+  background-image: linear-gradient(-90deg, #00f, red);
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 
 a:not(.button):hover {
