@@ -10,16 +10,17 @@ class KergeThemeSwitcher extends HTMLElement {
    */
   renderStyles() {
     const css = `
+    :host {
+      display: inline-block;
+    }
     button {
       align-items: center;
-      border-radius: 333px;
+      border-radius: 99px;
       border: 0;
       color: var(--c-txt);
       cursor: pointer;
       display: flex;
-      font-size: 1rem;
-      line-height: 0;
-      padding: .5rem;
+      padding: 11px;
       background: transparent !important;
     }
     .label {
@@ -128,19 +129,17 @@ class KergeThemeSwitcher extends HTMLElement {
   }
 
   /**
-   * @returns {{label: HTMLSpanElement, button: HTMLButtonElement}}
+   * @returns {HTMLButtonElement}}
    */
   renderButton(theme) {
     const text = theme === this.constructor.Themes.DARK ? 'Dark' : 'Light';
-    const tpl = `<button type="button" value="${theme}">
+    const tpl = `<button type="button" value="${theme}" aria-label="${text}">
       <span class="icon"></span>
-      <span class="label">${text}</span>
     </button>`;
 
     this.shadowRoot.innerHTML = tpl;
     const button = this.shadowRoot.querySelector('button');
-    const label = this.shadowRoot.querySelector('.label');
-    return {label, button};
+    return button;
   }
 
   connectedCallback() {
@@ -149,13 +148,13 @@ class KergeThemeSwitcher extends HTMLElement {
     this.setTheme(theme);
     const styles = this.renderStyles();
 
-    const {button, label} = this.renderButton(theme);
+    const button = this.renderButton(theme);
     button.addEventListener('click', (e) => {
       const dark = this.constructor.Themes.DARK;
       const light = this.constructor.Themes.LIGHT;
       const value = button.value;
       button.value = value === dark ? light : dark;
-      label.textContent = value === dark ? 'Light' : 'Dark';
+      button.ariaLabel = value === dark ? 'Light' : 'Dark';
       this.setTheme(button.value);
     });
     this.shadowRoot.prepend(styles, button);
