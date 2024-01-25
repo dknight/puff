@@ -22,11 +22,3 @@
 .nowrap {
   white-space: nowrap;
 }
-
-.menu,
-.reset {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  /* add more on demand */
-}
