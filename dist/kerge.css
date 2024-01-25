@@ -55,7 +55,7 @@
 
 .dialog {
   background: var(--c-bg);
-  color: var(--c-text);
+  color: var(--c-txt);
   max-width: var(--maxw);
   border: 0;
   margin: auto;
@@ -87,7 +87,7 @@
   background: var(--c-surf);
   border: var(--bw) solid var(--c-line);
   border-radius: var(--br);
-  color: var(--c-text);
+  color: var(--c-txt);
   font-size: inherit;
   padding: var(--s);
 }
@@ -97,7 +97,7 @@ input:not(:focus-visible, :focus) {
 }
 
 .input:focus {
-  border-color: var(--c-text);
+  border-color: var(--c-txt);
 }
 
 .input[type]:read-only, .input:disabled {
@@ -167,7 +167,7 @@ td, th {
 
 body {
   background: var(--c-bg);
-  color: var(--c-text);
+  color: var(--c-txt);
   margin: 0;
 }
 
@@ -209,7 +209,12 @@ mark {
 }
 
 .text {
-  color: var(--c-text);
+  color: var(--c-txt);
+}
+
+.dimmed {
+  color: var(--c-dim);
+  font-size: 90%;
 }
 
 .invert {
@@ -237,7 +242,7 @@ mark {
 }
 
 .bg-text {
-  background-color: var(--c-text);
+  background-color: var(--c-txt);
 }
 
 .bg-error {
@@ -261,7 +266,7 @@ mark {
 }
 
 .b-text {
-  border-color: var(--c-text);
+  border-color: var(--c-txt);
 }
 
 .b-invert {
@@ -687,6 +692,7 @@ h6 {
     --c-err: #f33;
     --c-suc: #007800;
     --c-txt: #202124;
+    --c-dim: #4d5156;
     --c-bg: #fff;
     --c-line: #d3d3d3;
     --c-surf: #f3f3f3;
@@ -701,6 +707,7 @@ h6 {
   --c-err: #b22222;
   --c-suc: #007800;
   --c-txt: #202124;
+  --c-dim: #4d5156;
   --c-bg: #fff;
   --c-line: #d3d3d3;
   --c-surf: #f3f3f3;
@@ -715,6 +722,7 @@ h6 {
     --c-err: #ff8672;
     --c-suc: #6ba55d;
     --c-txt: #e8eaed;
+    --c-dim: #bdc1c6;
     --c-bg: #202124;
     --c-line: #413e46;
     --c-surf: #151417;
@@ -730,6 +738,7 @@ h6 {
   --c-err: #ff8672;
   --c-suc: #6ba55d;
   --c-txt: #e8eaed;
+  --c-dim: #bdc1c6;
   --c-bg: #202124;
   --c-line: #413e46;
   --c-surf: #151417;

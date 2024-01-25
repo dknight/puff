@@ -78,7 +78,7 @@ body {
   width: 2rem;
 }
 .burger ins {
-  background-color: var(--c-text);
+  background-color: var(--c-txt);
   display: block;
   height: 0.1875rem;
   margin: 0.25rem 0;

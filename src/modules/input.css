@@ -2,7 +2,7 @@
   background: var(--c-surf);
   border: var(--bw) solid var(--c-line);
   border-radius: var(--br);
-  color: var(--c-text);
+  color: var(--c-txt);
   font-size: inherit;
   padding: var(--s);
 }
@@ -12,7 +12,7 @@ input:not(:focus-visible, :focus) {
 }
 
 .input:focus {
-  border-color: var(--c-text);
+  border-color: var(--c-txt);
 }
 
 .input[type]:read-only, /* handle <select>, kind of bug? */

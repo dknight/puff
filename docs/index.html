@@ -267,6 +267,9 @@
           Examples of <b>bold text</b>, <em>italics</em> and <u>underline</u> text.
           You can <mark>mark</mark> important things.
         </p>
+        <p class="dimmed">
+          Dimmed text used for less imporant information or disclaimers.
+        </p>
       </kerge-doc-previewer>
 
       <h3 id="text-size">Text size</h3>
@@ -309,6 +312,7 @@
       <h4 id="text-colors">Text colors</h4>
       <kerge-doc-previewer>
         <span class="p1 text">text</span>
+        <span class="p1 dimmed">dimmed text</span>
         <span class="p1 primary">primary</span>
         <span class="p1 secondary">secondary</span>
         <span class="p1 error">error</span>
@@ -858,17 +862,23 @@
               <td><span class="success">Success color</span></td>
             </tr>
             <tr>
-              <td>--c-text</td>
+              <td>--c-txt</td>
               <td>#202124</td>
               <td>#e8eaed</td>
-              <td><span style="color: var(--c-text)">Color for text</span></td>
+              <td><span style="color: var(--c-txt)">Color for text</span></td>
+            </tr>
+            <tr>
+              <td>--c-dim</td>
+              <td>#4d5156</td>
+              <td>#bdc1c6</td>
+              <td><span style="color: var(--c-dim)">Color for dimmed text</span></td>
             </tr>
             <tr>
               <td>--c-bg</td>
               <td>#fff</td>
               <td>#202124</td>
               <td>
-                <span style="color: var(--c-bg);background-color: var(--c-text);">
+                <span style="color: var(--c-bg);background-color: var(--c-txt);">
                   Inverted text color (background)</span>&nbsp;*
               </td>
             </tr>
@@ -877,7 +887,7 @@
               <td>#d3d3d3</td>
               <td>#413e46</td>
               <td>
-                <span style="color: var(--c-line);background-color: var(--c-text);">Color for outline</span>.
+                <span style="color: var(--c-line);background-color: var(--c-txt);">Color for outline</span>.
                 Used for borders and outlines. *
               </td>
             </tr>
@@ -886,7 +896,7 @@
               <td>#f3f3f3</td>
               <td>#151417</td>
               <td>
-                <span style="color: var(--c-surf);background-color: var(--c-text);">Color for surface</span>.
+                <span style="color: var(--c-surf);background-color: var(--c-txt);">Color for surface</span>.
                 Used for dimmed backgrounds. *
               </td>
             </tr>

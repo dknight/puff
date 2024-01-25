@@ -4,7 +4,7 @@
 
 body {
   background: var(--c-bg);
-  color: var(--c-text);
+  color: var(--c-txt);
   margin: 0;
 }
 

@@ -11,7 +11,11 @@
   color: var(--c-tri);
 }
 .text {
-  color: var(--c-text);
+  color: var(--c-txt);
+}
+.dimmed {
+  color: var(--c-dim);
+  font-size: 90%;
 }
 .invert {
   color: var(--c-bg);
@@ -36,7 +40,7 @@
   background-color: var(--c-tri);
 }
 .bg-text {
-  background-color: var(--c-text);
+  background-color: var(--c-txt);
 }
 .bg-error {
   background-color: var(--c-err);
@@ -58,7 +62,7 @@
   border-color: var(--c-tri);
 }
 .b-text {
-  border-color: var(--c-text);
+  border-color: var(--c-txt);
 }
 .b-invert {
   border-color: var(--c-bg);

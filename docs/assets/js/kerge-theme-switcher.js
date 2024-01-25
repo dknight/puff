@@ -14,7 +14,7 @@ class KergeThemeSwitcher extends HTMLElement {
       align-items: center;
       border-radius: 333px;
       border: 0;
-      color: var(--c-text);
+      color: var(--c-txt);
       cursor: pointer;
       display: flex;
       font-size: 1rem;
@@ -40,7 +40,7 @@ class KergeThemeSwitcher extends HTMLElement {
     }
     .icon {
       display: inline-block;
-      background-color: var(--c-text);
+      background-color: var(--c-txt);
       width: 1.5rem;
       aspect-ratio: 1 / 1;
     }

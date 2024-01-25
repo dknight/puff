@@ -1,7 +1,7 @@
 .dialog {
   background: var(--c-bg);
   border: 0;
-  color: var(--c-text);
+  color: var(--c-txt);
   margin: auto;
   max-width: var(--maxw);
 }
