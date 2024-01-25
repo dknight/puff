@@ -1,4 +1,5 @@
 .input {
+  accent-color: var(--c-secondary);
   background: var(--c-surface);
   border: var(--bw) solid var(--c-outline);
   border-radius: var(--br);

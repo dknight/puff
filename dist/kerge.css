@@ -27,7 +27,7 @@
 }
 
 .button:focus-visible {
-  outline-offset: var(--bw);
+  outline-offset: calc(var(--bw) * 2);
   outline: auto;
 }
 
@@ -84,6 +84,7 @@
 }
 
 .input {
+  accent-color: var(--c-secondary);
   background: var(--c-surface);
   border: var(--bw) solid var(--c-outline);
   border-radius: var(--br);
