@@ -1,6 +1,6 @@
 @media print {
   :root {
-    --c-text: #000;
+    --c-txt: #000;
     --c-bg: #fff;
     print-color-adjust: economy;
     /* TODO check print in chrome, color issues? */

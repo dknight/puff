@@ -3,17 +3,15 @@
     color-scheme: light;
     --c-pri: #8a00d4;
     --c-sec: #c224a8;
-
-    --c-error: #f33;
-    --c-success: #007800;
     --c-tri: #f9c46b;
 
-    --c-text: #202124;
-    --c-bg: #fff;
-    --c-outline: #d3d3d3;
-    --c-surface: #f3f3f3;
+    --c-err: #f33;
+    --c-suc: #007800;
 
-    --img-filter: ;
+    --c-txt: #202124;
+    --c-bg: #fff;
+    --c-line: #d3d3d3;
+    --c-surf: #f3f3f3;
   }
 }
 
@@ -23,13 +21,11 @@
   --c-sec: #c224a8;
   --c-tri: #f9c46b;
 
-  --c-error: #b22222;
-  --c-success: #007800;
+  --c-err: #b22222;
+  --c-suc: #007800;
 
-  --c-text: #202124;
+  --c-txt: #202124;
   --c-bg: #fff;
-  --c-outline: #d3d3d3;
-  --c-surface: #f3f3f3;
-
-  --img-filter: ;
+  --c-line: #d3d3d3;
+  --c-surf: #f3f3f3;
 }

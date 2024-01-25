@@ -5,13 +5,13 @@
     --c-sec: #db7ac5;
     --c-tri: #f9c46b;
 
-    --c-error: #ff8672;
-    --c-success: #6ba55d;
+    --c-err: #ff8672;
+    --c-suc: #6ba55d;
 
-    --c-text: #e8eaed;
+    --c-txt: #e8eaed;
     --c-bg: #202124;
-    --c-outline: #413e46;
-    --c-surface: #151417;
+    --c-line: #413e46;
+    --c-surf: #151417;
 
     --img-filter: brightness(0.8) contrast(1.2);
   }
@@ -23,13 +23,13 @@
   --c-sec: #db7ac5;
   --c-tri: #f9c46b;
 
-  --c-error: #ff8672;
-  --c-success: #6ba55d;
+  --c-err: #ff8672;
+  --c-suc: #6ba55d;
 
-  --c-text: #e8eaed;
+  --c-txt: #e8eaed;
   --c-bg: #202124;
-  --c-outline: #413e46;
-  --c-surface: #151417;
+  --c-line: #413e46;
+  --c-surf: #151417;
 
   --img-filter: brightness(0.8) contrast(1.2);
 }

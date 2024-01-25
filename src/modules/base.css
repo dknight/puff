@@ -9,8 +9,8 @@ body {
 }
 
 pre {
-  background: var(--c-surface);
-  border: var(--bw) solid var(--c-outline);
+  background: var(--c-surf);
+  border: var(--bw) solid var(--c-line);
   border-radius: var(--br);
   overflow-x: auto;
   padding: calc(var(--s) * 2);

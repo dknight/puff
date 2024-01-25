@@ -11,7 +11,7 @@
   /* Border width */
   --bw: 0.0625rem;
   /* Border */
-  --brd: var(--bw) solid var(--c-outline);
+  --brd: var(--bw) solid var(--c-line);
   /* Border radius */
   --br: 0.25rem;
   /* Spacings */

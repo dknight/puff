@@ -1,5 +1,5 @@
 .card {
-  background: var(--c-surface);
+  background: var(--c-surf);
   border-radius: var(--br);
   border: var(--brd);
   padding: calc(var(--s) * 2);

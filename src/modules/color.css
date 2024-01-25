@@ -17,10 +17,10 @@
   color: var(--c-bg);
 }
 .error {
-  color: var(--c-error);
+  color: var(--c-err);
 }
 .success {
-  color: var(--c-success);
+  color: var(--c-suc);
 }
 
 /**
@@ -39,10 +39,10 @@
   background-color: var(--c-text);
 }
 .bg-error {
-  background-color: var(--c-error);
+  background-color: var(--c-err);
 }
 .bg-success {
-  background-color: var(--c-success);
+  background-color: var(--c-suc);
 }
 
 /**
@@ -64,8 +64,8 @@
   border-color: var(--c-bg);
 }
 .b-error {
-  border-color: var(--c-error);
+  border-color: var(--c-err);
 }
 .b-success {
-  border-color: var(--c-success);
+  border-color: var(--c-suc);
 }

@@ -16,7 +16,7 @@ body {
 }
 
 .doc-grid .grid > div {
-  background-color: var(--c-surface);
+  background-color: var(--c-surf);
   border: var(--brd);
   padding: 0.5rem;
 }
@@ -31,7 +31,7 @@ body {
 }
 
 .doc-sidebar {
-  background: var(--c-surface);
+  background: var(--c-surf);
   display: flex;
   flex-direction: column;
   height: 100vh;
