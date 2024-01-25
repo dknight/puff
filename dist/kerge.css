@@ -697,6 +697,10 @@ h6 {
     --c-line: #d3d3d3;
     --c-surf: #f3f3f3;
   }
+
+  .bg-tertiary {
+    color: var(--c-txt);
+  }
 }
 
 :root[data-theme="light"] {
@@ -711,6 +715,10 @@ h6 {
   --c-bg: #fff;
   --c-line: #d3d3d3;
   --c-surf: #f3f3f3;
+}
+
+:root[data-theme="light"] .bg-tertiary {
+  color: var(--c-txt);
 }
 
 @media (prefers-color-scheme: dark) {
