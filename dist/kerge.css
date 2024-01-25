@@ -61,18 +61,6 @@
   margin: auto;
 }
 
-.dialog::-webkit-backdrop {
-  -webkit-backdrop-filter: blur(2px);
-  backdrop-filter: blur(2px);
-  background: rgba(0, 0, 0, .9);
-}
-
-.dialog::-ms-backdrop {
-  -webkit-backdrop-filter: blur(2px);
-  backdrop-filter: blur(2px);
-  background: rgba(0, 0, 0, .9);
-}
-
 .dialog::backdrop {
   -webkit-backdrop-filter: blur(2px);
   backdrop-filter: blur(2px);
@@ -104,11 +92,7 @@
   padding: var(--s);
 }
 
-input:not(:-webkit-any(:focus-visible, :focus)) {
-  accent-color: var(--c-sec);
-}
-
-input:not(:is(:focus-visible, :focus)) {
+input:not(:focus-visible, :focus) {
   accent-color: var(--c-sec);
 }
 
@@ -116,11 +100,7 @@ input:not(:is(:focus-visible, :focus)) {
   border-color: var(--c-txt);
 }
 
-.input:disabled {
-  background: var(--c-line);
-}
-
-.input[type]:read-only {
+.input[type]:read-only, .input:disabled {
   background: var(--c-line);
 }
 
