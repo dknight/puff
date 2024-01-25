@@ -5,7 +5,6 @@
 body {
   background: var(--c-bg);
   color: var(--c-text);
-  letter-spacing: var(--ls);
   margin: 0;
 }
 
@@ -18,7 +17,7 @@ pre {
 }
 
 hr {
-  border-bottom: var(--bw) solid var(--c-primary);
+  border-bottom: var(--bw) solid var(--c-pri);
 }
 
 img {
@@ -30,5 +29,5 @@ summary {
 }
 
 mark {
-  background-color: var(--c-tertiary);
+  background-color: var(--c-tri);
 }

@@ -17,5 +17,5 @@
   /* Spacings */
   --s: 0.5rem;
   /* Gradient angle */
-  --grad: linear-gradient(45deg, var(--c-primary), var(--c-secondary));
+  --grad: linear-gradient(45deg, var(--c-pri), var(--c-sec));
 }

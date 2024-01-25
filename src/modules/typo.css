@@ -2,13 +2,13 @@
  * Links
  */
 a {
-  color: var(--c-primary);
+  color: var(--c-pri);
   background-image: linear-gradient(-90deg, blue, red);
   background-clip: text;
 }
 
 a:not(.button):hover {
-  color: var(--c-secondary);
+  color: var(--c-sec);
 }
 
 p {

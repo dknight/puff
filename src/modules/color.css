@@ -2,13 +2,13 @@
  * Text
  */
 .primary {
-  color: var(--c-primary);
+  color: var(--c-pri);
 }
 .secondary {
-  color: var(--c-secondary);
+  color: var(--c-sec);
 }
 .tertiary {
-  color: var(--c-tertiary);
+  color: var(--c-tri);
 }
 .text {
   color: var(--c-text);
@@ -27,13 +27,13 @@
  * Backgrounds
  */
 .bg-primary {
-  background-color: var(--c-primary);
+  background-color: var(--c-pri);
 }
 .bg-secondary {
-  background-color: var(--c-secondary);
+  background-color: var(--c-sec);
 }
 .bg-tertiary {
-  background-color: var(--c-tertiary);
+  background-color: var(--c-tri);
 }
 .bg-text {
   background-color: var(--c-text);
@@ -49,13 +49,13 @@
  * Borders
  */
 .b-primary {
-  border-color: var(--c-primary);
+  border-color: var(--c-pri);
 }
 .b-secondary {
-  border-color: var(--c-secondary);
+  border-color: var(--c-sec);
 }
 .b-tertiary {
-  border-color: var(--c-tertiary);
+  border-color: var(--c-tri);
 }
 .b-text {
   border-color: var(--c-text);

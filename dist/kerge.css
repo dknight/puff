@@ -33,7 +33,7 @@
 
 .button:hover:not(:disabled) {
   outline-offset: calc(var(--bw) * 2);
-  outline: calc(var(--bw) * 2) solid var(--c-primary);
+  outline: calc(var(--bw) * 2) solid var(--c-pri);
 }
 
 .button:disabled {
@@ -93,7 +93,7 @@
 }
 
 input:not(:focus-visible, :focus) {
-  accent-color: var(--c-secondary);
+  accent-color: var(--c-sec);
 }
 
 .input:focus {
@@ -168,7 +168,6 @@ td, th {
 body {
   background: var(--c-bg);
   color: var(--c-text);
-  letter-spacing: var(--ls);
   margin: 0;
 }
 
@@ -181,7 +180,7 @@ pre {
 }
 
 hr {
-  border-bottom: var(--bw) solid var(--c-primary);
+  border-bottom: var(--bw) solid var(--c-pri);
 }
 
 img {
@@ -194,19 +193,19 @@ summary {
 }
 
 mark {
-  background-color: var(--c-tertiary);
+  background-color: var(--c-tri);
 }
 
 .primary {
-  color: var(--c-primary);
+  color: var(--c-pri);
 }
 
 .secondary {
-  color: var(--c-secondary);
+  color: var(--c-sec);
 }
 
 .tertiary {
-  color: var(--c-tertiary);
+  color: var(--c-tri);
 }
 
 .text {
@@ -226,15 +225,15 @@ mark {
 }
 
 .bg-primary {
-  background-color: var(--c-primary);
+  background-color: var(--c-pri);
 }
 
 .bg-secondary {
-  background-color: var(--c-secondary);
+  background-color: var(--c-sec);
 }
 
 .bg-tertiary {
-  background-color: var(--c-tertiary);
+  background-color: var(--c-tri);
 }
 
 .bg-text {
@@ -250,15 +249,15 @@ mark {
 }
 
 .b-primary {
-  border-color: var(--c-primary);
+  border-color: var(--c-pri);
 }
 
 .b-secondary {
-  border-color: var(--c-secondary);
+  border-color: var(--c-sec);
 }
 
 .b-tertiary {
-  border-color: var(--c-tertiary);
+  border-color: var(--c-tri);
 }
 
 .b-text {
@@ -606,18 +605,18 @@ mark {
   --brd: var(--bw) solid var(--c-outline);
   --br: .25rem;
   --s: .5rem;
-  --grad: linear-gradient(45deg, var(--c-primary), var(--c-secondary));
+  --grad: linear-gradient(45deg, var(--c-pri), var(--c-sec));
 }
 
 a {
-  color: var(--c-primary);
+  color: var(--c-pri);
   background-image: linear-gradient(-90deg, #00f, red);
   -webkit-background-clip: text;
   background-clip: text;
 }
 
 a:not(.button):hover {
-  color: var(--c-secondary);
+  color: var(--c-sec);
 }
 
 p {
@@ -693,11 +692,11 @@ h6 {
 @media (prefers-color-scheme: light) {
   :root {
     color-scheme: light;
-    --c-primary: #8a00d4;
-    --c-secondary: #c224a8;
+    --c-pri: #8a00d4;
+    --c-sec: #c224a8;
     --c-error: #f33;
     --c-success: #007800;
-    --c-tertiary: #f9c46b;
+    --c-tri: #f9c46b;
     --c-text: #202124;
     --c-bg: #fff;
     --c-outline: #d3d3d3;
@@ -708,9 +707,9 @@ h6 {
 
 :root[data-theme="light"] {
   color-scheme: light;
-  --c-primary: #8a00d4;
-  --c-secondary: #c224a8;
-  --c-tertiary: #f9c46b;
+  --c-pri: #8a00d4;
+  --c-sec: #c224a8;
+  --c-tri: #f9c46b;
   --c-error: #b22222;
   --c-success: #007800;
   --c-text: #202124;
@@ -723,9 +722,9 @@ h6 {
 @media (prefers-color-scheme: dark) {
   :root {
     color-scheme: dark;
-    --c-primary: #b86ce4;
-    --c-secondary: #db7ac5;
-    --c-tertiary: #f9c46b;
+    --c-pri: #b86ce4;
+    --c-sec: #db7ac5;
+    --c-tri: #f9c46b;
     --c-error: #ff8672;
     --c-success: #6ba55d;
     --c-text: #e8eaed;
@@ -738,9 +737,9 @@ h6 {
 
 :root[data-theme="dark"] {
   color-scheme: dark;
-  --c-primary: #b86ce4;
-  --c-secondary: #db7ac5;
-  --c-tertiary: #f9c46b;
+  --c-pri: #b86ce4;
+  --c-sec: #db7ac5;
+  --c-tri: #f9c46b;
   --c-error: #ff8672;
   --c-success: #6ba55d;
   --c-text: #e8eaed;

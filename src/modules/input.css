@@ -8,7 +8,7 @@
 }
 
 input:not(:focus-visible, :focus) {
-  accent-color: var(--c-secondary);
+  accent-color: var(--c-sec);
 }
 
 .input:focus {
