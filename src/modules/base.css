@@ -13,14 +13,12 @@ pre {
   background: var(--c-surface);
   border: var(--bw) solid var(--c-outline);
   border-radius: var(--br);
-  overflow-x: scoll;
+  overflow-x: auto;
   padding: calc(var(--s) * 2);
 }
 
 hr {
-  border: 0;
-  border-bottom: var(--brd);
-  border-bottom-color: var(--c-primary);
+  border-bottom: var(--bw) solid var(--c-primary);
 }
 
 img {

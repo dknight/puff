@@ -10,5 +10,5 @@
 .dropdown.open > .dropdown-menu {
   display: block;
   position: absolute;
-  z-index: 1;
+  transform: translateY(7px);
 }

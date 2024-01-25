@@ -1,7 +1,6 @@
 .alert {
   border-radius: var(--br);
   color: var(--c-bg);
-  margin-block: 0;
   padding: calc(var(--s) * 2);
 }
 
