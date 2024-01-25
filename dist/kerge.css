@@ -26,7 +26,6 @@
   white-space: nowrap;
   border-radius: 99px;
   font-weight: 600;
-  position: relative;
 }
 
 .button:focus-visible {
@@ -42,13 +41,7 @@
 .button:disabled {
   border: var(--brd);
   cursor: default;
-  opacity: .7;
-}
-
-.button:disabled:before {
-  -webkit-filter: saturate(0);
-  filter: saturate(0);
-  background-image: none;
+  opacity: .5;
 }
 
 .button + a, .button + .button {
