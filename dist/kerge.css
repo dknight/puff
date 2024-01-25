@@ -108,6 +108,10 @@ textarea {
   font: inherit;
 }
 
+li {
+  margin: calc(var(--s) / 4) 0;
+}
+
 .menu li {
   padding: var(--s) calc(var(--s) * 2);
   margin: 0;

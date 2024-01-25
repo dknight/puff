@@ -1,0 +1,3 @@
+li {
+  margin: calc(var(--s) / 4) 0;
+}
