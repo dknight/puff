@@ -27,7 +27,7 @@
 }
 
 .button:focus-visible {
-  outline-offset: calc(var(--bw) * 2);
+  outline-offset: calc(var(--bw) * 3);
   outline: auto;
 }
 

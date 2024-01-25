@@ -11,7 +11,7 @@
 
 .button:focus-visible {
   outline: auto;
-  outline-offset: calc(var(--bw) * 2);
+  outline-offset: calc(var(--bw) * 3);
 }
 
 .button:hover:not(:disabled) {
