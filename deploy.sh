@@ -8,7 +8,7 @@ fi
 current=$( node -e "console.log(require('./package.json').version)"  | tr -d "\n" ) 
 next=$( npm version $type | tr -d "\n" ) 
 
-BUILD_VERSION="v$next" npm run build
+BUILD_VERSION="$next" npm run build
 
 git add .
 git commit -m "Release: $next"
