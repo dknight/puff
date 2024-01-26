@@ -1,6 +1,5 @@
 import {
   writeFileSync,
-  readFileSync,
   createReadStream,
   createWriteStream,
   statSync,
@@ -72,17 +71,13 @@ zip(outputMin, `${outputMin}.gz`)
   });
 
 // write version
-const packageContents = readFileSync(path.join(process.cwd(), 'package.json'));
-let env;
-try {
-  env = JSON.parse(packageContents);
-} catch (e) {
-  console.error('Cannot parse package.json', e);
+if (!process.env.BUILD_VERSION) {
+  console.error('env BUILD_VERSION not set');
   process.exit(1);
 }
 const replaceOpts = {
   from: /v\d+\.\d+\.\d+/g,
-  to: `v${env.version}`,
+  to: process.env.BUILD_VERSION,
   files: path.join(process.cwd(), 'docs', 'index.html'),
 };
 try {
