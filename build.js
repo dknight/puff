@@ -10,7 +10,6 @@ import path from 'node:path';
 import {createGzip} from 'node:zlib';
 import {promisify} from 'node:util';
 import {pipeline} from 'node:stream';
-import replace from 'replace-in-file';
 
 import browserslist from 'browserslist';
 import {browserslistToTargets, bundle, Features} from 'lightningcss';
@@ -82,7 +81,7 @@ try {
 }
 const replaceOpts = {
   from: /v\d+\.\d+\.\d+/g,
-  to: `v${process.env.BUILD_VERSION || env.version}`,
+  to: process.env.BUILD_VERSION || env.version,
   files: path.join(process.cwd(), 'docs', 'index.html'),
 };
 try {
