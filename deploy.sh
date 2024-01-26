@@ -10,6 +10,9 @@ npm run build
 current=$( node -e "console.log(require('./package.json').version)"  | tr -d "\n" ) 
 next=$( npm version $type | tr -d "\n" ) 
 
+git add .
+git commit -m "Release: v$next"
+
 git push origin "$next"
 git push origin main
 
