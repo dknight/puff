@@ -82,7 +82,7 @@ try {
 }
 const replaceOpts = {
   from: /v\d+\.\d+\.\d+/g,
-  to: process.env.BUILD_VERSION || `v${env.version}`,
+  to: process.env.BUILD_VERSION || env.version,
   files: path.join(process.cwd(), 'docs', 'index.html'),
 };
 try {
