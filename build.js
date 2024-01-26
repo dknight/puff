@@ -81,7 +81,7 @@ try {
   process.exit(1);
 }
 const replaceOpts = {
-  from: /v\d+\.\d+\.\d+/g,
+  from: /v?\d+\.\d+\.\d+/g,
   to: process.env.BUILD_VERSION || env.version,
   files: path.join(process.cwd(), 'docs', 'index.html'),
 };
