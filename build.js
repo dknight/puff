@@ -10,6 +10,7 @@ import path from 'node:path';
 import {createGzip} from 'node:zlib';
 import {promisify} from 'node:util';
 import {pipeline} from 'node:stream';
+import replace from 'replace-in-file';
 
 import browserslist from 'browserslist';
 import {browserslistToTargets, bundle, Features} from 'lightningcss';
