@@ -1,5 +1,6 @@
 import {
   writeFileSync,
+  readFileSync,
   createReadStream,
   createWriteStream,
   statSync,
@@ -9,6 +10,7 @@ import path from 'node:path';
 import {createGzip} from 'node:zlib';
 import {promisify} from 'node:util';
 import {pipeline} from 'node:stream';
+import replace from 'replace-in-file';
 
 import browserslist from 'browserslist';
 import {browserslistToTargets, bundle, Features} from 'lightningcss';
@@ -68,3 +70,24 @@ zip(outputMin, `${outputMin}.gz`)
     console.error(`Cannot zip file: ${err}`);
     process.exit(1);
   });
+
+// write version
+const packageContents = readFileSync(path.join(process.cwd(), 'package.json'));
+let env;
+try {
+  env = JSON.parse(packageContents);
+} catch (e) {
+  console.error('Cannot parse package.json', e);
+  process.exit(1);
+}
+const replaceOpts = {
+  from: /v\d+\.\d+\.\d+/g,
+  to: `v${env.version}`,
+  files: path.join(process.cwd(), 'docs', 'index.html'),
+};
+try {
+  replace.sync(replaceOpts);
+  // console.log('Replacement results:', results);
+} catch (error) {
+  console.error('Error occurred:', error);
+}
