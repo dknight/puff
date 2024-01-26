@@ -11,7 +11,7 @@ next=$( npm version $type | tr -d "\n" )
 BUILD_VERSION="v$next" npm run build
 
 git add .
-git commit -m "Release: v$next"
+git commit -m "Release: $next"
 
 git push origin "$next"
 git push origin main
