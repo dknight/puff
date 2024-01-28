@@ -84,7 +84,7 @@ try {
 }
 const version = process.env.BUILD_VERSION || env.version;
 const replaceOpts = {
-  from: /v?\d+\.\d+\.\d+/g,
+  from: /v\d+\.\d+\.\d+/g,
   to: `v${version}`,
   files: path.join(process.cwd(), 'docs', 'index.html'),
 };
