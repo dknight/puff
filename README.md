@@ -1,17 +1,17 @@
 > [!WARNING]
 > This is still a beta version; no feature compatibility is guaranteed.
 
-![kerge](https://github.com/dknight/kerge/blob/main/docs/assets/img/feather.png?raw=true)
+![puff](https://github.com/dknight/puff/blob/main/docs/assets/img/feather.png?raw=true)
 
-# kerge
+# puff
 
-[![License MIT](https://img.shields.io/npm/l/@dknight/kerge)](https://github.com/dknight/kerge/blob/main/LICENSE)
-[![Version](https://img.shields.io/npm/v/@dknight/kerge)](https://www.npmjs.com/package/@dknight/kerge)
-[![Size](https://img.shields.io/github/size/dknight/kerge/dist/kerge.min.css.gz)](https://github.com/dknight/kerge/blob/main/dist/kerge.min.css.gz)
+[![License MIT](https://img.shields.io/npm/l/@dknight/puff)](https://github.com/dknight/puff/blob/main/LICENSE)
+[![Version](https://img.shields.io/npm/v/@dknight/puff)](https://www.npmjs.com/package/@dknight/puff)
+[![Size](https://img.shields.io/github/size/dknight/puff/dist/puff.min.css.gz)](https://github.com/dknight/puff/blob/main/dist/puff.min.css.gz)
 
-kerge (light in Estonian🇪🇪) is a micro full-featured CSS framework for quick UI prototyping. kerge is based on design tokens. Combining just several tokens gives an almost limitless number of UI combinations.
+***puff*** is a micro full-featured CSS framework for quick UI prototyping. puff is based on design tokens. Combining just several tokens gives an almost limitless number of UI combinations.
 
-[Documentation](https://dknight.github.io/kerge/)
+[Documentation](https://dknight.github.io/puff/)
 
 ## Features
 
@@ -33,18 +33,18 @@ kerge (light in Estonian🇪🇪) is a micro full-featured CSS framework for qui
 Installation is straightforward; just include the CSS file into your HTML page in any possible way.
 
 ```html
-<link rel="stylesheet" href="kerge.min.css" />
+<link rel="stylesheet" href="puff.min.css" />
 ```
 
-or install it from <a href="https://www.npmjs.com/package/kerge">NPM</a>.
+or install it from <a href="https://www.npmjs.com/package/puff">NPM</a>.
 
 ```sh
-npm install @dknight/kerge
+npm install @dknight/puff
 ```
 
 ## Usage
 
-For detailed usage instructions, please go to the [documentation page](https://dknight.github.io/kerge/).
+For detailed usage instructions, please go to the [documentation page](https://dknight.github.io/puff/).
 
 ## Development
 

@@ -79,7 +79,6 @@
 .dropdown.open > .dropdown-menu {
   display: block;
   position: absolute;
-  -webkit-transform: translateY(7px);
   transform: translateY(7px);
 }
 
@@ -188,7 +187,6 @@ hr {
 }
 
 img {
-  -webkit-filter: var(--img-filter);
   filter: var(--img-filter);
 }
 

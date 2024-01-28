@@ -1,4 +1,4 @@
-export class KergeDocPreviewer extends HTMLElement {
+export class PuffDocPreviewer extends HTMLElement {
   constructor() {
     super();
   }
@@ -56,4 +56,4 @@ export class KergeDocPreviewer extends HTMLElement {
   }
 }
 
-customElements.define('kerge-doc-previewer', KergeDocPreviewer);
+customElements.define('puff-doc-previewer', PuffDocPreviewer);

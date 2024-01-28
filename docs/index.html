@@ -3,19 +3,19 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>kerge css</title>
-    <link rel=" stylesheet" href="../dist/kerge.min.css">
+    <title>puff css</title>
+    <link rel=" stylesheet" href="../dist/puff.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
-    <script type="module" src="assets/js/kerge-theme-switcher.js"></script>
-    <script type="module" src="assets/js/kerge-doc-previewer.js"></script>
-    <script type="module" src="assets/js/kerge-sidebar.js"></script>
+    <script type="module" src="assets/js/puff-theme-switcher.js"></script>
+    <script type="module" src="assets/js/puff-doc-previewer.js"></script>
+    <script type="module" src="assets/js/puff-sidebar.js"></script>
   </head>
   <body>
     <aside class="doc-sidebar p3" id="sidebar">
       <div class="grid align-center g1 logo">
-        <img src="assets/img/feather.png" alt="kerge feather" width="50">
-        <h3 lang="et">kerge</h3>
-        <kerge-theme-switcher></kerge-theme-switcher>
+        <img src="assets/img/feather.png" alt="puff feather" width="50">
+        <h3 lang="et">puff</h3>
+        <puff-theme-switcher></puff-theme-switcher>
       </div>
       <nav>
         <h4 class="mt1 mb1">Docs</h4>
@@ -88,9 +88,9 @@
     <main class="wrap">
       <h2 id="about">About</h2>
       <p>
-        <em lang="et">kerge</em> (light in Estonian🇪🇪) is a micro full-featured CSS framework for quick UI
+        <em>puff</em> is a micro full-featured CSS framework for quick UI
         prototyping.
-        <em lang="et">kerge</em>
+        <em>puff</em>
         is based on design <a href="#tokens">tokens</a>. Combining just several tokens gives an almost limitless
         number
         of UI combinations.
@@ -114,10 +114,10 @@
 
       <h2 id="install">Install</h2>
       <p>Installation is straightforward; just include the CSS file into your HTML page in any possible way.</p>
-      <pre><code>&lt;link rel="stylesheet" href="kerge.min.css"></code></pre>
+      <pre><code>&lt;link rel="stylesheet" href="puff.min.css"></code></pre>
 
-      <p>or install it from <a href="https://www.npmjs.com/package/kerge">NPM</a>.</p>
-      <pre><code>npm install @dknight/kerge</code></pre>
+      <p>or install it from <a href="https://www.npmjs.com/package/puff">NPM</a>.</p>
+      <pre><code>npm install @dknight/puff</code></pre>
 
       <h2>Layout</h2>
       <h3 id="wrapper">Wrapper</h3>
@@ -125,11 +125,11 @@
         The wrapper centers the content and adds padding to the sides. Usually, a page has one main
         wrapper that wraps everything, but you are not limited to using multiple wrappers.
       </p>
-      <kerge-doc-previewer>
+      <puff-doc-previewer>
         <div class="wrap">
           Wrapper example
         </div>
-      </kerge-doc-previewer>
+      </puff-doc-previewer>
 
       <h3 id="grid">Grid</h3>
       <p>
@@ -138,7 +138,7 @@
         remaining space. On small screens, grids collapse into column layout.
       </p>
       <div class="doc-grid">
-        <kerge-doc-previewer>
+        <puff-doc-previewer>
           <div class="grid g1">
             <div class="1">1 column</div>
             <div class="11">11 column</div>
@@ -162,7 +162,7 @@
               laborum nam architecto distinctio magnam! Maiores, cum?
             </div>
           </div>
-        </kerge-doc-previewer>
+        </puff-doc-previewer>
       </div>
 
       <h2 id="breakpoints">Breakpoints</h2>
@@ -250,17 +250,17 @@
 
       <h3 id="tyography">Typography</h3>
       <h3 id="headings">Headings</h3>
-      <kerge-doc-previewer>
+      <puff-doc-previewer>
         <h1>Heading 1</h1>
         <h2>Heading 2</h2>
         <h3>Heading 3</h3>
         <h4>Heading 4</h4>
         <h5>Heading 5</h5>
         <h6>Heading 6</h6>
-      </kerge-doc-previewer>
+      </puff-doc-previewer>
 
       <h3 id="text">Text</h3>
-      <kerge-doc-previewer>
+      <puff-doc-previewer>
         <p>
           Common paragraph with text. The default font family is <a href="#!">sans-serif</a> and
           can be overridden with <code>--ff</code> CSS custom property.
@@ -270,7 +270,7 @@
         <p class="dimmed">
           Dimmed text used for less imporant information or disclaimers.
         </p>
-      </kerge-doc-previewer>
+      </puff-doc-previewer>
 
       <h3 id="text-size">Text size</h3>
       <p>
@@ -279,7 +279,7 @@
         size tokens: xs, s, l, xl, xxl (plus one more xxxl which is very huge and useful only for the
         <a href="#hero">hero</a> component).
       </p>
-      <kerge-doc-previewer>
+      <puff-doc-previewer>
         <p class="xs">Extra-small</p>
         <p class="s">Small</p>
         <p class="">Normal</p>
@@ -287,10 +287,10 @@
         <p class="xl">Extra-large</p>
         <p class="xxl">Super extra-large</p>
         <p>* Triple X for <code>.xxxl</code> <a href="#hero">hero component</a> only.</p>
-      </kerge-doc-previewer>
+      </puff-doc-previewer>
 
       <h3 id="text-alignment">Text alignment</h3>
-      <kerge-doc-previewer>
+      <puff-doc-previewer>
         <p class="border p1 ts">
           ts - text align start (left)
         </p>
@@ -300,16 +300,16 @@
         <p class="border p1 tc">
           tc - text align center
         </p>
-      </kerge-doc-previewer>
+      </puff-doc-previewer>
 
       <h3 id="text-wrap">Text wrap/nowrap</h3>
-      <kerge-doc-previewer>
+      <puff-doc-previewer>
         <p class="nowrap">All words are on line line, useful for headers, brand.</p>
-      </kerge-doc-previewer>
+      </puff-doc-previewer>
 
       <h3 id="colors">Colors</h3>
       <h4 id="text-colors">Text colors</h4>
-      <kerge-doc-previewer>
+      <puff-doc-previewer>
         <span class="p1 text">text</span>
         <span class="p1 dimmed">dimmed text</span>
         <span class="p1 primary">primary</span>
@@ -318,10 +318,10 @@
         <span class="p1 error">error</span>
         <span class="p1 success">success</span>
         <span class="p1 invert bg-text">invert</span>
-      </kerge-doc-previewer>
+      </puff-doc-previewer>
 
       <h4 id="background-colors">Background colors</h4>
-      <kerge-doc-previewer>
+      <puff-doc-previewer>
         <div class="p1 invert bg-text mb1 round">bg-text</div>
         <div class="p1 invert bg-primary mb1 round">bg-primary</div>
         <div class="p1 invert bg-secondary mb1 round">bg-secondary</div>
@@ -329,17 +329,17 @@
         <div class="p1 invert bg-error mb1 round">bg-error</div>
         <div class="p1 invert bg-success mb1 round">bg-success</div>
         <div class="p1 text bg-invert mb1 round">bg-invert</div>
-      </kerge-doc-previewer>
+      </puff-doc-previewer>
 
       <h4 id="border-colors">Border colors</h4>
-      <kerge-doc-previewer>
+      <puff-doc-previewer>
         <div class="border p1 b-primary mb1 round">b-primary</div>
         <div class="border p1 b-secondary mb1 round">b-secondary</div>
         <div class="border p1 b-tertiary mb1 round">b-tertiary</div>
         <div class="border p1 b-error mb1 round">b-error</div>
         <div class="border p1 b-text mb1 round">b-text</div>
         <div class="border p1 b-invert mb1 round">invert</div>
-      </kerge-doc-previewer>
+      </puff-doc-previewer>
 
       <h3 id="layout-tokens">Layout</h3>
       <p>
@@ -453,7 +453,7 @@
 
       <h2>Components</h2>
       <h3 id="alerts">Alerts</h3>
-      <kerge-doc-previewer>
+      <puff-doc-previewer>
         <p>The combination of design tokens helps create alert elements.</p>
         <div class="alert mb1 bg-primary">
           <p>Thanks for updating your data.</p>
@@ -474,34 +474,34 @@
         <div class="alert mb1 bg-success">
           <p>Operation successful, you are save to quit.</p>
         </div>
-      </kerge-doc-previewer>
+      </puff-doc-previewer>
 
       <h3 id="badges">Badges</h3>
-      <kerge-doc-previewer>
+      <puff-doc-previewer>
         <span class="badge bg-primary">Great!</span>
         <span class="badge bg-secondary">Something</span>
         <span class="badge bg-tertiary">Hello</span>
         <span class="badge bg-success">OK</span>
         <strong class="badge bg-error">5</strong>
-      </kerge-doc-previewer>
+      </puff-doc-previewer>
 
       <h3 id="buttons">Buttons</h3>
-      <kerge-doc-previewer class="grid">
+      <puff-doc-previewer class="grid">
         <button class="button">Cool button</button>
         <button class="button" disabled>Disabled button</button>
-      </kerge-doc-previewer>
+      </puff-doc-previewer>
 
       <h4 id="carets">Carets</h4>
       <p>Caret is a small triangle-arrow, which is very useful for dropdowns. Also, they can be added to the links.
       </p>
-      <kerge-doc-previewer>
+      <puff-doc-previewer>
         <button class="button caret">Caret down</button>
         <button class="button caret up">Caret up</button>
         <a href="#!" class="caret">Pandora box</a>
-      </kerge-doc-previewer>
+      </puff-doc-previewer>
 
       <h3 id="cards">Cards</h3>
-      <kerge-doc-previewer>
+      <puff-doc-previewer>
         <div class="grid g1">
           <div class="6 card">
             <img src="https://picsum.photos/400/300/?random" alt="Just random image" class="w100">
@@ -520,20 +520,20 @@
             <button class="button">Cancel</button>
           </div>
         </div>
-      </kerge-doc-previewer>
+      </puff-doc-previewer>
 
       <h3 id="details">Details</h3>
-      <kerge-doc-previewer>
+      <puff-doc-previewer>
         <details>
           <summary>Click to expand</summary>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium expedita quas corrupti tempora
             veritatis
             magnam distinctio nam cupiditate totam laudantium.</p>
         </details>
-      </kerge-doc-previewer>
+      </puff-doc-previewer>
 
       <h3 id="dialog">Dialog</h3>
-      <kerge-doc-previewer>
+      <puff-doc-previewer>
         <button class="button" id="open-dialog-btn">Open dialog</button>
         <dialog id="demo-dialog" class="dialog round ph3">
           <h2>Dialog</h2>
@@ -558,11 +558,11 @@
             dialog.showModal();
           });
         </script>
-      </kerge-doc-previewer>
+      </puff-doc-previewer>
 
       <h3 id="dropdown-menu">Dropdown menu</h3>
       <p>This is an extremely simple dropdown menu. There is also a script on how to open the menu.</p>
-      <kerge-doc-previewer>
+      <puff-doc-previewer>
         <div class="dropdown" id="demo-dropdown">
           <button id="expand-dropdown-dialog" class="button caret dropdown-trigger">Open menu</button>
           <menu class="menu dropdown-menu">
@@ -582,10 +582,10 @@
             e.target.classList.toggle('up');
           });
         </script>
-      </kerge-doc-previewer>
+      </puff-doc-previewer>
 
       <h3 id="forms">Forms</h3>
-      <kerge-doc-previewer>
+      <puff-doc-previewer>
         <form name="demo-form" id="demo-form">
           <div class="grid">
             <div class="12 mb1">
@@ -639,11 +639,11 @@
             </div>
           </div>
         </form>
-      </kerge-doc-previewer>
+      </puff-doc-previewer>
 
       <h3 id="lists">Lists</h3>
       <p>Lists are very close to the default browser styles.</p>
-      <kerge-doc-previewer>
+      <puff-doc-previewer>
         <ul>
           <li>First Item</li>
           <li>
@@ -655,10 +655,10 @@
           </li>
           <li>Third Item</li>
         </ul>
-      </kerge-doc-previewer>
+      </puff-doc-previewer>
 
       <h3 id="navbar">Navbar</h3>
-      <kerge-doc-previewer>
+      <puff-doc-previewer>
         <nav class="grid p1 border round justify-between">
           <div class="6 pv1">
             <a href="#!" class="ph2">Main menu</a>
@@ -670,17 +670,17 @@
             <a href="#!" class="ph2">Login</a>
           </div>
         </nav>
-      </kerge-doc-previewer>
+      </puff-doc-previewer>
 
       <h3 id="ruler">Ruler</h3>
       <p>Ruler is just a <code>&lt;hr></code> tag. It is helpful to separate sections.</p>
-      <kerge-doc-previewer>
+      <puff-doc-previewer>
         <hr>
-      </kerge-doc-previewer>
+      </puff-doc-previewer>
 
       <h3 id="tables">Tables</h3>
       <p>To make tables responsive with horizontal scroll, wrap a table into a <code>div.table</code> container.</p>
-      <kerge-doc-previewer>
+      <puff-doc-previewer>
         <div class="table">
           <table>
             <thead>
@@ -732,9 +732,9 @@
             </tfoot>
           </table>
         </div>
-      </kerge-doc-previewer>
+      </puff-doc-previewer>
 
-      <kerge-doc-previewer>
+      <puff-doc-previewer>
         <div class="tc vh100 d-flex m0" id="hero">
           <div class="wrap">
             <h2 class="m1 mb0 xxxl">Hero Component</h2>
@@ -742,7 +742,7 @@
             <button class="button ph4 mt4">Button</button>
           </div>
         </div>
-      </kerge-doc-previewer>
+      </puff-doc-previewer>
 
       <h2 id="customize">Customize</h2>
       <p>There are only several global, customizable custom properties.</p>
@@ -913,9 +913,9 @@
       <footer class="d-flex f-col align-center mt3">
         <p>
           &copy; 2023&mdash;2024 MIT
-          <a href="https://github.com/dknight/kerge">GitHub</a>
+          <a href="https://github.com/dknight/puff">GitHub</a>
         </p>
-        <p class="dimmed">v0.6.7</p>
+        <p class="dimmed">0.6.7</p>
       </footer>
     </main>
   </body>

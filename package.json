@@ -1,8 +1,8 @@
 {
-  "name": "@dknight/kerge",
+  "name": "@dknight/puff",
   "version": "0.6.7",
   "description": "Full-featured, lightweight  CSS framework that maintained",
-  "main": "dist/kerge.css",
+  "main": "dist/puff.css",
   "type": "module",
   "directories": {
     "doc": "docs"
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dknight/kerge.git"
+    "url": "git+https://github.com/dknight/puff.git"
   },
   "keywords": [
     "css",
@@ -27,11 +27,11 @@
   "author": "Dmitri Smirnov",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/dknight/kerge/issues"
+    "url": "https://github.com/dknight/puff/issues"
   },
-  "homepage": "https://github.com/dknight/kerge#readme",
+  "homepage": "https://github.com/dknight/puff#readme",
   "devDependencies": {
-    "browser-sync": "^2.29.3",
+    "browser-sync": "^3.0.2",
     "browserslist": "^4.21.10",
     "lightningcss": "^1.23.0",
     "nodemon": "^3.0.1",

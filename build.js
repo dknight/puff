@@ -15,10 +15,12 @@ import replace from 'replace-in-file';
 import browserslist from 'browserslist';
 import {browserslistToTargets, bundle, Features} from 'lightningcss';
 
+const projectName = 'puff';
+
 const srcDir = 'src';
 const distDir = 'dist';
-const inputFile = 'kerge.css';
-const outputFile = 'kerge.min.css';
+const inputFile = `${projectName}.css`;
+const outputFile = `${projectName}.min.css`;
 const input = path.join('.', srcDir, inputFile);
 const output = path.join('.', distDir, inputFile);
 const outputMin = path.join('.', distDir, outputFile);

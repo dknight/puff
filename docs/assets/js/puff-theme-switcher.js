@@ -1,4 +1,4 @@
-class KergeThemeSwitcher extends HTMLElement {
+class PuffThemeSwitcher extends HTMLElement {
   constructor() {
     super();
     this.documentRoot = document.documentElement;
@@ -72,7 +72,7 @@ class KergeThemeSwitcher extends HTMLElement {
    * @type {string}
    */
   static get StorageKey() {
-    return 'kerge-theme';
+    return 'puff-theme';
   }
 
   /**
@@ -161,4 +161,4 @@ class KergeThemeSwitcher extends HTMLElement {
   }
 }
 
-customElements.define('kerge-theme-switcher', KergeThemeSwitcher);
+customElements.define('puff-theme-switcher', PuffThemeSwitcher);
