@@ -1,6 +1,6 @@
 {
   "name": "@dknight/puff",
-  "version": "0.6.7",
+  "version": "0.7.0",
   "description": "Full-featured, lightweight  CSS framework that maintained",
   "main": "dist/puff.css",
   "type": "module",
