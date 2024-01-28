@@ -82,9 +82,10 @@ try {
   console.error('Cannot parse package.json', e);
   process.exit(1);
 }
+const version = process.env.BUILD_VERSION || env.version;
 const replaceOpts = {
   from: /v?\d+\.\d+\.\d+/g,
-  to: process.env.BUILD_VERSION || env.version,
+  to: `v${version}`,
   files: path.join(process.cwd(), 'docs', 'index.html'),
 };
 try {
