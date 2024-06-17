@@ -687,6 +687,8 @@ h6 {
 
 @media (prefers-color-scheme: light) {
   :root {
+    --lightningcss-light: initial;
+    --lightningcss-dark: ;
     color-scheme: light;
     --c-pri: #8a00d4;
     --c-sec: #c224a8;
@@ -706,6 +708,8 @@ h6 {
 }
 
 :root[data-theme="light"] {
+  --lightningcss-light: initial;
+  --lightningcss-dark: ;
   color-scheme: light;
   --c-pri: #8a00d4;
   --c-sec: #c224a8;
@@ -725,6 +729,8 @@ h6 {
 
 @media (prefers-color-scheme: dark) {
   :root {
+    --lightningcss-light: ;
+    --lightningcss-dark: initial;
     color-scheme: dark;
     --c-pri: #b86ce4;
     --c-sec: #db7ac5;
@@ -741,6 +747,8 @@ h6 {
 }
 
 :root[data-theme="dark"] {
+  --lightningcss-light: ;
+  --lightningcss-dark: initial;
   color-scheme: dark;
   --c-pri: #b86ce4;
   --c-sec: #db7ac5;
